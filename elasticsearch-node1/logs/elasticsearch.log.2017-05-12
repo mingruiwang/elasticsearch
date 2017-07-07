@@ -1,0 +1,151 @@
+[2017-05-12 09:51:03,199][INFO ][cluster.service          ] [es-node1] added {[Jolt][YMTyn7FdSHKlVaGMfqRjHw][v-c7-es][inet[/192.168.8.81:9302]],}, reason: zen-disco-receive(from master [[Agamemnon][BunZuz4-QlGmLRzKnCtfYw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-12 09:56:06,718][INFO ][cluster.service          ] [es-node1] removed {[Jolt][YMTyn7FdSHKlVaGMfqRjHw][v-c7-es][inet[/192.168.8.81:9302]],}, reason: zen-disco-receive(from master [[Agamemnon][BunZuz4-QlGmLRzKnCtfYw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-12 09:58:09,300][INFO ][node                     ] [es-node1] stopping ...
+[2017-05-12 09:58:09,557][INFO ][node                     ] [es-node1] stopped
+[2017-05-12 09:58:09,557][INFO ][node                     ] [es-node1] closing ...
+[2017-05-12 09:58:09,559][INFO ][node                     ] [es-node1] closed
+[2017-05-12 09:59:19,561][INFO ][node                     ] [es-node1] version[1.7.3], pid[2601], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-12 09:59:19,565][INFO ][node                     ] [es-node1] initializing ...
+[2017-05-12 09:59:19,656][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-05-12 09:59:19,682][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.2gb], net total_space [36.9gb], types [rootfs]
+[2017-05-12 09:59:22,388][INFO ][node                     ] [es-node1] initialized
+[2017-05-12 09:59:22,388][INFO ][node                     ] [es-node1] starting ...
+[2017-05-12 09:59:22,628][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-05-12 09:59:22,667][INFO ][discovery                ] [es-node1] elasticsearch/yqAvLi1nTSahkq_-o6uo6A
+[2017-05-12 09:59:52,673][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-05-12 09:59:52,742][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-05-12 09:59:52,743][INFO ][node                     ] [es-node1] started
+[2017-05-12 09:59:58,982][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 09:59:58,984][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:00:02,773][INFO ][cluster.service          ] [es-node1] detected_master [Lazarus][GTfy5U6ZSuWqpdMSY-PdPg][v-c7-es][inet[/192.168.8.81:9301]], added {[Lazarus][GTfy5U6ZSuWqpdMSY-PdPg][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Lazarus][GTfy5U6ZSuWqpdMSY-PdPg][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-12 10:00:03,703][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-12 10:00:03,713][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-12 10:00:03,730][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-12 10:02:45,223][INFO ][node                     ] [es-node1] stopping ...
+[2017-05-12 10:02:45,443][INFO ][node                     ] [es-node1] stopped
+[2017-05-12 10:02:45,444][INFO ][node                     ] [es-node1] closing ...
+[2017-05-12 10:02:45,446][INFO ][node                     ] [es-node1] closed
+[2017-05-12 10:04:09,334][INFO ][node                     ] [es-node1] version[1.7.3], pid[2568], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-12 10:04:09,357][INFO ][node                     ] [es-node1] initializing ...
+[2017-05-12 10:04:09,434][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-05-12 10:04:09,460][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.2gb], net total_space [36.9gb], types [rootfs]
+[2017-05-12 10:04:11,680][INFO ][node                     ] [es-node1] initialized
+[2017-05-12 10:04:11,680][INFO ][node                     ] [es-node1] starting ...
+[2017-05-12 10:04:11,855][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-05-12 10:04:11,862][INFO ][discovery                ] [es-node1] elasticsearch/VRQXSeZfTXCCdF6IfyX8ww
+[2017-05-12 10:04:41,863][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-05-12 10:04:41,869][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-05-12 10:04:41,869][INFO ][node                     ] [es-node1] started
+[2017-05-12 10:05:21,282][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:21,285][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:22,858][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:22,959][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:22,964][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:23,482][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:23,594][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:23,594][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,136][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,140][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,233][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,236][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,466][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,466][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,566][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,580][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,670][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,780][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,783][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:24,923][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,025][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,026][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,144][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,146][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,245][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,248][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,371][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,476][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,481][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,586][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,592][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,684][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,688][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,768][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,772][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,879][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,881][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:25,941][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,038][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,041][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,096][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,195][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,204][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,261][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,362][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,368][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,404][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,404][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,503][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,507][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,546][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,654][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,658][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,691][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,795][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,804][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,850][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,952][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:26,961][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,018][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,129][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,133][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,166][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,168][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,266][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,269][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,322][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,324][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,421][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,428][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,476][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,580][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,583][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,643][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,787][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,790][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,819][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,924][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,928][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:27,959][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,054][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,057][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,094][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,191][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,194][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,255][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,356][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,360][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,413][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,414][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,512][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,518][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,562][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,563][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,963][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:28,968][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:29,025][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:29,122][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:29,129][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:29,179][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:29,432][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:29,437][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:29,498][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:29,596][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:29,600][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-12 10:05:31,935][INFO ][cluster.service          ] [es-node1] detected_master [Burstarr][hUgFq8FjSbqy4GvFGKxMug][v-c7-es][inet[/192.168.8.81:9301]], added {[Burstarr][hUgFq8FjSbqy4GvFGKxMug][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Burstarr][hUgFq8FjSbqy4GvFGKxMug][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-12 10:05:33,059][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-12 10:05:33,060][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-12 10:05:33,102][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-12 18:35:11,363][INFO ][node                     ] [es-node1] stopping ...
+[2017-05-12 18:35:11,530][INFO ][node                     ] [es-node1] stopped
+[2017-05-12 18:35:11,530][INFO ][node                     ] [es-node1] closing ...
+[2017-05-12 18:35:11,533][INFO ][node                     ] [es-node1] closed

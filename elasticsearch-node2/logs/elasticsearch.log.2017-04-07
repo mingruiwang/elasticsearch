@@ -1,0 +1,59 @@
+[2017-04-07 15:54:43,334][INFO ][node                     ] [Angela Del Toro] stopping ...
+[2017-04-07 15:54:43,348][INFO ][cluster.service          ] [Angela Del Toro] removed {[Mother Superior][yjer61PARFSg7as2CTP-sg][v-c7-es][inet[/192.168.8.81:9303]],}, reason: zen-disco-node_left([Mother Superior][yjer61PARFSg7as2CTP-sg][v-c7-es][inet[/192.168.8.81:9303]])
+[2017-04-07 15:54:43,405][INFO ][node                     ] [Angela Del Toro] stopped
+[2017-04-07 15:54:43,405][INFO ][node                     ] [Angela Del Toro] closing ...
+[2017-04-07 15:54:43,410][INFO ][node                     ] [Angela Del Toro] closed
+[2017-04-07 16:07:49,771][INFO ][node                     ] [Erik Josten] version[1.7.3], pid[26990], build[05d4530/2015-10-15T09:14:17Z]
+[2017-04-07 16:07:49,772][INFO ][node                     ] [Erik Josten] initializing ...
+[2017-04-07 16:07:49,858][INFO ][plugins                  ] [Erik Josten] loaded [analysis-ik], sites []
+[2017-04-07 16:07:49,891][INFO ][env                      ] [Erik Josten] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.6gb], net total_space [36.9gb], types [rootfs]
+[2017-04-07 16:07:52,087][INFO ][node                     ] [Erik Josten] initialized
+[2017-04-07 16:07:52,088][INFO ][node                     ] [Erik Josten] starting ...
+[2017-04-07 16:07:52,146][INFO ][transport                ] [Erik Josten] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-04-07 16:07:52,156][INFO ][discovery                ] [Erik Josten] elasticsearch/4xPJotlKSAe4E4m-rPH8Dg
+[2017-04-07 16:07:55,923][INFO ][cluster.service          ] [Erik Josten] new_master [Erik Josten][4xPJotlKSAe4E4m-rPH8Dg][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-04-07 16:07:55,977][INFO ][http                     ] [Erik Josten] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-04-07 16:07:55,977][INFO ][node                     ] [Erik Josten] started
+[2017-04-07 16:07:55,997][INFO ][gateway                  ] [Erik Josten] recovered [3] indices into cluster_state
+[2017-04-07 16:07:56,587][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-04-07 16:07:56,587][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-04-07 16:07:56,589][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-04-07 16:08:03,178][INFO ][cluster.service          ] [Erik Josten] added {[es-node1][-D5zt0-6TwORiWvohebjoA][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(join from node[[es-node1][-D5zt0-6TwORiWvohebjoA][v-c7-es][inet[/127.0.0.1:9300]]])
+[2017-04-07 16:17:01,763][INFO ][cluster.metadata         ] [Erik Josten] [my_index1] creating index, cause [api], templates [], shards [2]/[0], mappings []
+[2017-04-07 16:28:03,942][INFO ][cluster.metadata         ] [Erik Josten] [my_index2] creating index, cause [api], templates [], shards [2]/[0], mappings []
+[2017-04-07 16:37:13,396][INFO ][cluster.metadata         ] [Erik Josten] [my_index1] deleting index
+[2017-04-07 16:37:38,313][INFO ][cluster.metadata         ] [Erik Josten] [my_index2] deleting index
+[2017-04-07 16:54:49,313][INFO ][cluster.metadata         ] [Erik Josten] [my_index] deleting index
+[2017-04-07 16:55:39,806][INFO ][cluster.metadata         ] [Erik Josten] [my_index2] creating index, cause [api], templates [], shards [3]/[0], mappings []
+[2017-04-07 17:00:31,303][INFO ][cluster.metadata         ] [Erik Josten] [my_index2] deleting index
+[2017-04-07 17:02:40,442][INFO ][cluster.metadata         ] [Erik Josten] [my_index] creating index, cause [api], templates [], shards [3]/[3], mappings []
+[2017-04-07 17:03:54,826][INFO ][cluster.metadata         ] [Erik Josten] [my_index1] creating index, cause [api], templates [], shards [3]/[0], mappings []
+[2017-04-07 17:04:26,481][INFO ][cluster.metadata         ] [Erik Josten] [my_index] deleting index
+[2017-04-07 17:31:40,697][INFO ][cluster.metadata         ] [Erik Josten] [my_index2] creating index, cause [api], templates [], shards [2]/[0], mappings []
+[2017-04-07 17:33:43,208][INFO ][cluster.metadata         ] [Erik Josten] [my_index] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [my_type]
+[2017-04-07 17:33:43,711][INFO ][cluster.metadata         ] [Erik Josten] [my_index] update_mapping [my_type] (dynamic)
+[2017-04-07 17:39:24,394][INFO ][cluster.metadata         ] [Erik Josten] [my_index1] deleting index
+[2017-04-07 17:39:40,521][INFO ][cluster.metadata         ] [Erik Josten] [my_index2] deleting index
+[2017-04-07 19:07:22,856][INFO ][node                     ] [Erik Josten] stopping ...
+[2017-04-07 19:07:23,018][INFO ][node                     ] [Erik Josten] stopped
+[2017-04-07 19:07:23,018][INFO ][node                     ] [Erik Josten] closing ...
+[2017-04-07 19:07:23,020][INFO ][node                     ] [Erik Josten] closed
+[2017-04-07 19:11:59,868][INFO ][node                     ] [Alkhema] version[1.7.3], pid[2561], build[05d4530/2015-10-15T09:14:17Z]
+[2017-04-07 19:11:59,880][INFO ][node                     ] [Alkhema] initializing ...
+[2017-04-07 19:11:59,951][INFO ][plugins                  ] [Alkhema] loaded [analysis-ik], sites []
+[2017-04-07 19:11:59,975][INFO ][env                      ] [Alkhema] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.6gb], net total_space [36.9gb], types [rootfs]
+[2017-04-07 19:12:02,455][INFO ][node                     ] [Alkhema] initialized
+[2017-04-07 19:12:02,456][INFO ][node                     ] [Alkhema] starting ...
+[2017-04-07 19:12:02,581][INFO ][transport                ] [Alkhema] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-04-07 19:12:02,611][INFO ][discovery                ] [Alkhema] elasticsearch/DyLr_-MZTE6bQIl029pTGQ
+[2017-04-07 19:12:06,389][INFO ][cluster.service          ] [Alkhema] new_master [Alkhema][DyLr_-MZTE6bQIl029pTGQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-04-07 19:12:06,436][INFO ][http                     ] [Alkhema] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-04-07 19:12:06,437][INFO ][node                     ] [Alkhema] started
+[2017-04-07 19:12:06,468][INFO ][gateway                  ] [Alkhema] recovered [3] indices into cluster_state
+[2017-04-07 19:12:07,048][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-04-07 19:12:07,048][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-04-07 19:12:07,060][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-04-07 19:12:27,604][INFO ][node                     ] [Alkhema] stopping ...
+[2017-04-07 19:12:27,699][INFO ][node                     ] [Alkhema] stopped
+[2017-04-07 19:12:27,699][INFO ][node                     ] [Alkhema] closing ...
+[2017-04-07 19:12:27,701][INFO ][node                     ] [Alkhema] closed

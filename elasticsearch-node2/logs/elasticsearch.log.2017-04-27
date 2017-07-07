@@ -1,0 +1,20 @@
+[2017-04-27 09:02:16,458][INFO ][node                     ] [Omega the Unknown] version[1.7.3], pid[2717], build[05d4530/2015-10-15T09:14:17Z]
+[2017-04-27 09:02:16,473][INFO ][node                     ] [Omega the Unknown] initializing ...
+[2017-04-27 09:02:16,544][INFO ][plugins                  ] [Omega the Unknown] loaded [analysis-ik], sites []
+[2017-04-27 09:02:16,568][INFO ][env                      ] [Omega the Unknown] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.1gb], net total_space [36.9gb], types [rootfs]
+[2017-04-27 09:02:18,850][INFO ][node                     ] [Omega the Unknown] initialized
+[2017-04-27 09:02:18,850][INFO ][node                     ] [Omega the Unknown] starting ...
+[2017-04-27 09:02:18,967][INFO ][transport                ] [Omega the Unknown] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-04-27 09:02:19,009][INFO ][discovery                ] [Omega the Unknown] elasticsearch/eNaYSrgcSN218zi01yDFNQ
+[2017-04-27 09:02:22,787][INFO ][cluster.service          ] [Omega the Unknown] new_master [Omega the Unknown][eNaYSrgcSN218zi01yDFNQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-04-27 09:02:22,827][INFO ][http                     ] [Omega the Unknown] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-04-27 09:02:22,827][INFO ][node                     ] [Omega the Unknown] started
+[2017-04-27 09:02:22,925][INFO ][gateway                  ] [Omega the Unknown] recovered [3] indices into cluster_state
+[2017-04-27 09:02:23,617][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-04-27 09:02:23,618][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-04-27 09:02:23,624][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-04-27 09:02:28,398][INFO ][cluster.service          ] [Omega the Unknown] added {[es-node1][_84e9dujSc-RmSU2wWWUaw][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(join from node[[es-node1][_84e9dujSc-RmSU2wWWUaw][v-c7-es][inet[/127.0.0.1:9300]]])
+[2017-04-27 19:28:49,191][INFO ][node                     ] [Omega the Unknown] stopping ...
+[2017-04-27 19:28:49,282][INFO ][node                     ] [Omega the Unknown] stopped
+[2017-04-27 19:28:49,282][INFO ][node                     ] [Omega the Unknown] closing ...
+[2017-04-27 19:28:49,291][INFO ][node                     ] [Omega the Unknown] closed

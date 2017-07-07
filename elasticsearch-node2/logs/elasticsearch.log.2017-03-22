@@ -1,0 +1,98 @@
+[2017-03-22 10:13:41,968][INFO ][node                     ] [Apalla] version[1.7.3], pid[2571], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-22 10:13:42,004][INFO ][node                     ] [Apalla] initializing ...
+[2017-03-22 10:13:42,075][INFO ][plugins                  ] [Apalla] loaded [analysis-ik], sites []
+[2017-03-22 10:13:42,098][INFO ][env                      ] [Apalla] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-22 10:13:44,526][INFO ][node                     ] [Apalla] initialized
+[2017-03-22 10:13:44,526][INFO ][node                     ] [Apalla] starting ...
+[2017-03-22 10:13:44,678][INFO ][transport                ] [Apalla] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-22 10:13:44,715][INFO ][discovery                ] [Apalla] elasticsearch/Ix8QvmYASqC8HYNGp0y0uA
+[2017-03-22 10:13:48,492][INFO ][cluster.service          ] [Apalla] new_master [Apalla][Ix8QvmYASqC8HYNGp0y0uA][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-22 10:13:48,530][INFO ][http                     ] [Apalla] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-22 10:13:48,530][INFO ][node                     ] [Apalla] started
+[2017-03-22 10:13:48,562][INFO ][gateway                  ] [Apalla] recovered [3] indices into cluster_state
+[2017-03-22 10:13:49,110][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-22 10:13:49,122][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-22 10:13:49,173][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-22 10:14:08,064][INFO ][cluster.service          ] [Apalla] added {[es-node1][mDVUblLjRT6rYtnDjHhsJw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][mDVUblLjRT6rYtnDjHhsJw][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-22 14:32:37,017][DEBUG][action.admin.indices.settings.put] [Apalla] failed to update settings on indices [megacorp]
+org.elasticsearch.ElasticsearchIllegalArgumentException: Can't update non dynamic settings[[index.megacorp.number_of_replicas]] for open indices [[megacorp]]
+	at org.elasticsearch.cluster.metadata.MetaDataUpdateSettingsService$2.execute(MetaDataUpdateSettingsService.java:243)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-22 14:32:37,082][INFO ][cluster.service          ] [Apalla] removed {[es-node1][mDVUblLjRT6rYtnDjHhsJw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][mDVUblLjRT6rYtnDjHhsJw][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-22 14:32:37,082][INFO ][cluster.routing          ] [Apalla] delaying allocation for [15] unassigned shards, next check in [59.9s]
+[2017-03-22 14:32:37,090][INFO ][node                     ] [Apalla] stopping ...
+[2017-03-22 14:32:37,622][INFO ][node                     ] [Apalla] stopped
+[2017-03-22 14:32:37,622][INFO ][node                     ] [Apalla] closing ...
+[2017-03-22 14:32:37,624][INFO ][node                     ] [Apalla] closed
+[2017-03-22 14:36:16,891][INFO ][node                     ] [Frank Castle] version[1.7.3], pid[2258], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-22 14:36:16,904][INFO ][node                     ] [Frank Castle] initializing ...
+[2017-03-22 14:36:16,974][INFO ][plugins                  ] [Frank Castle] loaded [analysis-ik], sites []
+[2017-03-22 14:36:16,998][INFO ][env                      ] [Frank Castle] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-22 14:36:19,216][INFO ][node                     ] [Frank Castle] initialized
+[2017-03-22 14:36:19,216][INFO ][node                     ] [Frank Castle] starting ...
+[2017-03-22 14:36:19,303][INFO ][transport                ] [Frank Castle] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-22 14:36:19,334][INFO ][discovery                ] [Frank Castle] elasticsearch/_SA9RrZrS6WAUxOkXi0Hrg
+[2017-03-22 14:36:23,111][INFO ][cluster.service          ] [Frank Castle] new_master [Frank Castle][_SA9RrZrS6WAUxOkXi0Hrg][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-22 14:36:23,150][INFO ][http                     ] [Frank Castle] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-22 14:36:23,150][INFO ][node                     ] [Frank Castle] started
+[2017-03-22 14:36:23,229][INFO ][gateway                  ] [Frank Castle] recovered [3] indices into cluster_state
+[2017-03-22 14:36:23,820][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-22 14:36:23,821][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-22 14:36:23,843][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-22 14:36:45,217][INFO ][cluster.service          ] [Frank Castle] added {[es-node1][R_dQmudSSdKs6niS6FyRVw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][R_dQmudSSdKs6niS6FyRVw][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-22 14:55:19,415][INFO ][cluster.metadata         ] [Frank Castle] [productindex] deleting index
+[2017-03-22 14:59:32,121][INFO ][cluster.metadata         ] [Frank Castle] [product] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-22 15:12:19,595][DEBUG][action.admin.indices.mapping.put] [Frank Castle] failed to put mappings on indices [[product]], type [class]
+org.elasticsearch.index.mapper.MapperParsingException: Root type mapping not empty after parsing! Remaining fields:   [product : {properties={title={type=string, store=yes}, description={type=string, index=not_analyzed}, price={type=double}, onSale={type=boolean}, type={type=integer}, createDate={type=date}}}]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:278)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:192)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-22 15:16:41,828][INFO ][cluster.metadata         ] [Frank Castle] [product] create_mapping [class]
+[2017-03-22 15:32:25,545][INFO ][cluster.metadata         ] [Frank Castle] [produce] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [class]
+[2017-03-22 15:32:26,357][DEBUG][action.index             ] [Frank Castle] [produce][2], node[_SA9RrZrS6WAUxOkXi0Hrg], [P], s[STARTED]: Failed to execute [index {[produce][class][1], source[_na_]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse, document is empty
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:562)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:192)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-22 18:21:54,365][INFO ][cluster.service          ] [Frank Castle] removed {[es-node1][R_dQmudSSdKs6niS6FyRVw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][R_dQmudSSdKs6niS6FyRVw][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-22 18:21:54,365][INFO ][cluster.routing          ] [Frank Castle] delaying allocation for [20] unassigned shards, next check in [1m]
+[2017-03-22 18:28:33,050][INFO ][cluster.service          ] [Frank Castle] added {[es-node1][nrLSTpywRKO-DFsGZ6K3SQ][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][nrLSTpywRKO-DFsGZ6K3SQ][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-22 18:28:48,960][INFO ][node                     ] [the Living Colossus It] version[1.7.3], pid[2576], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-22 18:28:48,960][INFO ][node                     ] [the Living Colossus It] initializing ...
+[2017-03-22 18:28:49,045][INFO ][plugins                  ] [the Living Colossus It] loaded [analysis-ik], sites []
+[2017-03-22 18:28:49,073][INFO ][env                      ] [the Living Colossus It] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-22 18:28:51,252][INFO ][node                     ] [the Living Colossus It] initialized
+[2017-03-22 18:28:51,252][INFO ][node                     ] [the Living Colossus It] starting ...
+[2017-03-22 18:28:51,446][INFO ][transport                ] [the Living Colossus It] bound_address {inet[/0:0:0:0:0:0:0:0:9302]}, publish_address {inet[/192.168.8.81:9302]}
+[2017-03-22 18:28:51,488][INFO ][discovery                ] [the Living Colossus It] elasticsearch/Xi0CZArwRPuAd8LbMu149A
+[2017-03-22 18:28:55,278][INFO ][cluster.service          ] [the Living Colossus It] new_master [the Living Colossus It][Xi0CZArwRPuAd8LbMu149A][v-c7-es][inet[/192.168.8.81:9302]], reason: zen-disco-join (elected_as_master)
+[2017-03-22 18:28:55,332][INFO ][http                     ] [the Living Colossus It] bound_address {inet[/0:0:0:0:0:0:0:0:9202]}, publish_address {inet[/192.168.8.81:9202]}
+[2017-03-22 18:28:55,332][INFO ][node                     ] [the Living Colossus It] started
+[2017-03-22 18:28:55,346][INFO ][gateway                  ] [the Living Colossus It] recovered [0] indices into cluster_state
+[2017-03-22 18:39:14,723][INFO ][node                     ] [Frank Castle] stopping ...
+[2017-03-22 18:39:14,803][INFO ][node                     ] [Frank Castle] stopped
+[2017-03-22 18:39:14,803][INFO ][node                     ] [Frank Castle] closing ...
+[2017-03-22 18:39:14,805][INFO ][node                     ] [Frank Castle] closed
+[2017-03-22 20:40:12,836][INFO ][node                     ] [the Living Colossus It] stopping ...
+[2017-03-22 20:40:12,845][INFO ][node                     ] [the Living Colossus It] stopped
+[2017-03-22 20:40:12,845][INFO ][node                     ] [the Living Colossus It] closing ...
+[2017-03-22 20:40:12,851][INFO ][node                     ] [the Living Colossus It] closed

@@ -1,0 +1,20 @@
+[2017-03-25 12:08:58,921][INFO ][node                     ] [Meggan Braddock] version[1.7.3], pid[2835], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-25 12:08:58,925][INFO ][node                     ] [Meggan Braddock] initializing ...
+[2017-03-25 12:08:59,005][INFO ][plugins                  ] [Meggan Braddock] loaded [analysis-ik], sites []
+[2017-03-25 12:08:59,036][INFO ][env                      ] [Meggan Braddock] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-25 12:09:01,224][INFO ][node                     ] [Meggan Braddock] initialized
+[2017-03-25 12:09:01,224][INFO ][node                     ] [Meggan Braddock] starting ...
+[2017-03-25 12:09:01,313][INFO ][transport                ] [Meggan Braddock] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-25 12:09:01,347][INFO ][discovery                ] [Meggan Braddock] elasticsearch/ja8l5O0SRv-dqI4PBEHOLA
+[2017-03-25 12:09:05,125][INFO ][cluster.service          ] [Meggan Braddock] new_master [Meggan Braddock][ja8l5O0SRv-dqI4PBEHOLA][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-25 12:09:05,163][INFO ][http                     ] [Meggan Braddock] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-25 12:09:05,163][INFO ][node                     ] [Meggan Braddock] started
+[2017-03-25 12:09:05,257][INFO ][gateway                  ] [Meggan Braddock] recovered [2] indices into cluster_state
+[2017-03-25 12:09:05,826][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-25 12:09:05,826][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-25 12:09:05,827][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-25 12:09:09,336][INFO ][cluster.service          ] [Meggan Braddock] added {[es-node1][PWi4kZ5WQPGo67aiq2rT_Q][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][PWi4kZ5WQPGo67aiq2rT_Q][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-25 14:20:27,817][INFO ][node                     ] [Meggan Braddock] stopping ...
+[2017-03-25 14:20:27,880][INFO ][node                     ] [Meggan Braddock] stopped
+[2017-03-25 14:20:27,880][INFO ][node                     ] [Meggan Braddock] closing ...
+[2017-03-25 14:20:27,882][INFO ][node                     ] [Meggan Braddock] closed

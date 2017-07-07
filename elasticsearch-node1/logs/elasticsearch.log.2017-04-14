@@ -1,0 +1,121 @@
+[2017-04-14 09:29:53,168][INFO ][node                     ] [es-node1] version[1.7.3], pid[2770], build[05d4530/2015-10-15T09:14:17Z]
+[2017-04-14 09:29:53,192][INFO ][node                     ] [es-node1] initializing ...
+[2017-04-14 09:29:53,270][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-04-14 09:29:53,296][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.5gb], net total_space [36.9gb], types [rootfs]
+[2017-04-14 09:29:55,868][INFO ][node                     ] [es-node1] initialized
+[2017-04-14 09:29:55,869][INFO ][node                     ] [es-node1] starting ...
+[2017-04-14 09:29:56,141][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-04-14 09:29:56,160][INFO ][discovery                ] [es-node1] elasticsearch/jhufPKFQROWBUk4ZB5lKrA
+[2017-04-14 09:30:26,161][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-04-14 09:30:26,166][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-04-14 09:30:26,166][INFO ][node                     ] [es-node1] started
+[2017-04-14 09:40:23,629][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:23,632][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:29,576][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:29,902][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:29,947][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:30,367][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:30,368][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:30,884][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:30,889][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:31,392][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:31,784][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:31,785][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:31,793][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:31,794][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:32,112][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:32,118][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:32,662][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:32,695][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:33,830][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:33,837][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:34,370][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:34,373][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:34,750][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:34,754][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:34,813][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:35,008][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:35,036][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:36,776][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:36,802][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:53,635][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:40:53,636][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:40:56,783][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:56,793][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:40:59,576][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:40:59,904][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:40:59,948][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:00,369][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:00,369][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:00,884][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:00,889][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:01,392][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:01,784][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:01,786][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:01,794][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:01,794][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:02,113][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:02,118][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:02,662][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:02,696][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:03,830][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:03,837][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:04,371][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:04,374][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:04,751][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:04,755][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:04,813][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:05,009][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:05,037][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:06,777][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:06,786][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:06,804][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:26,783][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:26,794][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:36,787][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-04-14 09:41:36,791][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:46,650][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:46,656][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:47,489][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:47,490][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:47,776][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:47,789][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:48,113][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:48,116][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:48,404][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:48,409][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:48,479][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:48,854][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:48,874][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:49,917][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:49,919][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:49,921][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:50,197][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:50,206][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:52,477][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:52,483][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:53,520][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:53,529][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:53,943][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:53,972][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:54,261][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:54,264][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:54,268][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:54,577][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:54,579][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:54,930][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:54,936][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:55,120][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:55,402][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:55,407][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:55,476][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:55,804][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:55,809][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-04-14 09:41:56,412][INFO ][cluster.service          ] [es-node1] detected_master [Fateball][2qGB00cKTLC7xdSrz4Zzaw][v-c7-es][inet[/192.168.8.81:9301]], added {[Fateball][2qGB00cKTLC7xdSrz4Zzaw][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Fateball][2qGB00cKTLC7xdSrz4Zzaw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-04-14 09:41:57,291][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-04-14 09:41:57,303][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-04-14 09:41:57,370][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-04-14 19:16:45,080][INFO ][node                     ] [es-node1] stopping ...
+[2017-04-14 19:16:45,248][INFO ][node                     ] [es-node1] stopped
+[2017-04-14 19:16:45,249][INFO ][node                     ] [es-node1] closing ...
+[2017-04-14 19:16:45,251][INFO ][node                     ] [es-node1] closed

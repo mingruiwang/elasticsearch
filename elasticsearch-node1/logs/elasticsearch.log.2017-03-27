@@ -1,0 +1,157 @@
+[2017-03-27 08:41:26,052][INFO ][node                     ] [es-node1] version[1.7.3], pid[2735], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-27 08:41:26,052][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-27 08:41:26,147][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-27 08:41:26,203][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-27 08:41:28,426][INFO ][node                     ] [es-node1] initialized
+[2017-03-27 08:41:28,426][INFO ][node                     ] [es-node1] starting ...
+[2017-03-27 08:41:28,578][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-27 08:41:28,595][INFO ][discovery                ] [es-node1] elasticsearch/5YFi62r1RlmTukSE1V-aaQ
+[2017-03-27 08:41:58,596][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-27 08:41:58,603][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.http.BindHttpException: Failed to bind to [9200]
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:269)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.http.HttpServer.doStart(HttpServer.java:89)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:274)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9200
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport$1.onPortNumber(NettyHttpServerTransport.java:260)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:256)
+	... 7 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-27 08:41:58,605][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-27 08:41:58,611][INFO ][node                     ] [es-node1] stopped
+[2017-03-27 08:41:58,611][INFO ][node                     ] [es-node1] closing ...
+[2017-03-27 08:41:58,615][INFO ][node                     ] [es-node1] closed
+[2017-03-27 08:56:31,949][INFO ][node                     ] [es-node1] version[1.7.3], pid[2199], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-27 08:56:31,951][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-27 08:56:32,048][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-27 08:56:32,074][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-27 08:56:34,447][INFO ][node                     ] [es-node1] initialized
+[2017-03-27 08:56:34,447][INFO ][node                     ] [es-node1] starting ...
+[2017-03-27 08:56:34,600][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-27 08:56:34,619][INFO ][discovery                ] [es-node1] elasticsearch/VMULRRZ-S1eajg7uvZOU6g
+[2017-03-27 08:57:04,619][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-27 08:57:04,626][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-27 08:57:04,626][INFO ][node                     ] [es-node1] started
+[2017-03-27 08:57:54,750][INFO ][cluster.service          ] [es-node1] detected_master [King Bedlam][7vImyOFRThK63BoOdOMiPA][v-c7-es][inet[/192.168.8.81:9301]], added {[King Bedlam][7vImyOFRThK63BoOdOMiPA][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[King Bedlam][7vImyOFRThK63BoOdOMiPA][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-27 08:57:55,449][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-27 08:57:55,460][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-27 08:57:55,515][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-27 10:13:32,572][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@6ccd7cf8]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-27 11:11:41,035][INFO ][discovery.zen            ] [es-node1] master_left [[King Bedlam][7vImyOFRThK63BoOdOMiPA][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-03-27 11:11:41,035][WARN ][discovery.zen            ] [es-node1] master left (reason = shut_down), current nodes: {[es-node1][VMULRRZ-S1eajg7uvZOU6g][v-c7-es][inet[/192.168.8.81:9300]],}
+[2017-03-27 11:11:41,036][INFO ][cluster.service          ] [es-node1] removed {[King Bedlam][7vImyOFRThK63BoOdOMiPA][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([King Bedlam][7vImyOFRThK63BoOdOMiPA][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-03-27 11:11:41,104][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-27 11:11:41,140][INFO ][node                     ] [es-node1] stopped
+[2017-03-27 11:11:41,140][INFO ][node                     ] [es-node1] closing ...
+[2017-03-27 11:11:41,142][INFO ][node                     ] [es-node1] closed
+[2017-03-27 14:22:58,742][INFO ][node                     ] [es-node1] version[1.7.3], pid[2486], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-27 14:22:58,742][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-27 14:22:58,827][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-27 14:22:58,855][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-27 14:23:01,071][INFO ][node                     ] [es-node1] initialized
+[2017-03-27 14:23:01,071][INFO ][node                     ] [es-node1] starting ...
+[2017-03-27 14:23:01,225][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-27 14:23:01,243][INFO ][discovery                ] [es-node1] elasticsearch/qjRSbGUfQ_qZmPn2I2rtyA
+[2017-03-27 14:23:31,243][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-27 14:23:31,249][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.http.BindHttpException: Failed to bind to [9200]
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:269)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.http.HttpServer.doStart(HttpServer.java:89)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:274)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9200
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport$1.onPortNumber(NettyHttpServerTransport.java:260)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:256)
+	... 7 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-27 14:23:31,251][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-27 14:23:31,259][INFO ][node                     ] [es-node1] stopped
+[2017-03-27 14:23:31,259][INFO ][node                     ] [es-node1] closing ...
+[2017-03-27 14:23:31,263][INFO ][node                     ] [es-node1] closed
+[2017-03-27 14:33:49,329][INFO ][node                     ] [es-node1] version[1.7.3], pid[2199], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-27 14:33:49,331][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-27 14:33:49,425][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-27 14:33:49,451][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-27 14:33:51,636][INFO ][node                     ] [es-node1] initialized
+[2017-03-27 14:33:51,636][INFO ][node                     ] [es-node1] starting ...
+[2017-03-27 14:33:51,728][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-27 14:33:51,745][INFO ][discovery                ] [es-node1] elasticsearch/WKyFuc4RSIiomDT0lxQLEQ
+[2017-03-27 14:34:21,746][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-27 14:34:21,756][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-27 14:34:21,756][INFO ][node                     ] [es-node1] started
+[2017-03-27 14:34:49,866][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-27 14:34:49,879][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-27 14:35:09,855][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-27 14:35:09,856][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-27 14:35:11,872][INFO ][cluster.service          ] [es-node1] detected_master [Bova][ZfyeSzk-RmenEF_0yct0KQ][v-c7-es][inet[/192.168.8.81:9301]], added {[Bova][ZfyeSzk-RmenEF_0yct0KQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Bova][ZfyeSzk-RmenEF_0yct0KQ][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-27 14:35:12,600][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-27 14:35:12,600][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-27 14:35:12,656][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-27 15:02:21,946][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@7a4f5f8]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-27 15:02:23,937][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@63e54fcb]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-27 19:15:25,136][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-27 19:15:25,229][INFO ][node                     ] [es-node1] stopped
+[2017-03-27 19:15:25,229][INFO ][node                     ] [es-node1] closing ...
+[2017-03-27 19:15:25,232][INFO ][node                     ] [es-node1] closed

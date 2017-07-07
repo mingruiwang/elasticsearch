@@ -1,0 +1,48 @@
+[2017-04-07 15:55:38,107][INFO ][node                     ] [Skullcrusher] version[1.7.3], pid[26669], build[05d4530/2015-10-15T09:14:17Z]
+[2017-04-07 15:55:38,107][INFO ][node                     ] [Skullcrusher] initializing ...
+[2017-04-07 15:55:38,182][INFO ][plugins                  ] [Skullcrusher] loaded [], sites []
+[2017-04-07 15:55:38,207][INFO ][env                      ] [Skullcrusher] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.6gb], net total_space [36.9gb], types [rootfs]
+[2017-04-07 15:55:40,469][INFO ][node                     ] [Skullcrusher] initialized
+[2017-04-07 15:55:40,469][INFO ][node                     ] [Skullcrusher] starting ...
+[2017-04-07 15:55:40,668][INFO ][transport                ] [Skullcrusher] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-04-07 15:55:40,701][INFO ][discovery                ] [Skullcrusher] elasticsearch/SVwwCOWPSHixvdcGgpBNUw
+[2017-04-07 15:55:44,480][INFO ][cluster.service          ] [Skullcrusher] new_master [Skullcrusher][SVwwCOWPSHixvdcGgpBNUw][v-c7-es][inet[/192.168.8.81:9300]], reason: zen-disco-join (elected_as_master)
+[2017-04-07 15:55:44,497][INFO ][http                     ] [Skullcrusher] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-04-07 15:55:44,497][INFO ][node                     ] [Skullcrusher] started
+[2017-04-07 15:55:44,526][INFO ][gateway                  ] [Skullcrusher] recovered [0] indices into cluster_state
+[2017-04-07 15:56:15,624][INFO ][node                     ] [Skullcrusher] stopping ...
+[2017-04-07 15:56:15,634][INFO ][node                     ] [Skullcrusher] stopped
+[2017-04-07 15:56:15,634][INFO ][node                     ] [Skullcrusher] closing ...
+[2017-04-07 15:56:15,643][INFO ][node                     ] [Skullcrusher] closed
+[2017-04-07 15:57:35,495][INFO ][node                     ] [Titania] version[1.7.3], pid[26719], build[05d4530/2015-10-15T09:14:17Z]
+[2017-04-07 15:57:35,496][INFO ][node                     ] [Titania] initializing ...
+[2017-04-07 15:57:35,568][INFO ][plugins                  ] [Titania] loaded [], sites []
+[2017-04-07 15:57:35,593][INFO ][env                      ] [Titania] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.6gb], net total_space [36.9gb], types [rootfs]
+[2017-04-07 15:57:37,814][INFO ][node                     ] [Titania] initialized
+[2017-04-07 15:57:37,814][INFO ][node                     ] [Titania] starting ...
+[2017-04-07 15:57:38,022][INFO ][transport                ] [Titania] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-04-07 15:57:38,065][INFO ][discovery                ] [Titania] elasticsearch/jhLLmj-YREmXESqyowgKlQ
+[2017-04-07 15:57:41,844][INFO ][cluster.service          ] [Titania] new_master [Titania][jhLLmj-YREmXESqyowgKlQ][v-c7-es][inet[/192.168.8.81:9300]], reason: zen-disco-join (elected_as_master)
+[2017-04-07 15:57:41,861][INFO ][http                     ] [Titania] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-04-07 15:57:41,861][INFO ][node                     ] [Titania] started
+[2017-04-07 15:57:41,900][INFO ][gateway                  ] [Titania] recovered [0] indices into cluster_state
+[2017-04-07 15:57:56,123][INFO ][node                     ] [Titania] stopping ...
+[2017-04-07 15:57:56,132][INFO ][node                     ] [Titania] stopped
+[2017-04-07 15:57:56,132][INFO ][node                     ] [Titania] closing ...
+[2017-04-07 15:57:56,139][INFO ][node                     ] [Titania] closed
+[2017-04-07 19:09:27,700][INFO ][node                     ] [Glorian] version[1.7.3], pid[2459], build[05d4530/2015-10-15T09:14:17Z]
+[2017-04-07 19:09:27,711][INFO ][node                     ] [Glorian] initializing ...
+[2017-04-07 19:09:27,775][INFO ][plugins                  ] [Glorian] loaded [], sites []
+[2017-04-07 19:09:27,802][INFO ][env                      ] [Glorian] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.6gb], net total_space [36.9gb], types [rootfs]
+[2017-04-07 19:09:29,923][INFO ][node                     ] [Glorian] initialized
+[2017-04-07 19:09:29,923][INFO ][node                     ] [Glorian] starting ...
+[2017-04-07 19:09:30,057][INFO ][transport                ] [Glorian] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-04-07 19:09:30,100][INFO ][discovery                ] [Glorian] elasticsearch/2ykzD11FToOcXh9OMH5fLw
+[2017-04-07 19:09:33,878][INFO ][cluster.service          ] [Glorian] new_master [Glorian][2ykzD11FToOcXh9OMH5fLw][v-c7-es][inet[/192.168.8.81:9300]], reason: zen-disco-join (elected_as_master)
+[2017-04-07 19:09:33,894][INFO ][http                     ] [Glorian] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-04-07 19:09:33,894][INFO ][node                     ] [Glorian] started
+[2017-04-07 19:09:33,925][INFO ][gateway                  ] [Glorian] recovered [0] indices into cluster_state
+[2017-04-07 19:14:12,800][INFO ][node                     ] [Glorian] stopping ...
+[2017-04-07 19:14:12,811][INFO ][node                     ] [Glorian] stopped
+[2017-04-07 19:14:12,811][INFO ][node                     ] [Glorian] closing ...
+[2017-04-07 19:14:12,815][INFO ][node                     ] [Glorian] closed

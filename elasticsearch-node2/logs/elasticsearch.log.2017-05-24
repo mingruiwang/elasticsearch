@@ -1,0 +1,2 @@
+[2017-05-24 14:21:22,562][INFO ][cluster.metadata         ] [Kaluu] [my_index1] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [my_type]
+[2017-05-24 14:21:23,573][INFO ][cluster.metadata         ] [Kaluu] [my_index1] update_mapping [my_type] (dynamic)

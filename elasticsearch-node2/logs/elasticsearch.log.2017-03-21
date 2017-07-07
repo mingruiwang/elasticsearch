@@ -1,0 +1,323 @@
+[2017-03-21 09:09:00,582][INFO ][node                     ] [Akhenaten] version[1.7.3], pid[5567], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-21 09:09:00,582][INFO ][node                     ] [Akhenaten] initializing ...
+[2017-03-21 09:09:00,659][INFO ][plugins                  ] [Akhenaten] loaded [], sites []
+[2017-03-21 09:09:00,682][INFO ][env                      ] [Akhenaten] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-21 09:09:03,074][INFO ][node                     ] [Akhenaten] initialized
+[2017-03-21 09:09:03,074][INFO ][node                     ] [Akhenaten] starting ...
+[2017-03-21 09:09:03,236][INFO ][transport                ] [Akhenaten] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-21 09:09:03,268][INFO ][discovery                ] [Akhenaten] elasticsearch/rPSKz65FS46Ao83B0R-5cQ
+[2017-03-21 09:09:07,045][INFO ][cluster.service          ] [Akhenaten] new_master [Akhenaten][rPSKz65FS46Ao83B0R-5cQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-21 09:09:07,091][INFO ][http                     ] [Akhenaten] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-21 09:09:07,091][INFO ][node                     ] [Akhenaten] started
+[2017-03-21 09:09:07,133][INFO ][gateway                  ] [Akhenaten] recovered [3] indices into cluster_state
+[2017-03-21 09:09:42,540][INFO ][cluster.service          ] [Akhenaten] added {[es-node1][9OaDPv5KTF2aXTIN0-VNxw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][9OaDPv5KTF2aXTIN0-VNxw][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-21 09:34:52,573][INFO ][node                     ] [Akhenaten] stopping ...
+[2017-03-21 09:34:52,621][INFO ][cluster.service          ] [Akhenaten] removed {[es-node1][9OaDPv5KTF2aXTIN0-VNxw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][9OaDPv5KTF2aXTIN0-VNxw][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-21 09:34:52,621][INFO ][cluster.routing          ] [Akhenaten] delaying allocation for [15] unassigned shards, next check in [1m]
+[2017-03-21 09:34:53,212][INFO ][node                     ] [Akhenaten] stopped
+[2017-03-21 09:34:53,212][INFO ][node                     ] [Akhenaten] closing ...
+[2017-03-21 09:34:53,214][INFO ][node                     ] [Akhenaten] closed
+[2017-03-21 09:37:38,024][INFO ][node                     ] [Dougboy] version[1.7.3], pid[2278], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-21 09:37:38,038][INFO ][node                     ] [Dougboy] initializing ...
+[2017-03-21 09:37:38,100][INFO ][plugins                  ] [Dougboy] loaded [], sites []
+[2017-03-21 09:37:38,122][INFO ][env                      ] [Dougboy] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-21 09:37:40,543][INFO ][node                     ] [Dougboy] initialized
+[2017-03-21 09:37:40,543][INFO ][node                     ] [Dougboy] starting ...
+[2017-03-21 09:37:40,714][INFO ][transport                ] [Dougboy] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-21 09:37:40,747][INFO ][discovery                ] [Dougboy] elasticsearch/OnTgE0LtQjea1zt0Lc90zg
+[2017-03-21 09:37:44,525][INFO ][cluster.service          ] [Dougboy] new_master [Dougboy][OnTgE0LtQjea1zt0Lc90zg][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-21 09:37:44,565][INFO ][http                     ] [Dougboy] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-21 09:37:44,565][INFO ][node                     ] [Dougboy] started
+[2017-03-21 09:37:44,598][INFO ][gateway                  ] [Dougboy] recovered [3] indices into cluster_state
+[2017-03-21 09:38:17,847][INFO ][cluster.service          ] [Dougboy] added {[es-node1][-48G_tQsTu2PF_EfqqMKgQ][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][-48G_tQsTu2PF_EfqqMKgQ][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-21 09:46:18,054][DEBUG][action.admin.indices.mapping.put] [Dougboy] failed to put mappings on indices [[index]], type [fulltext]
+org.elasticsearch.ElasticsearchParseException: Failed to parse content to map
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:130)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:107)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:184)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('>' (code 62)): was expecting either valid name character (for unquoted name) or double-quote (for quoted) to start field name
+ at [Source: org.elasticsearch.common.compress.lzf.LZFCompressedStreamInput@40c752e5; line: 2, column: 2]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:447)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:1928)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1617)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:700)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:268)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readOrderedMap(AbstractXContentParser.java:258)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrdered(AbstractXContentParser.java:213)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrderedAndClose(AbstractXContentParser.java:228)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:125)
+	... 10 more
+[2017-03-21 10:08:33,429][DEBUG][action.admin.indices.mapping.put] [Dougboy] failed to put mappings on indices [[index]], type [fulltext]
+org.elasticsearch.ElasticsearchParseException: Failed to parse content to map
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:130)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:107)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:184)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('>' (code 62)): was expecting either valid name character (for unquoted name) or double-quote (for quoted) to start field name
+ at [Source: org.elasticsearch.common.compress.lzf.LZFCompressedStreamInput@407e663d; line: 2, column: 2]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:447)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:1928)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1617)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:700)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:268)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readValue(AbstractXContentParser.java:308)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:275)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readOrderedMap(AbstractXContentParser.java:258)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrdered(AbstractXContentParser.java:213)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrderedAndClose(AbstractXContentParser.java:228)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:125)
+	... 10 more
+[2017-03-21 10:10:14,749][DEBUG][action.admin.indices.mapping.put] [Dougboy] failed to put mappings on indices [[index]], type [fulltext]
+org.elasticsearch.index.mapper.MapperParsingException: Analyzer [ik] not found for field [content]
+	at org.elasticsearch.index.mapper.core.TypeParsers.parseField(TypeParsers.java:216)
+	at org.elasticsearch.index.mapper.core.StringFieldMapper$TypeParser.parse(StringFieldMapper.java:153)
+	at org.elasticsearch.index.mapper.object.ObjectMapper$TypeParser.parseProperties(ObjectMapper.java:290)
+	at org.elasticsearch.index.mapper.object.ObjectMapper$TypeParser.parseObjectOrDocumentTypeProperties(ObjectMapper.java:214)
+	at org.elasticsearch.index.mapper.object.RootObjectMapper$TypeParser.parse(RootObjectMapper.java:136)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:211)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:192)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-21 10:20:08,383][DEBUG][action.admin.indices.mapping.put] [Dougboy] failed to put mappings on indices [[index]], type [fulltext]
+org.elasticsearch.ElasticsearchParseException: Failed to parse content to map
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:130)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:107)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:184)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('>' (code 62)): was expecting either valid name character (for unquoted name) or double-quote (for quoted) to start field name
+ at [Source: org.elasticsearch.common.compress.lzf.LZFCompressedStreamInput@3b71cff8; line: 2, column: 2]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:447)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:1928)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1617)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:700)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:268)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readOrderedMap(AbstractXContentParser.java:258)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrdered(AbstractXContentParser.java:213)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrderedAndClose(AbstractXContentParser.java:228)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:125)
+	... 10 more
+[2017-03-21 10:36:56,597][INFO ][node                     ] [Dougboy] stopping ...
+[2017-03-21 10:36:56,669][WARN ][netty.channel.DefaultChannelPipeline] An exception was thrown by an exception handler.
+java.util.concurrent.RejectedExecutionException: Worker has already been shutdown
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.registerTask(AbstractNioSelector.java:120)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:72)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:56)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioChannelSink.execute(AbstractNioChannelSink.java:34)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.execute(DefaultChannelPipeline.java:636)
+	at org.elasticsearch.common.netty.channel.Channels.fireExceptionCaughtLater(Channels.java:496)
+	at org.elasticsearch.common.netty.channel.AbstractChannelSink.exceptionCaught(AbstractChannelSink.java:46)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.notifyHandlerException(DefaultChannelPipeline.java:658)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:577)
+	at org.elasticsearch.common.netty.channel.Channels.write(Channels.java:704)
+	at org.elasticsearch.common.netty.channel.Channels.write(Channels.java:671)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.write(AbstractChannel.java:348)
+	at org.elasticsearch.transport.netty.NettyTransportChannel.sendResponse(NettyTransportChannel.java:105)
+	at org.elasticsearch.transport.netty.NettyTransportChannel.sendResponse(NettyTransportChannel.java:76)
+	at org.elasticsearch.discovery.zen.membership.MembershipAction$LeaveRequestRequestHandler.messageReceived(MembershipAction.java:290)
+	at org.elasticsearch.discovery.zen.membership.MembershipAction$LeaveRequestRequestHandler.messageReceived(MembershipAction.java:280)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-21 10:36:56,730][INFO ][node                     ] [Dougboy] stopped
+[2017-03-21 10:36:56,730][INFO ][node                     ] [Dougboy] closing ...
+[2017-03-21 10:36:56,732][INFO ][node                     ] [Dougboy] closed
+[2017-03-21 10:39:41,214][INFO ][node                     ] [Beyonder] version[1.7.3], pid[2288], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-21 10:39:41,226][INFO ][node                     ] [Beyonder] initializing ...
+[2017-03-21 10:39:41,297][INFO ][plugins                  ] [Beyonder] loaded [analysis-ik], sites []
+[2017-03-21 10:39:41,320][INFO ][env                      ] [Beyonder] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-21 10:39:43,723][INFO ][node                     ] [Beyonder] initialized
+[2017-03-21 10:39:43,723][INFO ][node                     ] [Beyonder] starting ...
+[2017-03-21 10:39:43,884][INFO ][transport                ] [Beyonder] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-21 10:39:43,915][INFO ][discovery                ] [Beyonder] elasticsearch/WWUK3rz6QY2S218ir0ssFg
+[2017-03-21 10:39:47,692][INFO ][cluster.service          ] [Beyonder] new_master [Beyonder][WWUK3rz6QY2S218ir0ssFg][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-21 10:39:47,732][INFO ][http                     ] [Beyonder] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-21 10:39:47,732][INFO ][node                     ] [Beyonder] started
+[2017-03-21 10:39:47,770][INFO ][gateway                  ] [Beyonder] recovered [3] indices into cluster_state
+[2017-03-21 10:39:48,357][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-21 10:39:48,367][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-21 10:39:48,380][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-21 10:40:02,192][INFO ][cluster.service          ] [Beyonder] added {[es-node1][KByvlMlUTH6z2M534T4uQg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][KByvlMlUTH6z2M534T4uQg][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-21 10:47:50,042][INFO ][node                     ] [Beyonder] stopping ...
+[2017-03-21 10:47:50,068][INFO ][cluster.service          ] [Beyonder] removed {[es-node1][KByvlMlUTH6z2M534T4uQg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][KByvlMlUTH6z2M534T4uQg][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-21 10:47:50,068][INFO ][cluster.routing          ] [Beyonder] delaying allocation for [15] unassigned shards, next check in [1m]
+[2017-03-21 10:47:50,561][INFO ][node                     ] [Beyonder] stopped
+[2017-03-21 10:47:50,561][INFO ][node                     ] [Beyonder] closing ...
+[2017-03-21 10:47:50,562][INFO ][node                     ] [Beyonder] closed
+[2017-03-21 10:50:13,633][INFO ][node                     ] [Neuronne] version[1.7.3], pid[2276], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-21 10:50:13,634][INFO ][node                     ] [Neuronne] initializing ...
+[2017-03-21 10:50:13,727][INFO ][plugins                  ] [Neuronne] loaded [analysis-ik], sites []
+[2017-03-21 10:50:13,751][INFO ][env                      ] [Neuronne] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-21 10:50:16,219][INFO ][node                     ] [Neuronne] initialized
+[2017-03-21 10:50:16,219][INFO ][node                     ] [Neuronne] starting ...
+[2017-03-21 10:50:16,389][INFO ][transport                ] [Neuronne] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-21 10:50:16,421][INFO ][discovery                ] [Neuronne] elasticsearch/aoZMN-oaQy6zNyi3zzG_6w
+[2017-03-21 10:50:20,199][INFO ][cluster.service          ] [Neuronne] new_master [Neuronne][aoZMN-oaQy6zNyi3zzG_6w][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-21 10:50:20,247][INFO ][http                     ] [Neuronne] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-21 10:50:20,247][INFO ][node                     ] [Neuronne] started
+[2017-03-21 10:50:20,282][INFO ][gateway                  ] [Neuronne] recovered [3] indices into cluster_state
+[2017-03-21 10:50:20,854][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-21 10:50:20,866][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-21 10:50:20,879][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-21 10:50:25,359][INFO ][cluster.service          ] [Neuronne] added {[es-node1][FnTPNsx5RVGM8tKhXG8pQA][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][FnTPNsx5RVGM8tKhXG8pQA][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-21 11:50:35,818][DEBUG][action.admin.indices.mapping.put] [Neuronne] failed to put mappings on indices [[index]], type [fulltext]
+org.elasticsearch.ElasticsearchParseException: Failed to parse content to map
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:130)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:107)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:184)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('-' (code 45)): was expecting a colon to separate field name and value
+ at [Source: org.elasticsearch.common.compress.lzf.LZFCompressedStreamInput@72763348; line: 4, column: 7]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:447)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:2881)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2856)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:704)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:268)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readValue(AbstractXContentParser.java:308)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:275)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readValue(AbstractXContentParser.java:308)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:275)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readOrderedMap(AbstractXContentParser.java:258)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrdered(AbstractXContentParser.java:213)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrderedAndClose(AbstractXContentParser.java:228)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:125)
+	... 10 more
+[2017-03-21 13:48:27,948][INFO ][cluster.service          ] [Neuronne] removed {[es-node1][FnTPNsx5RVGM8tKhXG8pQA][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][FnTPNsx5RVGM8tKhXG8pQA][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-21 13:48:27,949][INFO ][cluster.routing          ] [Neuronne] delaying allocation for [15] unassigned shards, next check in [1m]
+[2017-03-21 13:48:28,006][INFO ][node                     ] [Neuronne] stopping ...
+[2017-03-21 13:48:28,495][INFO ][node                     ] [Neuronne] stopped
+[2017-03-21 13:48:28,495][INFO ][node                     ] [Neuronne] closing ...
+[2017-03-21 13:48:28,496][INFO ][node                     ] [Neuronne] closed
+[2017-03-21 13:57:27,726][INFO ][node                     ] [Digitek] version[1.7.3], pid[2572], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-21 13:57:27,727][INFO ][node                     ] [Digitek] initializing ...
+[2017-03-21 13:57:27,820][INFO ][plugins                  ] [Digitek] loaded [analysis-ik], sites []
+[2017-03-21 13:57:27,844][INFO ][env                      ] [Digitek] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-21 13:57:30,010][INFO ][node                     ] [Digitek] initialized
+[2017-03-21 13:57:30,011][INFO ][node                     ] [Digitek] starting ...
+[2017-03-21 13:57:30,170][INFO ][transport                ] [Digitek] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-21 13:57:30,201][INFO ][discovery                ] [Digitek] elasticsearch/shLTmQKQQCG7Hpu0As2IgQ
+[2017-03-21 13:57:33,979][INFO ][cluster.service          ] [Digitek] new_master [Digitek][shLTmQKQQCG7Hpu0As2IgQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-21 13:57:34,038][INFO ][http                     ] [Digitek] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-21 13:57:34,038][INFO ][node                     ] [Digitek] started
+[2017-03-21 13:57:34,140][INFO ][gateway                  ] [Digitek] recovered [3] indices into cluster_state
+[2017-03-21 13:57:34,716][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-21 13:57:34,716][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-21 13:57:34,717][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-21 13:58:01,429][INFO ][cluster.service          ] [Digitek] added {[es-node1][QvPc1vSxRASkEbFm00sMMg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][QvPc1vSxRASkEbFm00sMMg][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-21 14:07:05,718][DEBUG][action.index             ] [Digitek] [index][4], node[shLTmQKQQCG7Hpu0As2IgQ], [P], s[STARTED]: Failed to execute [index {[index][_analyzer][AVrved3wVLecUonDrltv], source[{"text":"中华人民共和国"}]}]
+org.elasticsearch.indices.InvalidTypeNameException: mapping type name [_analyzer] can't start with '_'
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:319)
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:307)
+	at org.elasticsearch.index.mapper.MapperService.documentMapperWithAutoCreate(MapperService.java:482)
+	at org.elasticsearch.index.shard.IndexShard.prepareCreate(IndexShard.java:464)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:201)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-21 14:19:57,841][INFO ][cluster.metadata         ] [Digitek] [index] update_mapping [fulltext] (dynamic)
+[2017-03-21 14:38:37,497][INFO ][cluster.metadata         ] [Digitek] [megacorp] update_mapping [employee] (dynamic)
+[2017-03-21 19:02:35,004][INFO ][node                     ] [Digitek] stopping ...
+[2017-03-21 19:02:35,122][INFO ][node                     ] [Digitek] stopped
+[2017-03-21 19:02:35,123][INFO ][node                     ] [Digitek] closing ...
+[2017-03-21 19:02:35,125][INFO ][node                     ] [Digitek] closed
+[2017-03-21 19:04:57,215][INFO ][node                     ] [Mammomax] version[1.7.3], pid[2274], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-21 19:04:57,215][INFO ][node                     ] [Mammomax] initializing ...
+[2017-03-21 19:04:57,286][INFO ][plugins                  ] [Mammomax] loaded [analysis-ik], sites []
+[2017-03-21 19:04:57,310][INFO ][env                      ] [Mammomax] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-21 19:04:59,685][INFO ][node                     ] [Mammomax] initialized
+[2017-03-21 19:04:59,685][INFO ][node                     ] [Mammomax] starting ...
+[2017-03-21 19:04:59,840][INFO ][transport                ] [Mammomax] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-21 19:04:59,872][INFO ][discovery                ] [Mammomax] elasticsearch/MrR9V8RXSiixPVU2BD6jqg
+[2017-03-21 19:05:03,650][INFO ][cluster.service          ] [Mammomax] new_master [Mammomax][MrR9V8RXSiixPVU2BD6jqg][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-21 19:05:03,690][INFO ][http                     ] [Mammomax] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-21 19:05:03,690][INFO ][node                     ] [Mammomax] started
+[2017-03-21 19:05:03,830][INFO ][gateway                  ] [Mammomax] recovered [3] indices into cluster_state
+[2017-03-21 19:05:04,415][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-21 19:05:04,427][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-21 19:05:04,449][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-21 19:05:07,147][INFO ][cluster.service          ] [Mammomax] added {[es-node1][qnQUpNAVSpiemRuf1y1dYA][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][qnQUpNAVSpiemRuf1y1dYA][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-21 19:22:42,293][DEBUG][action.index             ] [Mammomax] [index][1], node[MrR9V8RXSiixPVU2BD6jqg], [P], s[STARTED]: Failed to execute [index {[index][_analyzer][AVrwmtDw2uB0NrdNKR0c], source[{
+"text":"美国留给伊拉克的是个烂摊子吗"}]}]
+org.elasticsearch.indices.InvalidTypeNameException: mapping type name [_analyzer] can't start with '_'
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:319)
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:307)
+	at org.elasticsearch.index.mapper.MapperService.documentMapperWithAutoCreate(MapperService.java:482)
+	at org.elasticsearch.index.shard.IndexShard.prepareCreate(IndexShard.java:464)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:201)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-21 19:25:01,289][DEBUG][action.index             ] [Mammomax] [index][4], node[MrR9V8RXSiixPVU2BD6jqg], [P], s[STARTED]: Failed to execute [index {[index][_analyzer][AVrwnO_o2uB0NrdNKR0d], source[{
+"content":"美国留给伊拉克的是个烂摊子吗"}]}]
+org.elasticsearch.indices.InvalidTypeNameException: mapping type name [_analyzer] can't start with '_'
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:319)
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:307)
+	at org.elasticsearch.index.mapper.MapperService.documentMapperWithAutoCreate(MapperService.java:482)
+	at org.elasticsearch.index.shard.IndexShard.prepareCreate(IndexShard.java:464)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:201)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-21 19:32:58,025][INFO ][node                     ] [Mammomax] stopping ...
+[2017-03-21 19:32:58,144][INFO ][node                     ] [Mammomax] stopped
+[2017-03-21 19:32:58,144][INFO ][node                     ] [Mammomax] closing ...
+[2017-03-21 19:32:58,147][INFO ][node                     ] [Mammomax] closed

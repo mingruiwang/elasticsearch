@@ -1,0 +1,97 @@
+[2017-03-24 09:21:26,340][INFO ][node                     ] [Super-Skrull] version[1.7.3], pid[2525], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-24 09:21:26,352][INFO ][node                     ] [Super-Skrull] initializing ...
+[2017-03-24 09:21:26,424][INFO ][plugins                  ] [Super-Skrull] loaded [analysis-ik], sites []
+[2017-03-24 09:21:26,447][INFO ][env                      ] [Super-Skrull] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-24 09:21:28,782][INFO ][node                     ] [Super-Skrull] initialized
+[2017-03-24 09:21:28,783][INFO ][node                     ] [Super-Skrull] starting ...
+[2017-03-24 09:21:28,900][INFO ][transport                ] [Super-Skrull] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-24 09:21:28,910][INFO ][discovery                ] [Super-Skrull] elasticsearch/VBje173xSWqsdEXFh8XKoQ
+[2017-03-24 09:21:32,679][INFO ][cluster.service          ] [Super-Skrull] new_master [Super-Skrull][VBje173xSWqsdEXFh8XKoQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-24 09:21:32,738][INFO ][http                     ] [Super-Skrull] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-24 09:21:32,738][INFO ][node                     ] [Super-Skrull] started
+[2017-03-24 09:21:32,768][INFO ][gateway                  ] [Super-Skrull] recovered [2] indices into cluster_state
+[2017-03-24 09:21:33,334][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-24 09:21:33,343][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-24 09:21:33,345][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-24 09:23:36,368][INFO ][node                     ] [Super-Skrull] stopping ...
+[2017-03-24 09:23:36,502][INFO ][node                     ] [Super-Skrull] stopped
+[2017-03-24 09:23:36,502][INFO ][node                     ] [Super-Skrull] closing ...
+[2017-03-24 09:23:36,624][INFO ][node                     ] [Super-Skrull] closed
+[2017-03-24 09:25:09,043][INFO ][node                     ] [Venus] version[1.7.3], pid[2258], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-24 09:25:09,056][INFO ][node                     ] [Venus] initializing ...
+[2017-03-24 09:25:09,138][INFO ][plugins                  ] [Venus] loaded [analysis-ik], sites []
+[2017-03-24 09:25:09,162][INFO ][env                      ] [Venus] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-24 09:25:11,387][INFO ][node                     ] [Venus] initialized
+[2017-03-24 09:25:11,387][INFO ][node                     ] [Venus] starting ...
+[2017-03-24 09:25:11,512][INFO ][transport                ] [Venus] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-24 09:25:11,543][INFO ][discovery                ] [Venus] elasticsearch/OvrEPJU2RwubcuX6zcA9QQ
+[2017-03-24 09:25:15,319][INFO ][cluster.service          ] [Venus] new_master [Venus][OvrEPJU2RwubcuX6zcA9QQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-24 09:25:15,357][INFO ][http                     ] [Venus] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-24 09:25:15,358][INFO ][node                     ] [Venus] started
+[2017-03-24 09:25:15,375][INFO ][gateway                  ] [Venus] recovered [2] indices into cluster_state
+[2017-03-24 09:25:15,845][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-24 09:25:15,846][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-24 09:25:15,891][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-24 09:25:33,852][INFO ][cluster.service          ] [Venus] added {[es-node1][ea0qmU0PSe-59efK27W1hQ][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][ea0qmU0PSe-59efK27W1hQ][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-24 11:36:51,330][INFO ][node                     ] [Venus] stopping ...
+[2017-03-24 11:36:51,408][INFO ][node                     ] [Venus] stopped
+[2017-03-24 11:36:51,408][INFO ][node                     ] [Venus] closing ...
+[2017-03-24 11:36:51,414][INFO ][node                     ] [Venus] closed
+[2017-03-24 14:19:14,444][INFO ][node                     ] [Battering Ram] version[1.7.3], pid[2276], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-24 14:19:14,455][INFO ][node                     ] [Battering Ram] initializing ...
+[2017-03-24 14:19:14,530][INFO ][plugins                  ] [Battering Ram] loaded [analysis-ik], sites []
+[2017-03-24 14:19:14,552][INFO ][env                      ] [Battering Ram] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-24 14:19:16,973][INFO ][node                     ] [Battering Ram] initialized
+[2017-03-24 14:19:16,973][INFO ][node                     ] [Battering Ram] starting ...
+[2017-03-24 14:19:17,094][INFO ][transport                ] [Battering Ram] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-24 14:19:17,125][INFO ][discovery                ] [Battering Ram] elasticsearch/IJ6kuZP9QpqpGaJBMLE7UA
+[2017-03-24 14:19:20,904][INFO ][cluster.service          ] [Battering Ram] new_master [Battering Ram][IJ6kuZP9QpqpGaJBMLE7UA][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-24 14:19:20,941][INFO ][http                     ] [Battering Ram] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-24 14:19:20,942][INFO ][node                     ] [Battering Ram] started
+[2017-03-24 14:19:21,215][INFO ][gateway                  ] [Battering Ram] recovered [2] indices into cluster_state
+[2017-03-24 14:19:21,747][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-24 14:19:21,747][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-24 14:19:21,750][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-24 14:19:25,979][INFO ][cluster.service          ] [Battering Ram] added {[es-node1][UaGlZy6fQyG7iLA07en-xg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][UaGlZy6fQyG7iLA07en-xg][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-24 16:05:18,418][INFO ][cluster.service          ] [Battering Ram] removed {[es-node1][UaGlZy6fQyG7iLA07en-xg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][UaGlZy6fQyG7iLA07en-xg][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-24 16:05:18,419][INFO ][cluster.routing          ] [Battering Ram] delaying allocation for [6] unassigned shards, next check in [59.9s]
+[2017-03-24 16:08:47,856][INFO ][node                     ] [Glamor] version[1.7.3], pid[2507], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-24 16:08:47,857][INFO ][node                     ] [Glamor] initializing ...
+[2017-03-24 16:08:47,949][INFO ][plugins                  ] [Glamor] loaded [analysis-ik], sites []
+[2017-03-24 16:08:47,973][INFO ][env                      ] [Glamor] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-24 16:08:50,242][INFO ][node                     ] [Glamor] initialized
+[2017-03-24 16:08:50,243][INFO ][node                     ] [Glamor] starting ...
+[2017-03-24 16:08:50,378][INFO ][transport                ] [Glamor] bound_address {inet[/0:0:0:0:0:0:0:0:9302]}, publish_address {inet[/192.168.8.81:9302]}
+[2017-03-24 16:08:50,408][INFO ][discovery                ] [Glamor] elasticsearch/DYYDbLX4QcOFxJHtNjHY1Q
+[2017-03-24 16:08:54,187][INFO ][cluster.service          ] [Glamor] new_master [Glamor][DYYDbLX4QcOFxJHtNjHY1Q][v-c7-es][inet[/192.168.8.81:9302]], reason: zen-disco-join (elected_as_master)
+[2017-03-24 16:08:54,208][INFO ][http                     ] [Glamor] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-24 16:08:54,208][INFO ][node                     ] [Glamor] started
+[2017-03-24 16:08:54,304][INFO ][gateway                  ] [Glamor] recovered [0] indices into cluster_state
+[2017-03-24 16:11:29,617][INFO ][node                     ] [Glamor] stopping ...
+[2017-03-24 16:11:29,618][INFO ][node                     ] [Battering Ram] stopping ...
+[2017-03-24 16:11:29,639][INFO ][node                     ] [Glamor] stopped
+[2017-03-24 16:11:29,639][INFO ][node                     ] [Glamor] closing ...
+[2017-03-24 16:11:29,644][INFO ][node                     ] [Glamor] closed
+[2017-03-24 16:11:29,676][INFO ][node                     ] [Battering Ram] stopped
+[2017-03-24 16:11:29,676][INFO ][node                     ] [Battering Ram] closing ...
+[2017-03-24 16:11:29,678][INFO ][node                     ] [Battering Ram] closed
+[2017-03-24 16:13:26,868][INFO ][node                     ] [Fin Fang Foom] version[1.7.3], pid[2281], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-24 16:13:26,881][INFO ][node                     ] [Fin Fang Foom] initializing ...
+[2017-03-24 16:13:26,952][INFO ][plugins                  ] [Fin Fang Foom] loaded [analysis-ik], sites []
+[2017-03-24 16:13:26,975][INFO ][env                      ] [Fin Fang Foom] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-24 16:13:29,402][INFO ][node                     ] [Fin Fang Foom] initialized
+[2017-03-24 16:13:29,402][INFO ][node                     ] [Fin Fang Foom] starting ...
+[2017-03-24 16:13:29,526][INFO ][transport                ] [Fin Fang Foom] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-24 16:13:29,558][INFO ][discovery                ] [Fin Fang Foom] elasticsearch/B-nAdlswSNaAXlI11Z7qOA
+[2017-03-24 16:13:33,336][INFO ][cluster.service          ] [Fin Fang Foom] new_master [Fin Fang Foom][B-nAdlswSNaAXlI11Z7qOA][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-24 16:13:33,373][INFO ][http                     ] [Fin Fang Foom] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-24 16:13:33,373][INFO ][node                     ] [Fin Fang Foom] started
+[2017-03-24 16:13:33,400][INFO ][gateway                  ] [Fin Fang Foom] recovered [2] indices into cluster_state
+[2017-03-24 16:13:34,479][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-24 16:13:34,491][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-24 16:13:34,546][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-24 16:13:47,584][INFO ][cluster.service          ] [Fin Fang Foom] added {[es-node1][UPzgPOu0RyycURtNM-6FaA][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][UPzgPOu0RyycURtNM-6FaA][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-24 18:25:04,800][INFO ][node                     ] [Fin Fang Foom] stopping ...
+[2017-03-24 18:25:04,874][INFO ][node                     ] [Fin Fang Foom] stopped
+[2017-03-24 18:25:04,874][INFO ][node                     ] [Fin Fang Foom] closing ...
+[2017-03-24 18:25:04,875][INFO ][node                     ] [Fin Fang Foom] closed

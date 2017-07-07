@@ -1,0 +1,84 @@
+[2017-05-02 09:11:23,225][INFO ][node                     ] [es-node1] version[1.7.3], pid[3824], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-02 09:11:23,248][INFO ][node                     ] [es-node1] initializing ...
+[2017-05-02 09:11:23,326][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-05-02 09:11:23,351][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.1gb], net total_space [36.9gb], types [rootfs]
+[2017-05-02 09:11:25,527][INFO ][node                     ] [es-node1] initialized
+[2017-05-02 09:11:25,527][INFO ][node                     ] [es-node1] starting ...
+[2017-05-02 09:11:25,748][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-05-02 09:11:25,777][INFO ][discovery                ] [es-node1] elasticsearch/-8vmh8wUSOOU4Mytmx_A1Q
+[2017-05-02 09:11:55,778][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-05-02 09:11:55,783][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-05-02 09:11:55,783][INFO ][node                     ] [es-node1] started
+[2017-05-02 09:12:45,893][INFO ][cluster.service          ] [es-node1] detected_master [Susan Richards][BAUuLtjMQa23yEo5_M5ESw][v-c7-es][inet[/192.168.8.81:9301]], added {[Susan Richards][BAUuLtjMQa23yEo5_M5ESw][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Susan Richards][BAUuLtjMQa23yEo5_M5ESw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-02 09:12:46,568][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-02 09:12:46,578][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-02 09:12:46,599][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-02 15:00:05,345][INFO ][node                     ] [es-node1] version[1.7.3], pid[4973], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-02 15:00:05,345][INFO ][node                     ] [es-node1] initializing ...
+[2017-05-02 15:00:05,435][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-05-02 15:00:05,466][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.6gb], net total_space [36.9gb], types [rootfs]
+[2017-05-02 15:00:07,457][INFO ][node                     ] [es-node1] initialized
+[2017-05-02 15:00:07,457][INFO ][node                     ] [es-node1] starting ...
+[2017-05-02 15:00:07,678][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.transport.BindTransportException: Failed to bind to [9300]
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:422)
+	at org.elasticsearch.transport.netty.NettyTransport.doStart(NettyTransport.java:283)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.transport.TransportService.doStart(TransportService.java:153)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:257)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:9300
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.transport.netty.NettyTransport$1.onPortNumber(NettyTransport.java:413)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:409)
+	... 8 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-05-02 15:00:07,690][INFO ][node                     ] [es-node1] stopping ...
+[2017-05-02 15:00:07,703][INFO ][node                     ] [es-node1] stopped
+[2017-05-02 15:00:07,703][INFO ][node                     ] [es-node1] closing ...
+[2017-05-02 15:00:07,706][INFO ][node                     ] [es-node1] closed
+[2017-05-02 15:00:53,260][INFO ][cluster.service          ] [es-node1] added {[Stentor][iUjWmAtKRviOdsYreKVpsg][v-c7-es][inet[/192.168.8.81:9302]],}, reason: zen-disco-receive(from master [[Susan Richards][BAUuLtjMQa23yEo5_M5ESw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-02 15:57:47,194][INFO ][node                     ] [es-node1] stopping ...
+[2017-05-02 15:57:47,364][INFO ][node                     ] [es-node1] stopped
+[2017-05-02 15:57:47,364][INFO ][node                     ] [es-node1] closing ...
+[2017-05-02 15:57:47,367][INFO ][node                     ] [es-node1] closed
+[2017-05-02 15:58:56,281][INFO ][node                     ] [es-node1] version[1.7.3], pid[2425], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-02 15:58:56,304][INFO ][node                     ] [es-node1] initializing ...
+[2017-05-02 15:58:56,419][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-05-02 15:58:56,444][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.7gb], net total_space [36.9gb], types [rootfs]
+[2017-05-02 15:58:58,660][INFO ][node                     ] [es-node1] initialized
+[2017-05-02 15:58:58,660][INFO ][node                     ] [es-node1] starting ...
+[2017-05-02 15:58:58,857][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-05-02 15:58:58,886][INFO ][discovery                ] [es-node1] elasticsearch/VgqiXd-UQC2nLj4zJ7AVNw
+[2017-05-02 15:59:28,886][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-05-02 15:59:28,892][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-05-02 15:59:28,892][INFO ][node                     ] [es-node1] started
+[2017-05-02 15:59:39,306][INFO ][discovery.zen            ] [es-node1] failed to send join request to master [[Oblivion][GUMLv0BcQAmIZhggH7OJ1g][v-c7-es][inet[/192.168.8.81:9301]]], reason [RemoteTransportException[[Oblivion][inet[/192.168.8.81:9301]][internal:discovery/zen/join]]; nested: ElasticsearchIllegalStateException[Node [[Oblivion][GUMLv0BcQAmIZhggH7OJ1g][v-c7-es][inet[/192.168.8.81:9301]]] not master for join request from [[es-node1][VgqiXd-UQC2nLj4zJ7AVNw][v-c7-es][inet[/127.0.0.1:9300]]]]; ], tried [3] times
+[2017-05-02 15:59:59,469][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-02 15:59:59,472][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-02 16:00:19,333][INFO ][cluster.service          ] [es-node1] detected_master [Oblivion][GUMLv0BcQAmIZhggH7OJ1g][v-c7-es][inet[/192.168.8.81:9301]], added {[Oblivion][GUMLv0BcQAmIZhggH7OJ1g][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Oblivion][GUMLv0BcQAmIZhggH7OJ1g][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-02 16:00:20,033][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-02 16:00:20,055][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-02 16:00:20,061][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-02 19:05:43,921][INFO ][node                     ] [es-node1] stopping ...
+[2017-05-02 19:05:44,018][INFO ][node                     ] [es-node1] stopped
+[2017-05-02 19:05:44,018][INFO ][node                     ] [es-node1] closing ...
+[2017-05-02 19:05:44,020][INFO ][node                     ] [es-node1] closed

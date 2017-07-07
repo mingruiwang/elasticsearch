@@ -1,0 +1,21 @@
+[2017-07-06 10:12:40,773][INFO ][node                     ] [es-node1] version[1.7.3], pid[10807], build[05d4530/2015-10-15T09:14:17Z]
+[2017-07-06 10:12:40,774][INFO ][node                     ] [es-node1] initializing ...
+[2017-07-06 10:12:40,906][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-07-06 10:12:40,935][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.2gb], net total_space [36.9gb], types [rootfs]
+[2017-07-06 10:12:43,621][INFO ][node                     ] [es-node1] initialized
+[2017-07-06 10:12:43,621][INFO ][node                     ] [es-node1] starting ...
+[2017-07-06 10:12:43,963][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-07-06 10:12:43,988][INFO ][discovery                ] [es-node1] elasticsearch/4ohwvxRjTWGCtStyiRJJNg
+[2017-07-06 10:13:13,988][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-07-06 10:13:13,995][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-07-06 10:13:13,995][INFO ][node                     ] [es-node1] started
+[2017-07-06 10:14:04,046][INFO ][cluster.service          ] [es-node1] new_master [es-node1][4ohwvxRjTWGCtStyiRJJNg][v-c7-es][inet[/127.0.0.1:9300]], reason: zen-disco-join (elected_as_master)
+[2017-07-06 10:14:06,138][INFO ][cluster.service          ] [es-node1] added {[Halloween Jack][SWtq9pgBQQum-GSxHZlHIg][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(join from node[[Halloween Jack][SWtq9pgBQQum-GSxHZlHIg][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-07-06 10:14:06,672][INFO ][gateway                  ] [es-node1] recovered [3] indices into cluster_state
+[2017-07-06 10:14:08,353][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-07-06 10:14:08,363][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-07-06 10:14:08,408][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-07-06 19:24:10,615][INFO ][node                     ] [es-node1] stopping ...
+[2017-07-06 19:24:10,722][INFO ][node                     ] [es-node1] stopped
+[2017-07-06 19:24:10,722][INFO ][node                     ] [es-node1] closing ...
+[2017-07-06 19:24:10,723][INFO ][node                     ] [es-node1] closed

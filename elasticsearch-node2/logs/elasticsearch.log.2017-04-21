@@ -1,0 +1,21 @@
+[2017-04-24 09:29:59,336][INFO ][node                     ] [Janus] version[1.7.3], pid[11610], build[05d4530/2015-10-15T09:14:17Z]
+[2017-04-24 09:29:59,339][INFO ][node                     ] [Janus] initializing ...
+[2017-04-24 09:29:59,440][INFO ][plugins                  ] [Janus] loaded [analysis-ik], sites []
+[2017-04-24 09:29:59,463][INFO ][env                      ] [Janus] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.2gb], net total_space [36.9gb], types [rootfs]
+[2017-04-24 09:30:01,696][INFO ][node                     ] [Janus] initialized
+[2017-04-24 09:30:01,696][INFO ][node                     ] [Janus] starting ...
+[2017-04-24 09:30:01,846][INFO ][transport                ] [Janus] bound_address {inet[/0:0:0:0:0:0:0:0:9302]}, publish_address {inet[/192.168.8.81:9302]}
+[2017-04-24 09:30:01,888][INFO ][discovery                ] [Janus] elasticsearch/jwM21asqT-qE1clDKH5YIA
+[2017-04-24 09:30:04,976][INFO ][cluster.service          ] [Janus] detected_master [Agony][TKvJfk2RR2imUjAj3ZE5Cw][v-c7-es][inet[/192.168.8.81:9301]], added {[es-node1][hWmIIcQXQLSxGhC4jtnc7A][v-c7-es][inet[/127.0.0.1:9300]],[Agony][TKvJfk2RR2imUjAj3ZE5Cw][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Agony][TKvJfk2RR2imUjAj3ZE5Cw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-04-24 09:30:05,266][INFO ][http                     ] [Janus] bound_address {inet[/0:0:0:0:0:0:0:0:9202]}, publish_address {inet[/192.168.8.81:9202]}
+[2017-04-24 09:30:05,266][INFO ][node                     ] [Janus] started
+[2017-04-24 09:30:05,832][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-04-24 09:30:05,832][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-04-24 09:30:05,852][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-04-24 09:31:34,786][INFO ][node                     ] [Janus] stopping ...
+[2017-04-24 09:31:34,797][INFO ][discovery.zen            ] [Janus] master_left [[Agony][TKvJfk2RR2imUjAj3ZE5Cw][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-04-24 09:31:34,798][WARN ][discovery.zen            ] [Janus] master left (reason = shut_down), current nodes: {[es-node1][hWmIIcQXQLSxGhC4jtnc7A][v-c7-es][inet[/127.0.0.1:9300]],[Janus][jwM21asqT-qE1clDKH5YIA][v-c7-es][inet[/192.168.8.81:9302]],}
+[2017-04-24 09:31:34,798][INFO ][cluster.service          ] [Janus] removed {[Agony][TKvJfk2RR2imUjAj3ZE5Cw][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([Agony][TKvJfk2RR2imUjAj3ZE5Cw][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-04-24 09:31:35,123][INFO ][node                     ] [Janus] stopped
+[2017-04-24 09:31:35,124][INFO ][node                     ] [Janus] closing ...
+[2017-04-24 09:31:35,125][INFO ][node                     ] [Janus] closed

@@ -1,0 +1,929 @@
+[2017-04-27 09:01:45,561][INFO ][node                     ] [es-node1] version[1.7.3], pid[2660], build[05d4530/2015-10-15T09:14:17Z]
+[2017-04-27 09:01:45,563][INFO ][node                     ] [es-node1] initializing ...
+[2017-04-27 09:01:45,668][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-04-27 09:01:45,697][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.1gb], net total_space [36.9gb], types [rootfs]
+[2017-04-27 09:01:48,137][INFO ][node                     ] [es-node1] initialized
+[2017-04-27 09:01:48,137][INFO ][node                     ] [es-node1] starting ...
+[2017-04-27 09:01:48,285][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-04-27 09:01:48,304][INFO ][discovery                ] [es-node1] elasticsearch/_84e9dujSc-RmSU2wWWUaw
+[2017-04-27 09:02:18,305][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-04-27 09:02:18,382][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-04-27 09:02:18,382][INFO ][node                     ] [es-node1] started
+[2017-04-27 09:02:28,408][INFO ][cluster.service          ] [es-node1] detected_master [Omega the Unknown][eNaYSrgcSN218zi01yDFNQ][v-c7-es][inet[/192.168.8.81:9301]], added {[Omega the Unknown][eNaYSrgcSN218zi01yDFNQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Omega the Unknown][eNaYSrgcSN218zi01yDFNQ][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-04-27 09:02:28,983][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-04-27 09:02:28,994][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-04-27 09:02:29,002][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-04-27 10:57:22,325][DEBUG][action.search.type       ] [es-node1] [index2][0], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4288a687] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}},{"name":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 10:57:22,326][DEBUG][action.search.type       ] [es-node1] [index2][2], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4288a687] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}},{"name":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 10:57:22,361][DEBUG][action.search.type       ] [es-node1] [index2][4], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4288a687] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}},{"name":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 10:57:22,363][DEBUG][action.search.type       ] [es-node1] [index2][3], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4288a687] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}},{"name":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 10:57:22,367][DEBUG][action.search.type       ] [es-node1] [index2][1], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4288a687]
+org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}},{"name":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 10:57:23,702][DEBUG][action.search.type       ] [es-node1] [index2][4], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5a1125ca] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}},{"name":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 10:57:23,702][DEBUG][action.search.type       ] [es-node1] [index2][3], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5a1125ca] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}},{"name":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 10:57:23,706][DEBUG][action.search.type       ] [es-node1] [index2][1], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5a1125ca] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}},{"name":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 10:57:23,707][DEBUG][action.search.type       ] [es-node1] [index2][0], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5a1125ca] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}},{"name":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 10:57:23,713][DEBUG][action.search.type       ] [es-node1] [index2][2], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5a1125ca]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}},{"name":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 10:57:23,713][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}},{"name":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 11:29:48,902][DEBUG][action.search.type       ] [es-node1] [index1][0], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21b77975] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index1][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 11:29:48,903][DEBUG][action.search.type       ] [es-node1] [index1][2], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21b77975] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index1][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 11:29:48,903][DEBUG][action.search.type       ] [es-node1] [index1][4], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21b77975] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index1][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 11:29:48,918][DEBUG][action.search.type       ] [es-node1] [index1][3], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21b77975] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index1][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 11:29:48,918][DEBUG][action.search.type       ] [es-node1] [index1][1], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21b77975]
+org.elasticsearch.search.SearchParseException: [index1][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 11:29:48,919][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [dfs]
+org.elasticsearch.search.SearchParseException: [index1][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:11,926][DEBUG][action.search.type       ] [es-node1] [index2][3], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@581a7511] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:11,927][DEBUG][action.search.type       ] [es-node1] [index][0], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@581a7511] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:11,928][DEBUG][action.search.type       ] [es-node1] [index2][4], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@581a7511] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:11,928][DEBUG][action.search.type       ] [es-node1] [index2][2], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@581a7511] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:11,929][DEBUG][action.search.type       ] [es-node1] [index2][1], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@581a7511] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:11,929][DEBUG][action.search.type       ] [es-node1] [index2][0], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@581a7511]
+org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:14,295][DEBUG][action.search.type       ] [es-node1] [index2][3], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1dff3ded] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:14,295][DEBUG][action.search.type       ] [es-node1] [index2][4], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1dff3ded] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:14,297][DEBUG][action.search.type       ] [es-node1] [index2][0], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1dff3ded] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:14,298][DEBUG][action.search.type       ] [es-node1] [index2][2], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1dff3ded] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:14,320][DEBUG][action.search.type       ] [es-node1] [index2][1], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1dff3ded]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:14,321][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:15,115][DEBUG][action.search.type       ] [es-node1] [index2][2], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@57d9df72] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:15,115][DEBUG][action.search.type       ] [es-node1] [index2][0], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@57d9df72] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:15,115][DEBUG][action.search.type       ] [es-node1] [index2][1], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@57d9df72] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:15,117][DEBUG][action.search.type       ] [es-node1] [index2][3], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@57d9df72] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:15,117][DEBUG][action.search.type       ] [es-node1] [index2][4], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@57d9df72] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:15,120][DEBUG][action.search.type       ] [es-node1] [index][0], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@57d9df72]
+org.elasticsearch.search.SearchParseException: [index][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:16,576][DEBUG][action.search.type       ] [es-node1] [index2][2], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@116812fb] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:16,580][DEBUG][action.search.type       ] [es-node1] [index][0], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@116812fb] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:16,579][DEBUG][action.search.type       ] [es-node1] [index2][1], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@116812fb] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:40:16,580][DEBUG][action.search.type       ] [es-node1] [index2][3], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@116812fb] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:16,581][DEBUG][action.search.type       ] [es-node1] [index2][4], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@116812fb] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:40:16,582][DEBUG][action.search.type       ] [es-node1] [index2][0], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@116812fb]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:45:55,938][DEBUG][action.search.type       ] [es-node1] [index2][4], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3e5dfd01] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:45:55,938][DEBUG][action.search.type       ] [es-node1] [index2][3], node[_84e9dujSc-RmSU2wWWUaw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3e5dfd01] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-04-27 18:45:55,939][DEBUG][action.search.type       ] [es-node1] [index][0], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3e5dfd01] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:45:55,940][DEBUG][action.search.type       ] [es-node1] [index2][0], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3e5dfd01] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:45:55,941][DEBUG][action.search.type       ] [es-node1] [index2][2], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3e5dfd01] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 18:45:55,942][DEBUG][action.search.type       ] [es-node1] [index2][1], node[eNaYSrgcSN218zi01yDFNQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3e5dfd01]
+org.elasticsearch.transport.RemoteTransportException: [Omega the Unknown][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"logourl":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [logourl] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-04-27 19:28:49,191][INFO ][node                     ] [es-node1] stopping ...
+[2017-04-27 19:28:49,409][INFO ][node                     ] [es-node1] stopped
+[2017-04-27 19:28:49,409][INFO ][node                     ] [es-node1] closing ...
+[2017-04-27 19:28:49,411][INFO ][node                     ] [es-node1] closed

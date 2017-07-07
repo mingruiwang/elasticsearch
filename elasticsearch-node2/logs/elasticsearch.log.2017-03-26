@@ -1,0 +1,60 @@
+[2017-03-26 12:57:56,038][INFO ][node                     ] [M-Twins] version[1.7.3], pid[3401], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-26 12:57:56,039][INFO ][node                     ] [M-Twins] initializing ...
+[2017-03-26 12:57:56,125][INFO ][plugins                  ] [M-Twins] loaded [analysis-ik], sites []
+[2017-03-26 12:57:56,152][INFO ][env                      ] [M-Twins] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-26 12:57:58,283][INFO ][node                     ] [M-Twins] initialized
+[2017-03-26 12:57:58,283][INFO ][node                     ] [M-Twins] starting ...
+[2017-03-26 12:57:58,355][INFO ][transport                ] [M-Twins] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-26 12:57:58,386][INFO ][discovery                ] [M-Twins] elasticsearch/RqBw1tuSSbCfx8v3hXvoSA
+[2017-03-26 12:58:02,163][INFO ][cluster.service          ] [M-Twins] new_master [M-Twins][RqBw1tuSSbCfx8v3hXvoSA][v-c7-es][inet[/192.168.8.81:9300]], reason: zen-disco-join (elected_as_master)
+[2017-03-26 12:58:02,212][INFO ][http                     ] [M-Twins] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-26 12:58:02,212][INFO ][node                     ] [M-Twins] started
+[2017-03-26 12:58:02,307][INFO ][gateway                  ] [M-Twins] recovered [2] indices into cluster_state
+[2017-03-26 12:58:02,782][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-26 12:58:02,782][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-26 12:58:02,805][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-26 13:00:11,266][INFO ][node                     ] [M-Twins] stopping ...
+[2017-03-26 13:00:11,368][INFO ][node                     ] [M-Twins] stopped
+[2017-03-26 13:00:11,368][INFO ][node                     ] [M-Twins] closing ...
+[2017-03-26 13:00:11,370][INFO ][node                     ] [M-Twins] closed
+[2017-03-26 13:00:59,704][INFO ][node                     ] [Sam Wilson] version[1.7.3], pid[2255], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-26 13:00:59,718][INFO ][node                     ] [Sam Wilson] initializing ...
+[2017-03-26 13:00:59,817][INFO ][plugins                  ] [Sam Wilson] loaded [analysis-ik], sites []
+[2017-03-26 13:00:59,840][INFO ][env                      ] [Sam Wilson] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-26 13:01:02,237][INFO ][node                     ] [Sam Wilson] initialized
+[2017-03-26 13:01:02,237][INFO ][node                     ] [Sam Wilson] starting ...
+[2017-03-26 13:01:02,399][INFO ][transport                ] [Sam Wilson] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-26 13:01:02,443][INFO ][discovery                ] [Sam Wilson] elasticsearch/jJSpI9q2Rr-5r9SEbBySpQ
+[2017-03-26 13:01:06,222][INFO ][cluster.service          ] [Sam Wilson] new_master [Sam Wilson][jJSpI9q2Rr-5r9SEbBySpQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-26 13:01:06,260][INFO ][http                     ] [Sam Wilson] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-26 13:01:06,260][INFO ][node                     ] [Sam Wilson] started
+[2017-03-26 13:01:06,287][INFO ][gateway                  ] [Sam Wilson] recovered [2] indices into cluster_state
+[2017-03-26 13:01:06,953][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-26 13:01:06,956][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-26 13:01:06,967][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-26 13:14:42,949][INFO ][node                     ] [Sam Wilson] stopping ...
+[2017-03-26 13:14:42,998][INFO ][node                     ] [Sam Wilson] stopped
+[2017-03-26 13:14:42,998][INFO ][node                     ] [Sam Wilson] closing ...
+[2017-03-26 13:14:43,000][INFO ][node                     ] [Sam Wilson] closed
+[2017-03-26 13:19:40,917][INFO ][node                     ] [Domo] version[1.7.3], pid[2263], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-26 13:19:40,929][INFO ][node                     ] [Domo] initializing ...
+[2017-03-26 13:19:41,001][INFO ][plugins                  ] [Domo] loaded [analysis-ik], sites []
+[2017-03-26 13:19:41,025][INFO ][env                      ] [Domo] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-26 13:19:43,298][INFO ][node                     ] [Domo] initialized
+[2017-03-26 13:19:43,298][INFO ][node                     ] [Domo] starting ...
+[2017-03-26 13:19:43,459][INFO ][transport                ] [Domo] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-26 13:19:43,491][INFO ][discovery                ] [Domo] elasticsearch/rxgxLgCxRy-Oap2neQg42Q
+[2017-03-26 13:19:47,270][INFO ][cluster.service          ] [Domo] new_master [Domo][rxgxLgCxRy-Oap2neQg42Q][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-26 13:19:47,310][INFO ][http                     ] [Domo] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-26 13:19:47,310][INFO ][node                     ] [Domo] started
+[2017-03-26 13:19:47,340][INFO ][gateway                  ] [Domo] recovered [2] indices into cluster_state
+[2017-03-26 13:19:47,907][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-26 13:19:47,916][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-26 13:19:47,920][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-26 13:20:10,107][INFO ][cluster.service          ] [Domo] added {[es-node1][-3vyjv-MSHe2K9-T7DxmhA][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][-3vyjv-MSHe2K9-T7DxmhA][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-26 14:58:36,030][INFO ][cluster.service          ] [Domo] removed {[es-node1][-3vyjv-MSHe2K9-T7DxmhA][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][-3vyjv-MSHe2K9-T7DxmhA][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-26 14:58:36,031][INFO ][cluster.routing          ] [Domo] delaying allocation for [6] unassigned shards, next check in [59.9s]
+[2017-03-26 15:15:51,280][INFO ][node                     ] [Domo] stopping ...
+[2017-03-26 15:15:51,338][INFO ][node                     ] [Domo] stopped
+[2017-03-26 15:15:51,338][INFO ][node                     ] [Domo] closing ...
+[2017-03-26 15:15:51,343][INFO ][node                     ] [Domo] closed

@@ -1,0 +1,435 @@
+[2017-03-24 09:21:04,296][INFO ][node                     ] [es-node1] version[1.7.3], pid[2473], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-24 09:21:04,297][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-24 09:21:04,392][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-24 09:21:04,418][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-24 09:21:06,784][INFO ][node                     ] [es-node1] initialized
+[2017-03-24 09:21:06,785][INFO ][node                     ] [es-node1] starting ...
+[2017-03-24 09:21:06,894][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-24 09:21:06,911][INFO ][discovery                ] [es-node1] elasticsearch/C0uYwYDpTH62aP4Xxgz3HA
+[2017-03-24 09:21:36,912][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-24 09:21:36,919][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.http.BindHttpException: Failed to bind to [9200]
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:269)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.http.HttpServer.doStart(HttpServer.java:89)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:274)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9200
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport$1.onPortNumber(NettyHttpServerTransport.java:260)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:256)
+	... 7 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 09:21:36,922][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-24 09:21:36,930][INFO ][node                     ] [es-node1] stopped
+[2017-03-24 09:21:36,931][INFO ][node                     ] [es-node1] closing ...
+[2017-03-24 09:21:36,934][INFO ][node                     ] [es-node1] closed
+[2017-03-24 09:24:11,246][INFO ][node                     ] [es-node1] version[1.7.3], pid[2192], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-24 09:24:11,248][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-24 09:24:11,343][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-24 09:24:11,369][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-24 09:24:13,574][INFO ][node                     ] [es-node1] initialized
+[2017-03-24 09:24:13,574][INFO ][node                     ] [es-node1] starting ...
+[2017-03-24 09:24:13,717][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-24 09:24:13,736][INFO ][discovery                ] [es-node1] elasticsearch/ea0qmU0PSe-59efK27W1hQ
+[2017-03-24 09:24:43,736][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-24 09:24:43,743][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-24 09:24:43,743][INFO ][node                     ] [es-node1] started
+[2017-03-24 09:25:33,862][INFO ][cluster.service          ] [es-node1] detected_master [Venus][OvrEPJU2RwubcuX6zcA9QQ][v-c7-es][inet[/192.168.8.81:9301]], added {[Venus][OvrEPJU2RwubcuX6zcA9QQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Venus][OvrEPJU2RwubcuX6zcA9QQ][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-24 09:25:34,537][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-24 09:25:34,548][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-24 09:25:34,594][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-24 11:36:51,345][INFO ][discovery.zen            ] [es-node1] master_left [[Venus][OvrEPJU2RwubcuX6zcA9QQ][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-03-24 11:36:51,346][WARN ][discovery.zen            ] [es-node1] master left (reason = shut_down), current nodes: {[es-node1][ea0qmU0PSe-59efK27W1hQ][v-c7-es][inet[/192.168.8.81:9300]],}
+[2017-03-24 11:36:51,346][INFO ][cluster.service          ] [es-node1] removed {[Venus][OvrEPJU2RwubcuX6zcA9QQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([Venus][OvrEPJU2RwubcuX6zcA9QQ][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-03-24 11:52:49,785][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-24 11:52:49,805][INFO ][node                     ] [es-node1] stopped
+[2017-03-24 11:52:49,806][INFO ][node                     ] [es-node1] closing ...
+[2017-03-24 11:52:49,808][INFO ][node                     ] [es-node1] closed
+[2017-03-24 14:18:43,205][INFO ][node                     ] [es-node1] version[1.7.3], pid[2220], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-24 14:18:43,212][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-24 14:18:43,304][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-24 14:18:43,330][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-24 14:18:45,731][INFO ][node                     ] [es-node1] initialized
+[2017-03-24 14:18:45,732][INFO ][node                     ] [es-node1] starting ...
+[2017-03-24 14:18:45,841][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-24 14:18:45,859][INFO ][discovery                ] [es-node1] elasticsearch/UaGlZy6fQyG7iLA07en-xg
+[2017-03-24 14:19:15,860][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-24 14:19:15,868][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-24 14:19:15,868][INFO ][node                     ] [es-node1] started
+[2017-03-24 14:19:25,989][INFO ][cluster.service          ] [es-node1] detected_master [Battering Ram][IJ6kuZP9QpqpGaJBMLE7UA][v-c7-es][inet[/192.168.8.81:9301]], added {[Battering Ram][IJ6kuZP9QpqpGaJBMLE7UA][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Battering Ram][IJ6kuZP9QpqpGaJBMLE7UA][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-24 14:19:26,659][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-24 14:19:26,669][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-24 14:19:26,704][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-24 14:42:02,532][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@10a1e000]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer []
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 14:42:50,807][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@55198546]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 15:49:22,833][DEBUG][action.search.type       ] [es-node1] [index][0], node[IJ6kuZP9QpqpGaJBMLE7UA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@58b81924]
+org.elasticsearch.transport.RemoteTransportException: [Battering Ram][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query+fetch]]
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"text":{"name":"太阳从西边出来了"}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler.messageReceived(SearchServiceTransportAction.java:833)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler.messageReceived(SearchServiceTransportAction.java:824)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index] No query registered for [text]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:107)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-24 15:49:22,833][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query_fetch]
+org.elasticsearch.transport.RemoteTransportException: [Battering Ram][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query+fetch]]
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"text":{"name":"太阳从西边出来了"}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler.messageReceived(SearchServiceTransportAction.java:833)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler.messageReceived(SearchServiceTransportAction.java:824)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index] No query registered for [text]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:107)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-24 15:49:25,693][DEBUG][action.search.type       ] [es-node1] [index][0], node[UaGlZy6fQyG7iLA07en-xg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@328f3bb4]
+org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"text":{"name":"太阳从西边出来了"}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:333)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:330)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index] No query registered for [text]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:107)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-24 15:49:25,693][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query_fetch]
+org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"text":{"name":"太阳从西边出来了"}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:333)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:330)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index] No query registered for [text]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:107)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-24 15:49:26,094][DEBUG][action.search.type       ] [es-node1] [index][0], node[IJ6kuZP9QpqpGaJBMLE7UA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@ed456fd]
+org.elasticsearch.transport.RemoteTransportException: [Battering Ram][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query+fetch]]
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"text":{"name":"太阳从西边出来了"}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler.messageReceived(SearchServiceTransportAction.java:833)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler.messageReceived(SearchServiceTransportAction.java:824)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index] No query registered for [text]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:107)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-24 15:49:26,095][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query_fetch]
+org.elasticsearch.transport.RemoteTransportException: [Battering Ram][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query+fetch]]
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"text":{"name":"太阳从西边出来了"}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler.messageReceived(SearchServiceTransportAction.java:833)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryFetchTransportHandler.messageReceived(SearchServiceTransportAction.java:824)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index] No query registered for [text]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:107)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-24 16:05:18,401][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-24 16:05:18,460][INFO ][node                     ] [es-node1] stopped
+[2017-03-24 16:05:18,461][INFO ][node                     ] [es-node1] closing ...
+[2017-03-24 16:05:18,463][INFO ][node                     ] [es-node1] closed
+[2017-03-24 16:08:28,467][INFO ][node                     ] [es-node1] version[1.7.3], pid[2470], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-24 16:08:28,468][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-24 16:08:28,557][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-24 16:08:28,582][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-24 16:08:30,710][INFO ][node                     ] [es-node1] initialized
+[2017-03-24 16:08:30,711][INFO ][node                     ] [es-node1] starting ...
+[2017-03-24 16:08:30,778][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-24 16:08:30,787][INFO ][discovery                ] [es-node1] elasticsearch/kuiZwEOSQXCq-5RO6xubTQ
+[2017-03-24 16:09:00,787][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-24 16:09:00,803][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.http.BindHttpException: Failed to bind to [9200]
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:269)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.http.HttpServer.doStart(HttpServer.java:89)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:274)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9200
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport$1.onPortNumber(NettyHttpServerTransport.java:260)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:256)
+	... 7 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:09:00,831][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-24 16:09:00,841][INFO ][node                     ] [es-node1] stopped
+[2017-03-24 16:09:00,841][INFO ][node                     ] [es-node1] closing ...
+[2017-03-24 16:09:00,851][INFO ][node                     ] [es-node1] closed
+[2017-03-24 16:12:24,602][INFO ][node                     ] [es-node1] version[1.7.3], pid[2219], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-24 16:12:24,609][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-24 16:12:24,702][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-24 16:12:24,731][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-24 16:12:27,200][INFO ][node                     ] [es-node1] initialized
+[2017-03-24 16:12:27,200][INFO ][node                     ] [es-node1] starting ...
+[2017-03-24 16:12:27,446][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-24 16:12:27,466][INFO ][discovery                ] [es-node1] elasticsearch/UPzgPOu0RyycURtNM-6FaA
+[2017-03-24 16:12:57,466][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-24 16:12:57,473][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-24 16:12:57,473][INFO ][node                     ] [es-node1] started
+[2017-03-24 16:13:47,594][INFO ][cluster.service          ] [es-node1] detected_master [Fin Fang Foom][B-nAdlswSNaAXlI11Z7qOA][v-c7-es][inet[/192.168.8.81:9301]], added {[Fin Fang Foom][B-nAdlswSNaAXlI11Z7qOA][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Fin Fang Foom][B-nAdlswSNaAXlI11Z7qOA][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-24 16:13:48,354][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-24 16:13:48,366][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-24 16:13:48,432][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-24 16:14:06,085][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@7a366bad]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:14:44,289][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@5ef328b2]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:14:46,415][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@1f7fceaa]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:14:47,488][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@16dc4282]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:15:07,591][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@4cab57f5]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:15:20,886][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@3347c52]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:15:24,563][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@3e6eef44]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:16:16,042][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@3c66c0ed]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:16:19,168][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@22d0d0da]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:16:19,698][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@2b8f677]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:16:19,893][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@4408a25a]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:16:20,033][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@10f52913]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:17:18,986][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@2667e9c5]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:17:20,632][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@11e275a4]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:17:20,914][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@4bc5c4d5]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 16:17:21,401][DEBUG][action.admin.indices.analyze] [es-node1] failed to execute [org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest@52157771]
+org.elasticsearch.ElasticsearchIllegalArgumentException: failed to find analyzer [ik]
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:151)
+	at org.elasticsearch.action.admin.indices.analyze.TransportAnalyzeAction.shardOperation(TransportAnalyzeAction.java:60)
+	at org.elasticsearch.action.support.single.custom.TransportSingleCustomOperationAction$AsyncSingleAction$1.run(TransportSingleCustomOperationAction.java:161)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-24 18:25:04,805][INFO ][discovery.zen            ] [es-node1] master_left [[Fin Fang Foom][B-nAdlswSNaAXlI11Z7qOA][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-03-24 18:25:04,807][WARN ][discovery.zen            ] [es-node1] master left (reason = shut_down), current nodes: {[es-node1][UPzgPOu0RyycURtNM-6FaA][v-c7-es][inet[/192.168.8.81:9300]],}
+[2017-03-24 18:25:04,807][INFO ][cluster.service          ] [es-node1] removed {[Fin Fang Foom][B-nAdlswSNaAXlI11Z7qOA][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([Fin Fang Foom][B-nAdlswSNaAXlI11Z7qOA][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-03-24 18:41:46,273][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-24 18:41:46,333][INFO ][node                     ] [es-node1] stopped
+[2017-03-24 18:41:46,333][INFO ][node                     ] [es-node1] closing ...
+[2017-03-24 18:41:46,335][INFO ][node                     ] [es-node1] closed

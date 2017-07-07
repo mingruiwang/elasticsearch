@@ -1,0 +1,20 @@
+[2017-03-16 16:29:44,939][INFO ][node                     ] [es-node2] version[1.7.3], pid[3303], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-16 16:29:44,940][INFO ][node                     ] [es-node2] initializing ...
+[2017-03-16 16:29:45,038][INFO ][plugins                  ] [es-node2] loaded [], sites []
+[2017-03-16 16:29:45,062][INFO ][env                      ] [es-node2] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [35.2gb], net total_space [36.9gb], types [rootfs]
+[2017-03-16 16:29:47,218][INFO ][node                     ] [es-node2] initialized
+[2017-03-16 16:29:47,218][INFO ][node                     ] [es-node2] starting ...
+[2017-03-16 16:29:47,314][INFO ][transport                ] [es-node2] bound_address {inet[/192.168.8.81:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-16 16:29:47,345][INFO ][discovery                ] [es-node2] elasticsearch/rxvVVvI6SqWvbLGUJ0mAVA
+[2017-03-16 16:30:17,345][WARN ][discovery                ] [es-node2] waited for 30s and no initial state was set by the discovery
+[2017-03-16 16:30:17,351][INFO ][http                     ] [es-node2] bound_address {inet[/192.168.8.81:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-16 16:30:17,352][INFO ][node                     ] [es-node2] started
+[2017-03-16 16:30:27,467][INFO ][cluster.service          ] [es-node2] detected_master [es-node1][gR3EjY_OTte8Wq_wz6shzg][v-c7-es][inet[/192.168.8.81:9300]], added {[es-node1][gR3EjY_OTte8Wq_wz6shzg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(from master [[es-node1][gR3EjY_OTte8Wq_wz6shzg][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-16 18:41:29,992][INFO ][discovery.zen            ] [es-node2] master_left [[es-node1][gR3EjY_OTte8Wq_wz6shzg][v-c7-es][inet[/192.168.8.81:9300]]], reason [shut_down]
+[2017-03-16 18:41:29,993][WARN ][discovery.zen            ] [es-node2] master left (reason = shut_down), current nodes: {[es-node2][rxvVVvI6SqWvbLGUJ0mAVA][v-c7-es][inet[/192.168.8.81:9301]],}
+[2017-03-16 18:41:29,995][INFO ][discovery.zen            ] [es-node2] master_left [[es-node1][gR3EjY_OTte8Wq_wz6shzg][v-c7-es][inet[/192.168.8.81:9300]]], reason [transport disconnected]
+[2017-03-16 18:41:29,995][INFO ][cluster.service          ] [es-node2] removed {[es-node1][gR3EjY_OTte8Wq_wz6shzg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-master_failed ([es-node1][gR3EjY_OTte8Wq_wz6shzg][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-16 18:41:30,567][INFO ][node                     ] [es-node2] stopping ...
+[2017-03-16 18:41:30,575][INFO ][node                     ] [es-node2] stopped
+[2017-03-16 18:41:30,576][INFO ][node                     ] [es-node2] closing ...
+[2017-03-16 18:41:30,583][INFO ][node                     ] [es-node2] closed

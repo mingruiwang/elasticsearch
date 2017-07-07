@@ -1,0 +1,1347 @@
+[2017-05-03 09:11:40,687][INFO ][node                     ] [es-node1] version[1.7.3], pid[3570], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-03 09:11:40,700][INFO ][node                     ] [es-node1] initializing ...
+[2017-05-03 09:11:40,843][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-05-03 09:11:40,869][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.7gb], net total_space [36.9gb], types [rootfs]
+[2017-05-03 09:11:43,256][INFO ][node                     ] [es-node1] initialized
+[2017-05-03 09:11:43,256][INFO ][node                     ] [es-node1] starting ...
+[2017-05-03 09:11:43,361][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-05-03 09:11:43,379][INFO ][discovery                ] [es-node1] elasticsearch/cagX53axT5u2AhteryV4Uw
+[2017-05-03 09:12:13,380][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-05-03 09:12:13,386][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-05-03 09:12:13,386][INFO ][node                     ] [es-node1] started
+[2017-05-03 09:12:55,328][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-03 09:12:55,362][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-03 09:12:57,385][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-03 09:12:57,393][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-03 09:13:03,527][INFO ][cluster.service          ] [es-node1] detected_master [Stature][1XC_3HiYTWiWShbib7IFgQ][v-c7-es][inet[/192.168.8.81:9301]], added {[Stature][1XC_3HiYTWiWShbib7IFgQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Stature][1XC_3HiYTWiWShbib7IFgQ][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-03 09:13:04,335][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-03 09:13:04,336][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-03 09:13:04,392][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-03 09:48:16,960][DEBUG][action.search.type       ] [es-node1] [test1][3], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5dfb7e5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test1][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"title":{"order":"asc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [title] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 09:48:16,972][DEBUG][action.search.type       ] [es-node1] [test1][4], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5dfb7e5] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"title":{"order":"asc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [title] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 09:48:16,973][DEBUG][action.search.type       ] [es-node1] [test1][0], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5dfb7e5] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"title":{"order":"asc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [title] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 09:48:16,998][DEBUG][action.search.type       ] [es-node1] [test1][2], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5dfb7e5] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"title":{"order":"asc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [title] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 09:48:16,999][DEBUG][action.search.type       ] [es-node1] [test1][1], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5dfb7e5] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"title":{"order":"asc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [title] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 09:48:17,629][DEBUG][action.search.type       ] [es-node1] [test1][2], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2ffb5be0] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test1][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"title":{"order":"asc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][2]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [title] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 09:48:17,629][DEBUG][action.search.type       ] [es-node1] [test1][0], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2ffb5be0] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test1][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"title":{"order":"asc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][0]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [title] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 09:48:17,637][DEBUG][action.search.type       ] [es-node1] [test1][1], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2ffb5be0] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test1][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"title":{"order":"asc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][1]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [title] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 09:48:17,638][DEBUG][action.search.type       ] [es-node1] [test1][3], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2ffb5be0] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"title":{"order":"asc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][3]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [title] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 09:48:17,650][DEBUG][action.search.type       ] [es-node1] [test1][4], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2ffb5be0]
+org.elasticsearch.search.SearchParseException: [test1][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"title":{"order":"asc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [title] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 09:48:17,650][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [test1][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[],"should":[{"match_all":{}}]}},"from":0,"size":50,"sort":[{"title":{"order":"asc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][4]: query[ConstantScore(*:*)],from[0],size[50]: Parse Failure [No mapping found for [title] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:56,423][DEBUG][action.search.type       ] [es-node1] [test1][0], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test1][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:56,423][DEBUG][action.search.type       ] [es-node1] [index2][3], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:56,451][DEBUG][action.search.type       ] [es-node1] [test1][2], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:56,452][DEBUG][action.search.type       ] [es-node1] [test1][1], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:56,453][DEBUG][action.search.type       ] [es-node1] [test2][3], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test2][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test2][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:56,453][DEBUG][action.search.type       ] [es-node1] [test2][0], node[cagX53axT5u2AhteryV4Uw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test2][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test2][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:56,453][DEBUG][action.search.type       ] [es-node1] [test1][3], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test1][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:56,453][DEBUG][action.search.type       ] [es-node1] [index2][1], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:56,453][DEBUG][action.search.type       ] [es-node1] [index2][0], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:56,477][DEBUG][action.search.type       ] [es-node1] [test2][1], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test2][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test2][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:56,477][DEBUG][action.search.type       ] [es-node1] [index2][2], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:56,479][DEBUG][action.search.type       ] [es-node1] [test2][4], node[1XC_3HiYTWiWShbib7IFgQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test2][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test2][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:56,480][DEBUG][action.search.type       ] [es-node1] [index2][4], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:56,480][DEBUG][action.search.type       ] [es-node1] [test2][2], node[1XC_3HiYTWiWShbib7IFgQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test2][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test2][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:56,486][DEBUG][action.search.type       ] [es-node1] [test1][4], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@55bd31fd]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:59,649][DEBUG][action.search.type       ] [es-node1] [test1][0], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:59,650][DEBUG][action.search.type       ] [es-node1] [index2][1], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:59,651][DEBUG][action.search.type       ] [es-node1] [test1][3], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:59,651][DEBUG][action.search.type       ] [es-node1] [index2][2], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:59,651][DEBUG][action.search.type       ] [es-node1] [test2][4], node[cagX53axT5u2AhteryV4Uw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test2][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test2][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:59,652][DEBUG][action.search.type       ] [es-node1] [test2][1], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test2][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test2][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:59,655][DEBUG][action.search.type       ] [es-node1] [index2][4], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:59,656][DEBUG][action.search.type       ] [es-node1] [test1][2], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test1][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:59,656][DEBUG][action.search.type       ] [es-node1] [test1][1], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test1][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][1]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:59,656][DEBUG][action.search.type       ] [es-node1] [test1][4], node[cagX53axT5u2AhteryV4Uw], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test1][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][4]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:59,652][DEBUG][action.search.type       ] [es-node1] [test2][3], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test2][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test2][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:59,657][DEBUG][action.search.type       ] [es-node1] [index2][3], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:59,657][DEBUG][action.search.type       ] [es-node1] [test2][0], node[1XC_3HiYTWiWShbib7IFgQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test2][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test2][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 13:53:59,669][DEBUG][action.search.type       ] [es-node1] [test2][2], node[cagX53axT5u2AhteryV4Uw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test2][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test2][2]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 13:53:59,685][DEBUG][action.search.type       ] [es-node1] [index2][0], node[1XC_3HiYTWiWShbib7IFgQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@52b285cf]
+org.elasticsearch.transport.RemoteTransportException: [Stature][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":1001,"lte":1001}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"_id":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[+id:[1001 TO 1001]],from[0],size[50]: Parse Failure [No mapping found for [_id] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 14:57:58,317][INFO ][node                     ] [es-node1] stopping ...
+[2017-05-03 14:57:58,396][INFO ][discovery.zen            ] [es-node1] master_left [[Stature][1XC_3HiYTWiWShbib7IFgQ][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-05-03 14:57:58,397][WARN ][discovery.zen            ] [es-node1] master left (reason = shut_down), current nodes: {[es-node1][cagX53axT5u2AhteryV4Uw][v-c7-es][inet[/127.0.0.1:9300]],}
+[2017-05-03 14:57:58,399][INFO ][discovery.zen            ] [es-node1] master_left [[Stature][1XC_3HiYTWiWShbib7IFgQ][v-c7-es][inet[/192.168.8.81:9301]]], reason [transport disconnected]
+[2017-05-03 14:57:58,399][INFO ][cluster.service          ] [es-node1] removed {[Stature][1XC_3HiYTWiWShbib7IFgQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([Stature][1XC_3HiYTWiWShbib7IFgQ][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-05-03 14:57:58,473][INFO ][node                     ] [es-node1] stopped
+[2017-05-03 14:57:58,473][INFO ][node                     ] [es-node1] closing ...
+[2017-05-03 14:57:58,475][INFO ][node                     ] [es-node1] closed
+[2017-05-03 14:59:10,681][INFO ][node                     ] [es-node1] version[1.7.3], pid[2563], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-03 14:59:10,686][INFO ][node                     ] [es-node1] initializing ...
+[2017-05-03 14:59:10,778][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-05-03 14:59:10,804][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.7gb], net total_space [36.9gb], types [rootfs]
+[2017-05-03 14:59:13,071][INFO ][node                     ] [es-node1] initialized
+[2017-05-03 14:59:13,071][INFO ][node                     ] [es-node1] starting ...
+[2017-05-03 14:59:13,316][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-05-03 14:59:13,324][INFO ][discovery                ] [es-node1] elasticsearch/vEv07qVbSaaOg78f7qo5dg
+[2017-05-03 14:59:43,324][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-05-03 14:59:43,330][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-05-03 14:59:43,330][INFO ][node                     ] [es-node1] started
+[2017-05-03 15:00:14,737][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-05-03 15:00:14,739][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-05-03 15:00:33,400][INFO ][cluster.service          ] [es-node1] detected_master [Red Raven][UC4Q8_-uQtqiK09Vkzb1vA][v-c7-es][inet[/192.168.8.81:9301]], added {[Red Raven][UC4Q8_-uQtqiK09Vkzb1vA][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Red Raven][UC4Q8_-uQtqiK09Vkzb1vA][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-03 15:00:34,193][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-03 15:00:34,203][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-03 15:00:34,270][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-03 17:13:43,159][INFO ][node                     ] [es-node1] stopping ...
+[2017-05-03 17:13:43,379][INFO ][node                     ] [es-node1] stopped
+[2017-05-03 17:13:43,379][INFO ][node                     ] [es-node1] closing ...
+[2017-05-03 17:13:43,382][INFO ][node                     ] [es-node1] closed
+[2017-05-03 17:15:31,747][INFO ][node                     ] [es-node1] version[1.7.3], pid[2571], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-03 17:15:31,770][INFO ][node                     ] [es-node1] initializing ...
+[2017-05-03 17:15:31,850][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-05-03 17:15:31,875][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.7gb], net total_space [36.9gb], types [rootfs]
+[2017-05-03 17:15:34,155][INFO ][node                     ] [es-node1] initialized
+[2017-05-03 17:15:34,155][INFO ][node                     ] [es-node1] starting ...
+[2017-05-03 17:15:34,267][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-05-03 17:15:34,285][INFO ][discovery                ] [es-node1] elasticsearch/zexwzFwDTVywqSfNmjCE6A
+[2017-05-03 17:16:04,286][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-05-03 17:16:04,288][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-05-03 17:16:04,288][INFO ][node                     ] [es-node1] started
+[2017-05-03 17:16:54,434][INFO ][cluster.service          ] [es-node1] detected_master [Bounty][4e3IpFbXRHSfClePhXOIaQ][v-c7-es][inet[/192.168.8.81:9301]], added {[Bounty][4e3IpFbXRHSfClePhXOIaQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Bounty][4e3IpFbXRHSfClePhXOIaQ][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-03 17:16:55,208][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-03 17:16:55,218][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-03 17:16:55,242][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-03 17:39:37,175][INFO ][node                     ] [es-node1] stopping ...
+[2017-05-03 17:39:37,347][INFO ][node                     ] [es-node1] stopped
+[2017-05-03 17:39:37,347][INFO ][node                     ] [es-node1] closing ...
+[2017-05-03 17:39:37,349][INFO ][node                     ] [es-node1] closed
+[2017-05-03 17:40:35,143][INFO ][node                     ] [es-node1] version[1.7.3], pid[2546], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-03 17:40:35,144][INFO ][node                     ] [es-node1] initializing ...
+[2017-05-03 17:40:35,237][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-05-03 17:40:35,262][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.7gb], net total_space [36.9gb], types [rootfs]
+[2017-05-03 17:40:37,901][INFO ][node                     ] [es-node1] initialized
+[2017-05-03 17:40:37,901][INFO ][node                     ] [es-node1] starting ...
+[2017-05-03 17:40:38,109][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-05-03 17:40:38,144][INFO ][discovery                ] [es-node1] elasticsearch/IHgbpkA1QNyWGd-3-gUx4Q
+[2017-05-03 17:41:08,145][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-05-03 17:41:08,153][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-05-03 17:41:08,153][INFO ][node                     ] [es-node1] started
+[2017-05-03 17:41:58,290][INFO ][cluster.service          ] [es-node1] detected_master [Clearcut][nzaT5bfsT4aGQMFOl4EsBQ][v-c7-es][inet[/192.168.8.81:9301]], added {[Clearcut][nzaT5bfsT4aGQMFOl4EsBQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Clearcut][nzaT5bfsT4aGQMFOl4EsBQ][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-03 17:41:59,053][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-03 17:41:59,064][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-03 17:41:59,115][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-03 18:30:51,208][DEBUG][action.search.type       ] [es-node1] [test1][0], node[nzaT5bfsT4aGQMFOl4EsBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4e221117] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Clearcut][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][0]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":null,"lte":null}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"logout_time":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][0]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [No mapping found for [logout_time] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 18:30:51,213][DEBUG][action.search.type       ] [es-node1] [index2][0], node[nzaT5bfsT4aGQMFOl4EsBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4e221117] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Clearcut][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":null,"lte":null}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"logout_time":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][0]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [No mapping found for [logout_time] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 18:30:51,216][DEBUG][action.search.type       ] [es-node1] [index2][1], node[IHgbpkA1QNyWGd-3-gUx4Q], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4e221117] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][1]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":null,"lte":null}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"logout_time":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][1]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [No mapping found for [logout_time] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 18:30:51,216][DEBUG][action.search.type       ] [es-node1] [index2][4], node[IHgbpkA1QNyWGd-3-gUx4Q], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4e221117] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][4]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":null,"lte":null}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"logout_time":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][4]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [No mapping found for [logout_time] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 18:30:51,216][DEBUG][action.search.type       ] [es-node1] [test1][2], node[IHgbpkA1QNyWGd-3-gUx4Q], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4e221117] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test1][2]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":null,"lte":null}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"logout_time":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][2]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [No mapping found for [logout_time] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 18:30:51,217][DEBUG][action.search.type       ] [es-node1] [test1][1], node[IHgbpkA1QNyWGd-3-gUx4Q], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4e221117] lastShard [true]
+org.elasticsearch.search.SearchParseException: [test1][1]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":null,"lte":null}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"logout_time":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][1]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [No mapping found for [logout_time] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 18:30:51,218][DEBUG][action.search.type       ] [es-node1] [index2][2], node[nzaT5bfsT4aGQMFOl4EsBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4e221117] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Clearcut][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":null,"lte":null}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"logout_time":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][2]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [No mapping found for [logout_time] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 18:30:51,219][DEBUG][action.search.type       ] [es-node1] [index2][3], node[IHgbpkA1QNyWGd-3-gUx4Q], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4e221117] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index2][3]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":null,"lte":null}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"logout_time":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index2][3]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [No mapping found for [logout_time] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-03 18:30:51,227][DEBUG][action.search.type       ] [es-node1] [test1][3], node[nzaT5bfsT4aGQMFOl4EsBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4e221117] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Clearcut][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][3]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":null,"lte":null}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"logout_time":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][3]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [No mapping found for [logout_time] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 18:30:51,250][DEBUG][action.search.type       ] [es-node1] [test1][4], node[nzaT5bfsT4aGQMFOl4EsBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4e221117]
+org.elasticsearch.transport.RemoteTransportException: [Clearcut][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [test1][4]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"range":{"id":{"gte":null,"lte":null}}}],"must_not":[],"should":[]}},"from":0,"size":50,"sort":[{"logout_time":{"order":"desc"}}],"aggs":{},"version":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [test1][4]: query[+id:[* TO *]],from[0],size[50]: Parse Failure [No mapping found for [logout_time] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-03 18:57:00,652][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:57:00,652][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:57:00,652][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:57:00,652][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:57:00,653][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:57:03,140][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:57:03,140][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:57:03,140][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:57:03,140][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:57:03,140][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:58:00,125][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:58:00,125][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:58:00,125][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:58:00,125][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:58:00,125][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:58:01,226][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:58:01,226][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:58:01,226][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:58:01,226][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:58:01,226][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:59:00,178][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:59:00,178][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:59:00,178][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:59:00,179][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:59:00,179][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 18:59:01,005][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:59:01,006][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:59:01,006][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:59:01,006][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 18:59:01,006][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:00:00,122][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:00:00,122][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:00:00,122][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:00:00,122][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:00:00,122][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:00:00,801][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:00:00,801][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:00:00,801][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:00:00,801][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:00:00,801][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:01:00,106][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:01:00,106][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:01:00,106][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:01:00,106][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:01:00,106][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:01:00,858][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:01:00,858][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:01:00,858][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:01:00,858][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:01:00,858][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:02:00,178][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:02:00,179][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:02:00,179][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:02:00,179][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:02:00,179][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:02:00,871][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:02:00,871][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:02:00,871][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:02:00,871][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:02:00,871][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:03:00,080][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:03:00,080][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:03:00,080][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:03:00,080][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:03:00,080][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:03:00,618][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:03:00,618][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:03:00,618][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:03:00,618][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:03:00,618][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:04:00,086][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:04:00,086][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:04:00,086][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:04:00,086][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:04:00,086][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:04:00,613][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:04:00,613][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:04:00,613][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:04:00,613][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:04:00,613][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:05:00,078][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:05:00,078][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:05:00,078][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:05:00,078][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:05:00,078][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:05:00,552][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:05:00,552][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:05:00,552][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:05:00,552][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:05:00,552][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:06:00,078][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:06:00,078][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:06:00,078][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:06:00,078][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:06:00,078][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:06:00,611][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:06:00,611][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:06:00,611][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:06:00,611][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:06:00,611][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:07:00,076][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:07:00,076][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:07:00,076][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:07:00,076][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:07:00,076][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:07:00,487][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:07:00,487][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:07:00,487][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:07:00,487][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:07:00,487][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:08:00,089][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:08:00,089][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:08:00,089][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:08:00,089][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:08:00,089][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:08:00,457][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:08:00,457][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:08:00,457][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:08:00,457][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:08:00,457][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:09:00,068][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:09:00,068][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:09:00,068][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:09:00,068][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:09:00,068][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:09:00,505][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:09:00,505][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:09:00,505][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:09:00,505][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:09:00,505][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:10:00,116][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:10:00,116][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:10:00,116][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:10:00,116][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:10:00,116][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:10:00,528][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:10:00,528][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:10:00,528][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:10:00,528][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:10:00,528][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:11:00,113][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:11:00,113][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:11:00,113][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:11:00,113][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:11:00,113][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:11:00,485][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:11:00,485][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:11:00,485][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:11:00,485][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:11:00,485][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:12:00,050][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:12:00,050][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:12:00,050][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:12:00,050][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:12:00,050][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:12:00,509][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:12:00,509][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:12:00,509][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:12:00,509][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:12:00,509][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:13:00,046][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:13:00,046][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:13:00,046][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:13:00,046][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:13:00,046][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:13:00,408][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:13:00,408][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:13:00,408][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:13:00,408][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:13:00,408][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:14:00,086][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:14:00,086][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:14:00,086][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:14:00,087][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:14:00,087][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:14:00,546][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:14:00,546][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:14:00,546][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:14:00,547][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:14:00,547][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:15:00,068][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:15:00,068][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:15:00,068][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:15:00,068][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:15:00,068][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:15:00,449][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:15:00,449][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:15:00,449][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:15:00,449][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:15:00,449][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:16:00,030][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:16:00,030][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:16:00,030][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:16:00,030][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:16:00,030][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:16:00,498][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:16:00,498][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:16:00,498][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:16:00,498][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:16:00,498][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:17:00,051][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:17:00,051][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:17:00,051][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:17:00,051][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:17:00,051][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:17:00,397][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:17:00,397][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:17:00,397][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:17:00,397][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:17:00,397][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:18:00,069][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:18:00,069][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:18:00,069][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:18:00,069][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:18:00,069][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:18:00,501][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:18:00,501][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:18:00,501][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:18:00,501][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:18:00,501][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:19:00,070][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:19:00,070][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:19:00,070][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:19:00,070][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:19:00,070][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:19:00,479][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:19:00,479][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:19:00,479][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:19:00,479][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:19:00,479][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:20:00,055][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:20:00,055][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:20:00,055][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:20:00,055][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:20:00,055][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:20:00,400][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:20:00,400][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:20:00,400][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:20:00,400][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:20:00,401][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:21:00,022][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:21:00,023][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:21:00,023][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:21:00,023][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:21:00,023][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:21:00,406][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:21:00,406][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:21:00,406][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:21:00,407][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:21:00,407][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:22:00,043][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:22:00,043][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:22:00,043][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:22:00,043][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:22:00,043][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:22:00,361][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:22:00,361][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:22:00,361][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:22:00,361][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:22:00,361][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:23:00,067][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:23:00,067][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:23:00,067][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:23:00,067][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:23:00,067][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:23:00,396][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:23:00,396][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:23:00,396][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:23:00,396][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:23:00,396][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:24:00,038][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:24:00,038][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:24:00,038][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:24:00,038][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:24:00,038][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:24:00,385][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:24:00,385][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:24:00,385][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:24:00,385][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:24:00,385][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:25:00,050][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:25:00,050][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:25:00,050][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:25:00,051][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:25:00,051][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [1s] to [-1]
+[2017-05-03 19:25:00,305][INFO ][index.shard              ] [es-node1] [success][4] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:25:00,305][INFO ][index.shard              ] [es-node1] [success][0] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:25:00,305][INFO ][index.shard              ] [es-node1] [success][2] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:25:00,305][INFO ][index.shard              ] [es-node1] [success][3] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:25:00,305][INFO ][index.shard              ] [es-node1] [success][1] updating refresh_interval from [-1] to [1s]
+[2017-05-03 19:25:40,264][INFO ][node                     ] [es-node1] stopping ...
+[2017-05-03 19:25:40,292][INFO ][discovery.zen            ] [es-node1] master_left [[Clearcut][nzaT5bfsT4aGQMFOl4EsBQ][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-05-03 19:25:40,292][WARN ][discovery.zen            ] [es-node1] master left (reason = shut_down), current nodes: {[es-node1][IHgbpkA1QNyWGd-3-gUx4Q][v-c7-es][inet[/127.0.0.1:9300]],}
+[2017-05-03 19:25:40,293][INFO ][cluster.service          ] [es-node1] removed {[Clearcut][nzaT5bfsT4aGQMFOl4EsBQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([Clearcut][nzaT5bfsT4aGQMFOl4EsBQ][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-05-03 19:25:40,957][INFO ][node                     ] [es-node1] stopped
+[2017-05-03 19:25:40,957][INFO ][node                     ] [es-node1] closing ...
+[2017-05-03 19:25:40,960][INFO ][node                     ] [es-node1] closed

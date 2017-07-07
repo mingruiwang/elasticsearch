@@ -1,0 +1,141 @@
+[2017-03-23 10:13:29,351][INFO ][node                     ] [Tethlam] version[1.7.3], pid[3097], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-23 10:13:29,351][INFO ][node                     ] [Tethlam] initializing ...
+[2017-03-23 10:13:29,447][INFO ][plugins                  ] [Tethlam] loaded [analysis-ik], sites []
+[2017-03-23 10:13:29,475][INFO ][env                      ] [Tethlam] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-23 10:13:31,670][INFO ][node                     ] [Tethlam] initialized
+[2017-03-23 10:13:31,674][INFO ][node                     ] [Tethlam] starting ...
+[2017-03-23 10:13:31,741][INFO ][transport                ] [Tethlam] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-23 10:13:31,751][INFO ][discovery                ] [Tethlam] elasticsearch/30xiWl7bSDmbDCjRGt3Gqw
+[2017-03-23 10:13:35,519][INFO ][cluster.service          ] [Tethlam] new_master [Tethlam][30xiWl7bSDmbDCjRGt3Gqw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-23 10:13:35,659][INFO ][http                     ] [Tethlam] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-23 10:13:35,659][INFO ][node                     ] [Tethlam] started
+[2017-03-23 10:13:35,695][INFO ][gateway                  ] [Tethlam] recovered [4] indices into cluster_state
+[2017-03-23 10:13:36,194][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-23 10:13:36,194][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-23 10:13:36,195][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-23 10:13:44,024][INFO ][cluster.service          ] [Tethlam] added {[es-node1][GdxQI0veSquVVy_UEMaUuQ][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][GdxQI0veSquVVy_UEMaUuQ][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-23 11:52:54,827][INFO ][node                     ] [Tethlam] stopping ...
+[2017-03-23 11:52:54,936][INFO ][node                     ] [Tethlam] stopped
+[2017-03-23 11:52:54,936][INFO ][node                     ] [Tethlam] closing ...
+[2017-03-23 11:52:54,939][INFO ][node                     ] [Tethlam] closed
+[2017-03-23 11:59:18,102][INFO ][node                     ] [Avarrish] version[1.7.3], pid[2258], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-23 11:59:18,115][INFO ][node                     ] [Avarrish] initializing ...
+[2017-03-23 11:59:18,182][INFO ][plugins                  ] [Avarrish] loaded [analysis-ik], sites []
+[2017-03-23 11:59:18,206][INFO ][env                      ] [Avarrish] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-23 11:59:20,674][INFO ][node                     ] [Avarrish] initialized
+[2017-03-23 11:59:20,675][INFO ][node                     ] [Avarrish] starting ...
+[2017-03-23 11:59:20,825][INFO ][transport                ] [Avarrish] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-23 11:59:20,857][INFO ][discovery                ] [Avarrish] elasticsearch/Z1ul5EDfT4mwQO_s1rMUfQ
+[2017-03-23 11:59:24,635][INFO ][cluster.service          ] [Avarrish] new_master [Avarrish][Z1ul5EDfT4mwQO_s1rMUfQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-23 11:59:24,678][INFO ][http                     ] [Avarrish] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-23 11:59:24,678][INFO ][node                     ] [Avarrish] started
+[2017-03-23 11:59:24,747][INFO ][gateway                  ] [Avarrish] recovered [4] indices into cluster_state
+[2017-03-23 11:59:25,327][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-23 11:59:25,328][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-23 11:59:25,339][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-23 11:59:52,716][INFO ][cluster.service          ] [Avarrish] added {[es-node1][RnTJATfNRxuo9s_Nmy6jOg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][RnTJATfNRxuo9s_Nmy6jOg][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-23 12:34:09,122][DEBUG][action.admin.indices.mapping.put] [Avarrish] failed to put mappings on indices [[index]], type [fulltext]
+org.elasticsearch.ElasticsearchParseException: Failed to parse content to map
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:130)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:107)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:184)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: org.elasticsearch.common.compress.lzf.LZFCompressedStreamInput@21378a7f; line: 1, column: 0])
+ at [Source: org.elasticsearch.common.compress.lzf.LZFCompressedStreamInput@21378a7f; line: 20, column: 331]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:270)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readOrderedMap(AbstractXContentParser.java:258)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrdered(AbstractXContentParser.java:213)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrderedAndClose(AbstractXContentParser.java:228)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:125)
+	... 10 more
+[2017-03-23 14:23:26,977][INFO ][cluster.service          ] [Avarrish] removed {[es-node1][RnTJATfNRxuo9s_Nmy6jOg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][RnTJATfNRxuo9s_Nmy6jOg][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-23 14:23:26,978][INFO ][cluster.routing          ] [Avarrish] delaying allocation for [20] unassigned shards, next check in [59.9s]
+[2017-03-23 14:23:27,025][INFO ][node                     ] [Avarrish] stopping ...
+[2017-03-23 14:23:27,656][INFO ][node                     ] [Avarrish] stopped
+[2017-03-23 14:23:27,656][INFO ][node                     ] [Avarrish] closing ...
+[2017-03-23 14:23:27,658][INFO ][node                     ] [Avarrish] closed
+[2017-03-23 14:37:19,343][INFO ][node                     ] [Arena] version[1.7.3], pid[2511], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-23 14:37:19,343][INFO ][node                     ] [Arena] initializing ...
+[2017-03-23 14:37:19,433][INFO ][plugins                  ] [Arena] loaded [analysis-ik], sites []
+[2017-03-23 14:37:19,456][INFO ][env                      ] [Arena] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-23 14:37:21,640][INFO ][node                     ] [Arena] initialized
+[2017-03-23 14:37:21,641][INFO ][node                     ] [Arena] starting ...
+[2017-03-23 14:37:21,742][INFO ][transport                ] [Arena] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-23 14:37:21,773][INFO ][discovery                ] [Arena] elasticsearch/T0aOd46hSp2J1ryKLtKGQA
+[2017-03-23 14:37:25,544][INFO ][cluster.service          ] [Arena] new_master [Arena][T0aOd46hSp2J1ryKLtKGQA][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-23 14:37:25,608][INFO ][http                     ] [Arena] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-23 14:37:25,608][INFO ][node                     ] [Arena] started
+[2017-03-23 14:37:25,643][INFO ][gateway                  ] [Arena] recovered [4] indices into cluster_state
+[2017-03-23 14:37:26,121][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-23 14:37:26,121][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-23 14:37:26,133][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-23 14:37:59,659][INFO ][cluster.service          ] [Arena] added {[es-node1][RlPPyGH7SdqVaB-uJw0ZjA][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][RlPPyGH7SdqVaB-uJw0ZjA][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-23 14:38:22,319][INFO ][cluster.metadata         ] [Arena] [index] deleting index
+[2017-03-23 14:38:37,301][INFO ][cluster.metadata         ] [Arena] [product] deleting index
+[2017-03-23 14:38:51,511][INFO ][cluster.metadata         ] [Arena] [produce] deleting index
+[2017-03-23 14:39:17,658][INFO ][cluster.metadata         ] [Arena] [megacorp] deleting index
+[2017-03-23 14:43:13,098][INFO ][node                     ] [Arena] stopping ...
+[2017-03-23 14:43:13,152][INFO ][node                     ] [Arena] stopped
+[2017-03-23 14:43:13,152][INFO ][node                     ] [Arena] closing ...
+[2017-03-23 14:43:13,176][INFO ][node                     ] [Arena] closed
+[2017-03-23 14:45:29,711][INFO ][node                     ] [Decay II] version[1.7.3], pid[2258], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-23 14:45:29,724][INFO ][node                     ] [Decay II] initializing ...
+[2017-03-23 14:45:29,795][INFO ][plugins                  ] [Decay II] loaded [analysis-ik], sites []
+[2017-03-23 14:45:29,819][INFO ][env                      ] [Decay II] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-23 14:45:32,091][INFO ][node                     ] [Decay II] initialized
+[2017-03-23 14:45:32,091][INFO ][node                     ] [Decay II] starting ...
+[2017-03-23 14:45:32,232][INFO ][transport                ] [Decay II] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-23 14:45:32,264][INFO ][discovery                ] [Decay II] elasticsearch/o3wb-RSvSOKVLG7FLrgnEA
+[2017-03-23 14:45:36,042][INFO ][cluster.service          ] [Decay II] new_master [Decay II][o3wb-RSvSOKVLG7FLrgnEA][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-23 14:45:36,060][INFO ][http                     ] [Decay II] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-23 14:45:36,060][INFO ][node                     ] [Decay II] started
+[2017-03-23 14:45:36,093][INFO ][gateway                  ] [Decay II] recovered [0] indices into cluster_state
+[2017-03-23 14:46:00,974][INFO ][cluster.service          ] [Decay II] added {[es-node1][zmIs23JjQ-qDBw-XZFnLNw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][zmIs23JjQ-qDBw-XZFnLNw][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-23 14:48:00,540][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-23 14:48:00,551][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-23 14:48:00,596][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-23 14:48:00,702][INFO ][cluster.metadata         ] [Decay II] [productindex] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [index]
+[2017-03-23 14:55:11,541][INFO ][cluster.metadata         ] [Decay II] [productindex] update_mapping [index] (dynamic)
+[2017-03-23 15:12:35,738][INFO ][node                     ] [Decay II] stopping ...
+[2017-03-23 15:12:35,773][INFO ][cluster.service          ] [Decay II] removed {[es-node1][zmIs23JjQ-qDBw-XZFnLNw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][zmIs23JjQ-qDBw-XZFnLNw][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-23 15:12:35,773][INFO ][cluster.routing          ] [Decay II] delaying allocation for [5] unassigned shards, next check in [1m]
+[2017-03-23 15:12:35,990][INFO ][node                     ] [Decay II] stopped
+[2017-03-23 15:12:35,990][INFO ][node                     ] [Decay II] closing ...
+[2017-03-23 15:12:35,992][INFO ][node                     ] [Decay II] closed
+[2017-03-23 15:18:54,476][INFO ][node                     ] [Ironclad] version[1.7.3], pid[2309], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-23 15:18:54,488][INFO ][node                     ] [Ironclad] initializing ...
+[2017-03-23 15:18:54,559][INFO ][plugins                  ] [Ironclad] loaded [analysis-ik], sites []
+[2017-03-23 15:18:54,582][INFO ][env                      ] [Ironclad] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-23 15:18:56,880][INFO ][node                     ] [Ironclad] initialized
+[2017-03-23 15:18:56,880][INFO ][node                     ] [Ironclad] starting ...
+[2017-03-23 15:18:57,065][INFO ][transport                ] [Ironclad] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-23 15:18:57,097][INFO ][discovery                ] [Ironclad] elasticsearch/po3af1VySD-yMKL5JRkdrQ
+[2017-03-23 15:19:00,875][INFO ][cluster.service          ] [Ironclad] new_master [Ironclad][po3af1VySD-yMKL5JRkdrQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-23 15:19:00,906][INFO ][http                     ] [Ironclad] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-23 15:19:00,906][INFO ][node                     ] [Ironclad] started
+[2017-03-23 15:19:00,944][INFO ][gateway                  ] [Ironclad] recovered [1] indices into cluster_state
+[2017-03-23 15:19:01,503][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-23 15:19:01,513][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-23 15:19:01,538][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-23 15:19:16,731][INFO ][cluster.service          ] [Ironclad] added {[es-node1][4XVmN0AfQxyV5m2xTwDiRA][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][4XVmN0AfQxyV5m2xTwDiRA][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-23 16:37:25,804][INFO ][cluster.metadata         ] [Ironclad] [index] creating index, cause [api], templates [], shards [1]/[1], mappings []
+[2017-03-23 16:38:54,573][INFO ][cluster.metadata         ] [Ironclad] [index] update_mapping [employee] (dynamic)
+[2017-03-23 19:37:42,295][INFO ][node                     ] [Ironclad] stopping ...
+[2017-03-23 19:37:42,403][INFO ][node                     ] [Ironclad] stopped
+[2017-03-23 19:37:42,403][INFO ][node                     ] [Ironclad] closing ...
+[2017-03-23 19:37:42,405][INFO ][node                     ] [Ironclad] closed

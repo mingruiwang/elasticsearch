@@ -1,0 +1,16 @@
+[2017-05-15 09:26:26,747][INFO ][node                     ] [Kaluu] version[1.7.3], pid[3659], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-15 09:26:26,750][INFO ][node                     ] [Kaluu] initializing ...
+[2017-05-15 09:26:26,848][INFO ][plugins                  ] [Kaluu] loaded [analysis-ik], sites []
+[2017-05-15 09:26:26,871][INFO ][env                      ] [Kaluu] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.3gb], net total_space [36.9gb], types [rootfs]
+[2017-05-15 09:26:29,217][INFO ][node                     ] [Kaluu] initialized
+[2017-05-15 09:26:29,217][INFO ][node                     ] [Kaluu] starting ...
+[2017-05-15 09:26:29,338][INFO ][transport                ] [Kaluu] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-05-15 09:26:29,367][INFO ][discovery                ] [Kaluu] elasticsearch/PYyooVUbTR6lM3EApqgAMg
+[2017-05-15 09:26:33,145][INFO ][cluster.service          ] [Kaluu] new_master [Kaluu][PYyooVUbTR6lM3EApqgAMg][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-05-15 09:26:33,180][INFO ][http                     ] [Kaluu] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-05-15 09:26:33,181][INFO ][node                     ] [Kaluu] started
+[2017-05-15 09:26:33,204][INFO ][gateway                  ] [Kaluu] recovered [2] indices into cluster_state
+[2017-05-15 09:26:33,672][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-15 09:26:33,683][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-15 09:26:33,717][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-15 09:26:34,792][INFO ][cluster.service          ] [Kaluu] added {[es-node1][ZQHm_myDRICHMET3H7Bl6g][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(join from node[[es-node1][ZQHm_myDRICHMET3H7Bl6g][v-c7-es][inet[/127.0.0.1:9300]]])

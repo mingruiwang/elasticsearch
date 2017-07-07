@@ -1,0 +1,264 @@
+[2017-05-16 11:22:46,757][DEBUG][action.search.type       ] [es-node1] [index1][4], node[PYyooVUbTR6lM3EApqgAMg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1bf62a34] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Kaluu][inet[/192.168.8.81:9301]][indices:data/read/search[phase/dfs]]
+Caused by: org.elasticsearch.search.SearchParseException: [index1][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:757)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:748)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-16 11:22:46,761][DEBUG][action.search.type       ] [es-node1] [index1][2], node[ZQHm_myDRICHMET3H7Bl6g], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1bf62a34] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index1][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-16 11:22:46,784][DEBUG][action.search.type       ] [es-node1] [index1][1], node[ZQHm_myDRICHMET3H7Bl6g], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1bf62a34]
+org.elasticsearch.search.SearchParseException: [index1][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-16 11:22:46,784][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [dfs]
+org.elasticsearch.search.SearchParseException: [index1][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-16 11:22:46,760][DEBUG][action.search.type       ] [es-node1] [index1][0], node[PYyooVUbTR6lM3EApqgAMg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1bf62a34] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Kaluu][inet[/192.168.8.81:9301]][indices:data/read/search[phase/dfs]]
+Caused by: org.elasticsearch.search.SearchParseException: [index1][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:757)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:748)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-16 11:22:46,778][DEBUG][action.search.type       ] [es-node1] [index1][3], node[ZQHm_myDRICHMET3H7Bl6g], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1bf62a34] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index1][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-16 11:22:48,798][DEBUG][action.search.type       ] [es-node1] [index1][4], node[ZQHm_myDRICHMET3H7Bl6g], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@265a5741] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index1][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-16 11:22:48,798][DEBUG][action.search.type       ] [es-node1] [index1][0], node[ZQHm_myDRICHMET3H7Bl6g], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@265a5741] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index1][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:197)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$3.call(SearchServiceTransportAction.java:194)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-05-16 11:22:48,809][DEBUG][action.search.type       ] [es-node1] [index1][2], node[PYyooVUbTR6lM3EApqgAMg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@265a5741] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Kaluu][inet[/192.168.8.81:9301]][indices:data/read/search[phase/dfs]]
+Caused by: org.elasticsearch.search.SearchParseException: [index1][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:757)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:748)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-16 11:22:48,810][DEBUG][action.search.type       ] [es-node1] [index1][3], node[PYyooVUbTR6lM3EApqgAMg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@265a5741] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Kaluu][inet[/192.168.8.81:9301]][indices:data/read/search[phase/dfs]]
+Caused by: org.elasticsearch.search.SearchParseException: [index1][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:757)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:748)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-16 11:22:48,812][DEBUG][action.search.type       ] [es-node1] [index1][1], node[PYyooVUbTR6lM3EApqgAMg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@265a5741]
+org.elasticsearch.transport.RemoteTransportException: [Kaluu][inet[/192.168.8.81:9301]][indices:data/read/search[phase/dfs]]
+Caused by: org.elasticsearch.search.SearchParseException: [index1][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:757)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:748)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-05-16 11:22:48,812][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [dfs]
+org.elasticsearch.transport.RemoteTransportException: [Kaluu][inet[/192.168.8.81:9301]][indices:data/read/search[phase/dfs]]
+Caused by: org.elasticsearch.search.SearchParseException: [index1][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"nickname":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeDfsPhase(SearchService.java:223)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:757)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchDfsTransportHandler.messageReceived(SearchServiceTransportAction.java:748)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [index1] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more

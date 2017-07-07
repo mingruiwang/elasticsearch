@@ -1,0 +1,15 @@
+[2017-05-15 09:25:52,127][INFO ][node                     ] [es-node1] version[1.7.3], pid[3598], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-15 09:25:52,129][INFO ][node                     ] [es-node1] initializing ...
+[2017-05-15 09:25:52,229][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-05-15 09:25:52,254][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.3gb], net total_space [36.9gb], types [rootfs]
+[2017-05-15 09:25:54,463][INFO ][node                     ] [es-node1] initialized
+[2017-05-15 09:25:54,464][INFO ][node                     ] [es-node1] starting ...
+[2017-05-15 09:25:54,622][INFO ][transport                ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2017-05-15 09:25:54,640][INFO ][discovery                ] [es-node1] elasticsearch/ZQHm_myDRICHMET3H7Bl6g
+[2017-05-15 09:26:24,641][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-05-15 09:26:24,647][INFO ][http                     ] [es-node1] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2017-05-15 09:26:24,647][INFO ][node                     ] [es-node1] started
+[2017-05-15 09:26:34,802][INFO ][cluster.service          ] [es-node1] detected_master [Kaluu][PYyooVUbTR6lM3EApqgAMg][v-c7-es][inet[/192.168.8.81:9301]], added {[Kaluu][PYyooVUbTR6lM3EApqgAMg][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Kaluu][PYyooVUbTR6lM3EApqgAMg][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-15 09:26:35,564][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-15 09:26:35,565][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-15 09:26:35,630][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic

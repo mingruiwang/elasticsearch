@@ -1,0 +1,53 @@
+[2017-05-12 09:51:03,196][INFO ][cluster.service          ] [Agamemnon] added {[Jolt][YMTyn7FdSHKlVaGMfqRjHw][v-c7-es][inet[/192.168.8.81:9302]],}, reason: zen-disco-receive(join from node[[Jolt][YMTyn7FdSHKlVaGMfqRjHw][v-c7-es][inet[/192.168.8.81:9302]]])
+[2017-05-12 09:51:04,294][INFO ][gateway.local.state.meta ] [Agamemnon] auto importing dangled indices [index3/OPEN][index/OPEN][test1/OPEN] from [[Jolt][YMTyn7FdSHKlVaGMfqRjHw][v-c7-es][inet[/192.168.8.81:9302]]]
+[2017-05-12 09:56:06,620][INFO ][cluster.service          ] [Agamemnon] removed {[Jolt][YMTyn7FdSHKlVaGMfqRjHw][v-c7-es][inet[/192.168.8.81:9302]],}, reason: zen-disco-node_left([Jolt][YMTyn7FdSHKlVaGMfqRjHw][v-c7-es][inet[/192.168.8.81:9302]])
+[2017-05-12 09:56:07,012][INFO ][cluster.routing          ] [Agamemnon] delaying allocation for [17] unassigned shards, next check in [59.5s]
+[2017-05-12 09:58:09,299][INFO ][node                     ] [Agamemnon] stopping ...
+[2017-05-12 09:58:09,415][INFO ][node                     ] [Agamemnon] stopped
+[2017-05-12 09:58:09,415][INFO ][node                     ] [Agamemnon] closing ...
+[2017-05-12 09:58:09,418][INFO ][node                     ] [Agamemnon] closed
+[2017-05-12 09:59:50,509][INFO ][node                     ] [Lazarus] version[1.7.3], pid[2657], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-12 09:59:50,512][INFO ][node                     ] [Lazarus] initializing ...
+[2017-05-12 09:59:50,612][INFO ][plugins                  ] [Lazarus] loaded [analysis-ik], sites []
+[2017-05-12 09:59:50,635][INFO ][env                      ] [Lazarus] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.2gb], net total_space [36.9gb], types [rootfs]
+[2017-05-12 09:59:53,044][INFO ][node                     ] [Lazarus] initialized
+[2017-05-12 09:59:53,044][INFO ][node                     ] [Lazarus] starting ...
+[2017-05-12 09:59:53,165][INFO ][transport                ] [Lazarus] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-05-12 09:59:53,196][INFO ][discovery                ] [Lazarus] elasticsearch/GTfy5U6ZSuWqpdMSY-PdPg
+[2017-05-12 09:59:56,974][INFO ][cluster.service          ] [Lazarus] new_master [Lazarus][GTfy5U6ZSuWqpdMSY-PdPg][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-05-12 09:59:57,016][INFO ][http                     ] [Lazarus] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-05-12 09:59:57,016][INFO ][node                     ] [Lazarus] started
+[2017-05-12 09:59:57,066][INFO ][gateway                  ] [Lazarus] recovered [7] indices into cluster_state
+[2017-05-12 09:59:57,719][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-12 09:59:57,729][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-12 09:59:57,739][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-12 10:00:02,759][INFO ][cluster.service          ] [Lazarus] added {[es-node1][yqAvLi1nTSahkq_-o6uo6A][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(join from node[[es-node1][yqAvLi1nTSahkq_-o6uo6A][v-c7-es][inet[/127.0.0.1:9300]]])
+[2017-05-12 10:02:45,223][INFO ][node                     ] [Lazarus] stopping ...
+[2017-05-12 10:02:45,348][INFO ][node                     ] [Lazarus] stopped
+[2017-05-12 10:02:45,348][INFO ][node                     ] [Lazarus] closing ...
+[2017-05-12 10:02:45,350][INFO ][node                     ] [Lazarus] closed
+[2017-05-12 10:05:16,025][INFO ][node                     ] [Burstarr] version[1.7.3], pid[2632], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-12 10:05:16,038][INFO ][node                     ] [Burstarr] initializing ...
+[2017-05-12 10:05:16,112][INFO ][plugins                  ] [Burstarr] loaded [analysis-ik], sites []
+[2017-05-12 10:05:16,133][INFO ][env                      ] [Burstarr] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.2gb], net total_space [36.9gb], types [rootfs]
+[2017-05-12 10:05:18,584][INFO ][node                     ] [Burstarr] initialized
+[2017-05-12 10:05:18,585][INFO ][node                     ] [Burstarr] starting ...
+[2017-05-12 10:05:18,704][INFO ][transport                ] [Burstarr] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-05-12 10:05:18,735][INFO ][discovery                ] [Burstarr] elasticsearch/hUgFq8FjSbqy4GvFGKxMug
+[2017-05-12 10:05:22,513][INFO ][cluster.service          ] [Burstarr] new_master [Burstarr][hUgFq8FjSbqy4GvFGKxMug][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-05-12 10:05:22,555][INFO ][http                     ] [Burstarr] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-05-12 10:05:22,555][INFO ][node                     ] [Burstarr] started
+[2017-05-12 10:05:22,578][INFO ][gateway                  ] [Burstarr] recovered [7] indices into cluster_state
+[2017-05-12 10:05:23,195][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-12 10:05:23,205][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-12 10:05:23,225][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-12 10:05:31,924][INFO ][cluster.service          ] [Burstarr] added {[es-node1][VRQXSeZfTXCCdF6IfyX8ww][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(join from node[[es-node1][VRQXSeZfTXCCdF6IfyX8ww][v-c7-es][inet[/127.0.0.1:9300]]])
+[2017-05-12 10:06:24,674][INFO ][cluster.metadata         ] [Burstarr] [test1] deleting index
+[2017-05-12 10:06:40,981][INFO ][cluster.metadata         ] [Burstarr] [index3] deleting index
+[2017-05-12 10:06:44,498][INFO ][cluster.metadata         ] [Burstarr] [index] deleting index
+[2017-05-12 10:07:16,934][INFO ][cluster.metadata         ] [Burstarr] [index4] deleting index
+[2017-05-12 10:07:21,540][INFO ][cluster.metadata         ] [Burstarr] [index5] deleting index
+[2017-05-12 18:35:11,362][INFO ][node                     ] [Burstarr] stopping ...
+[2017-05-12 18:35:11,482][INFO ][node                     ] [Burstarr] stopped
+[2017-05-12 18:35:11,482][INFO ][node                     ] [Burstarr] closing ...
+[2017-05-12 18:35:11,483][INFO ][node                     ] [Burstarr] closed

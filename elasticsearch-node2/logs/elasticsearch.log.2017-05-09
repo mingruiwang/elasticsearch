@@ -1,0 +1,40 @@
+[2017-05-09 10:00:23,392][INFO ][node                     ] [Raza] version[1.7.3], pid[3060], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-09 10:00:23,393][INFO ][node                     ] [Raza] initializing ...
+[2017-05-09 10:00:23,491][INFO ][plugins                  ] [Raza] loaded [analysis-ik], sites []
+[2017-05-09 10:00:23,515][INFO ][env                      ] [Raza] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.3gb], net total_space [36.9gb], types [rootfs]
+[2017-05-09 10:00:25,876][INFO ][node                     ] [Raza] initialized
+[2017-05-09 10:00:25,876][INFO ][node                     ] [Raza] starting ...
+[2017-05-09 10:00:25,941][INFO ][transport                ] [Raza] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-05-09 10:00:25,973][INFO ][discovery                ] [Raza] elasticsearch/r1rnF2pAS9WciuiqFcQyxw
+[2017-05-09 10:00:29,751][INFO ][cluster.service          ] [Raza] new_master [Raza][r1rnF2pAS9WciuiqFcQyxw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-05-09 10:00:29,797][INFO ][http                     ] [Raza] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-05-09 10:00:29,797][INFO ][node                     ] [Raza] started
+[2017-05-09 10:00:29,831][INFO ][gateway                  ] [Raza] recovered [3] indices into cluster_state
+[2017-05-09 10:00:30,314][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-09 10:00:30,315][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-09 10:00:30,317][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-09 10:00:56,513][INFO ][cluster.service          ] [Raza] added {[es-node1][sh_h4rLaQbOAPH8XWaJZ3g][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(join from node[[es-node1][sh_h4rLaQbOAPH8XWaJZ3g][v-c7-es][inet[/127.0.0.1:9300]]])
+[2017-05-09 10:06:56,790][INFO ][node                     ] [Raza] stopping ...
+[2017-05-09 10:06:56,937][INFO ][node                     ] [Raza] stopped
+[2017-05-09 10:06:56,938][INFO ][node                     ] [Raza] closing ...
+[2017-05-09 10:06:56,939][INFO ][node                     ] [Raza] closed
+[2017-05-09 10:08:25,672][INFO ][node                     ] [Vargas] version[1.7.3], pid[2648], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-09 10:08:25,673][INFO ][node                     ] [Vargas] initializing ...
+[2017-05-09 10:08:25,773][INFO ][plugins                  ] [Vargas] loaded [analysis-ik], sites []
+[2017-05-09 10:08:25,796][INFO ][env                      ] [Vargas] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.3gb], net total_space [36.9gb], types [rootfs]
+[2017-05-09 10:08:28,179][INFO ][node                     ] [Vargas] initialized
+[2017-05-09 10:08:28,179][INFO ][node                     ] [Vargas] starting ...
+[2017-05-09 10:08:28,268][INFO ][transport                ] [Vargas] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-05-09 10:08:28,299][INFO ][discovery                ] [Vargas] elasticsearch/ya20m_SYQ1-wBIJxcV9GcA
+[2017-05-09 10:08:32,077][INFO ][cluster.service          ] [Vargas] new_master [Vargas][ya20m_SYQ1-wBIJxcV9GcA][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-05-09 10:08:32,113][INFO ][http                     ] [Vargas] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-05-09 10:08:32,113][INFO ][node                     ] [Vargas] started
+[2017-05-09 10:08:32,139][INFO ][gateway                  ] [Vargas] recovered [3] indices into cluster_state
+[2017-05-09 10:08:32,655][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-09 10:08:32,666][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-09 10:08:32,700][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-09 10:08:34,311][INFO ][cluster.service          ] [Vargas] added {[es-node1][BkucMwu9TBauoWLlveAqbg][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(join from node[[es-node1][BkucMwu9TBauoWLlveAqbg][v-c7-es][inet[/127.0.0.1:9300]]])
+[2017-05-09 18:35:20,185][INFO ][node                     ] [Vargas] stopping ...
+[2017-05-09 18:35:20,314][INFO ][node                     ] [Vargas] stopped
+[2017-05-09 18:35:20,314][INFO ][node                     ] [Vargas] closing ...
+[2017-05-09 18:35:20,316][INFO ][node                     ] [Vargas] closed

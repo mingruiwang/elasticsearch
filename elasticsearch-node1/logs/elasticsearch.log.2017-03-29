@@ -1,0 +1,428 @@
+[2017-03-29 10:01:50,904][INFO ][node                     ] [es-node1] version[1.7.3], pid[2505], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 10:01:50,905][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-29 10:01:51,003][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-29 10:01:51,033][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 10:01:53,357][INFO ][node                     ] [es-node1] initialized
+[2017-03-29 10:01:53,357][INFO ][node                     ] [es-node1] starting ...
+[2017-03-29 10:01:53,613][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-29 10:01:53,632][INFO ][discovery                ] [es-node1] elasticsearch/o9CwA7HhS0O5r3qRkHaa-Q
+[2017-03-29 10:02:23,633][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-29 10:02:23,639][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-29 10:02:23,639][INFO ][node                     ] [es-node1] started
+[2017-03-29 10:03:13,800][INFO ][cluster.service          ] [es-node1] detected_master [Willie Lumpkin][rkgb2aEfTRG1zuAdv-cBLg][v-c7-es][inet[/192.168.8.81:9301]], added {[Willie Lumpkin][rkgb2aEfTRG1zuAdv-cBLg][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Willie Lumpkin][rkgb2aEfTRG1zuAdv-cBLg][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-29 10:03:14,547][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-29 10:03:14,559][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-29 10:03:14,571][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-29 10:10:32,783][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-29 10:10:32,783][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-29 10:10:32,783][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-29 10:10:32,783][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-29 10:10:32,783][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-29 10:12:03,108][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-29 10:12:03,108][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-29 10:12:03,108][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-29 10:12:03,108][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-29 10:12:03,108][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-29 11:54:31,946][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-29 11:54:31,957][INFO ][discovery.zen            ] [es-node1] master_left [[Willie Lumpkin][rkgb2aEfTRG1zuAdv-cBLg][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-03-29 11:54:31,958][WARN ][discovery.zen            ] [es-node1] master left (reason = shut_down), current nodes: {[es-node1][o9CwA7HhS0O5r3qRkHaa-Q][v-c7-es][inet[/192.168.8.81:9300]],}
+[2017-03-29 11:54:31,958][INFO ][cluster.service          ] [es-node1] removed {[Willie Lumpkin][rkgb2aEfTRG1zuAdv-cBLg][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([Willie Lumpkin][rkgb2aEfTRG1zuAdv-cBLg][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-03-29 11:54:32,005][DEBUG][action.admin.indices.delete] [es-node1] connection exception while trying to forward request to master node [[Willie Lumpkin][rkgb2aEfTRG1zuAdv-cBLg][v-c7-es][inet[/192.168.8.81:9301]]], scheduling a retry. Error: [org.elasticsearch.transport.NodeDisconnectedException: [Willie Lumpkin][inet[/192.168.8.81:9301]][indices:admin/delete] disconnected]
+[2017-03-29 11:54:32,006][DEBUG][action.admin.indices.delete] [es-node1] no known master node, scheduling a retry
+[2017-03-29 11:54:32,008][WARN ][netty.channel.DefaultChannelPipeline] An exception was thrown by an exception handler.
+java.util.concurrent.RejectedExecutionException: Worker has already been shutdown
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.registerTask(AbstractNioSelector.java:120)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:72)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:56)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioChannelSink.execute(AbstractNioChannelSink.java:34)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.execute(DefaultChannelPipeline.java:636)
+	at org.elasticsearch.common.netty.channel.Channels.fireExceptionCaughtLater(Channels.java:496)
+	at org.elasticsearch.common.netty.channel.AbstractChannelSink.exceptionCaught(AbstractChannelSink.java:46)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.notifyHandlerException(DefaultChannelPipeline.java:658)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:781)
+	at org.elasticsearch.common.netty.channel.Channels.write(Channels.java:725)
+	at org.elasticsearch.common.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71)
+	at org.elasticsearch.common.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.handleDownstream(HttpPipeliningHandler.java:87)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582)
+	at org.elasticsearch.http.netty.NettyHttpChannel.sendResponse(NettyHttpChannel.java:195)
+	at org.elasticsearch.rest.action.support.RestActionListener.onFailure(RestActionListener.java:60)
+	at org.elasticsearch.action.support.TransportAction$ThreadedActionListener$2.run(TransportAction.java:137)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-29 11:54:32,028][INFO ][node                     ] [es-node1] stopped
+[2017-03-29 11:54:32,028][INFO ][node                     ] [es-node1] closing ...
+[2017-03-29 11:54:32,031][INFO ][node                     ] [es-node1] closed
+[2017-03-29 11:56:08,870][INFO ][node                     ] [es-node1] version[1.7.3], pid[2851], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 11:56:08,871][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-29 11:56:08,965][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-29 11:56:08,986][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 11:56:11,117][INFO ][node                     ] [es-node1] initialized
+[2017-03-29 11:56:11,117][INFO ][node                     ] [es-node1] starting ...
+[2017-03-29 11:56:11,183][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-29 11:56:11,189][INFO ][discovery                ] [es-node1] elasticsearch/nbiQwpPqToWSBFrk-7koQQ
+[2017-03-29 11:56:41,190][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-29 11:56:41,201][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.http.BindHttpException: Failed to bind to [9200]
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:269)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.http.HttpServer.doStart(HttpServer.java:89)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:274)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9200
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport$1.onPortNumber(NettyHttpServerTransport.java:260)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:256)
+	... 7 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-29 11:56:41,210][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-29 11:56:41,230][INFO ][node                     ] [es-node1] stopped
+[2017-03-29 11:56:41,230][INFO ][node                     ] [es-node1] closing ...
+[2017-03-29 11:56:41,236][INFO ][node                     ] [es-node1] closed
+[2017-03-29 12:02:53,871][INFO ][node                     ] [es-node1] version[1.7.3], pid[2989], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 12:02:53,871][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-29 12:02:53,966][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-29 12:02:53,995][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 12:02:56,176][INFO ][node                     ] [es-node1] initialized
+[2017-03-29 12:02:56,176][INFO ][node                     ] [es-node1] starting ...
+[2017-03-29 12:02:56,279][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-29 12:02:56,296][INFO ][discovery                ] [es-node1] elasticsearch/iJlCde30TlGv97bSN5S9-g
+[2017-03-29 12:03:26,297][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-29 12:03:26,303][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-29 12:03:26,303][INFO ][node                     ] [es-node1] started
+[2017-03-29 12:03:54,328][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:03:54,331][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:03:56,566][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:03:56,574][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:03:56,824][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:03:56,833][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:03:59,270][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:03:59,274][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:03:59,374][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:03:59,378][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:14,487][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:14,491][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:14,601][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:14,607][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:15,663][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:15,777][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:15,783][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:15,825][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:15,934][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:15,939][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:15,991][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:16,098][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:16,105][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:16,170][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:16,172][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 12:04:16,392][INFO ][cluster.service          ] [es-node1] detected_master [Agent Zero][imVAv3zDTsOzC1HctNh_ig][v-c7-es][inet[/192.168.8.81:9301]], added {[Agent Zero][imVAv3zDTsOzC1HctNh_ig][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Agent Zero][imVAv3zDTsOzC1HctNh_ig][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-29 12:04:17,265][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-29 12:04:17,265][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-29 12:04:17,267][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-29 12:06:38,916][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-29 12:06:38,916][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-29 12:06:38,916][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-29 12:06:38,916][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-29 12:08:09,401][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-29 12:08:09,401][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-29 12:08:09,401][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-29 12:08:09,401][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-29 12:42:51,838][INFO ][discovery.zen            ] [es-node1] master_left [[Agent Zero][imVAv3zDTsOzC1HctNh_ig][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-03-29 12:42:51,839][WARN ][discovery.zen            ] [es-node1] master left (reason = shut_down), current nodes: {[es-node1][iJlCde30TlGv97bSN5S9-g][v-c7-es][inet[/192.168.8.81:9300]],}
+[2017-03-29 12:42:51,839][INFO ][cluster.service          ] [es-node1] removed {[Agent Zero][imVAv3zDTsOzC1HctNh_ig][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([Agent Zero][imVAv3zDTsOzC1HctNh_ig][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-03-29 12:58:52,851][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-29 12:58:52,879][INFO ][node                     ] [es-node1] stopped
+[2017-03-29 12:58:52,879][INFO ][node                     ] [es-node1] closing ...
+[2017-03-29 12:58:52,881][INFO ][node                     ] [es-node1] closed
+[2017-03-29 13:44:38,830][INFO ][node                     ] [es-node1] version[1.7.3], pid[3227], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 13:44:38,830][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-29 13:44:38,923][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-29 13:44:38,980][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 13:44:41,198][INFO ][node                     ] [es-node1] initialized
+[2017-03-29 13:44:41,198][INFO ][node                     ] [es-node1] starting ...
+[2017-03-29 13:44:41,338][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-29 13:44:41,362][INFO ][discovery                ] [es-node1] elasticsearch/4vCBL2fmRtSto5Wf7fnC5A
+[2017-03-29 13:45:11,363][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-29 13:45:11,369][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-29 13:45:11,370][INFO ][node                     ] [es-node1] started
+[2017-03-29 13:46:01,593][INFO ][cluster.service          ] [es-node1] detected_master [Jason][MhbvjJ_vT4aOmGddylcpAw][v-c7-es][inet[/192.168.8.81:9301]], added {[Jason][MhbvjJ_vT4aOmGddylcpAw][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Jason][MhbvjJ_vT4aOmGddylcpAw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-29 13:46:02,596][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-29 13:46:02,597][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-29 13:46:02,598][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-29 13:48:17,230][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-29 13:48:17,230][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-29 13:48:17,230][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-29 13:48:17,230][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-29 13:48:17,231][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-29 13:49:47,544][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-29 13:49:47,544][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-29 13:49:47,544][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-29 13:49:47,544][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-29 13:49:47,544][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-29 16:01:05,596][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-29 16:01:05,654][INFO ][node                     ] [es-node1] stopped
+[2017-03-29 16:01:05,654][INFO ][node                     ] [es-node1] closing ...
+[2017-03-29 16:01:05,658][INFO ][node                     ] [es-node1] closed
+[2017-03-29 17:29:55,526][INFO ][node                     ] [es-node1] version[1.7.3], pid[4798], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 17:29:55,527][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-29 17:29:55,644][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-29 17:29:55,669][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 17:29:58,119][INFO ][node                     ] [es-node1] initialized
+[2017-03-29 17:29:58,119][INFO ][node                     ] [es-node1] starting ...
+[2017-03-29 17:29:58,231][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-29 17:29:58,249][INFO ][discovery                ] [es-node1] elasticsearch/y2iGiO8nR_G-CyvpJLMWjA
+[2017-03-29 17:30:06,214][INFO ][node                     ] [es-node1] version[1.7.3], pid[4836], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 17:30:06,214][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-29 17:30:06,314][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-29 17:30:06,370][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 17:30:08,546][INFO ][node                     ] [es-node1] initialized
+[2017-03-29 17:30:08,546][INFO ][node                     ] [es-node1] starting ...
+[2017-03-29 17:30:08,716][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.transport.BindTransportException: Failed to bind to [9300]
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:422)
+	at org.elasticsearch.transport.netty.NettyTransport.doStart(NettyTransport.java:283)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.transport.TransportService.doStart(TransportService.java:153)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:257)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9300
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.transport.netty.NettyTransport$1.onPortNumber(NettyTransport.java:413)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:409)
+	... 8 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-29 17:30:08,740][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-29 17:30:08,741][INFO ][node                     ] [es-node1] stopped
+[2017-03-29 17:30:08,741][INFO ][node                     ] [es-node1] closing ...
+[2017-03-29 17:30:08,744][INFO ][node                     ] [es-node1] closed
+[2017-03-29 17:30:15,468][INFO ][node                     ] [es-node1] version[1.7.3], pid[4862], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 17:30:15,468][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-29 17:30:15,552][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-29 17:30:15,577][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 17:30:17,752][INFO ][node                     ] [es-node1] initialized
+[2017-03-29 17:30:17,752][INFO ][node                     ] [es-node1] starting ...
+[2017-03-29 17:30:17,950][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.transport.BindTransportException: Failed to bind to [9300]
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:422)
+	at org.elasticsearch.transport.netty.NettyTransport.doStart(NettyTransport.java:283)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.transport.TransportService.doStart(TransportService.java:153)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:257)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9300
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.transport.netty.NettyTransport$1.onPortNumber(NettyTransport.java:413)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:409)
+	... 8 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-29 17:30:17,964][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-29 17:30:17,977][INFO ][node                     ] [es-node1] stopped
+[2017-03-29 17:30:17,977][INFO ][node                     ] [es-node1] closing ...
+[2017-03-29 17:30:17,981][INFO ][node                     ] [es-node1] closed
+[2017-03-29 17:30:28,249][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-29 17:30:28,255][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-29 17:30:28,255][INFO ][node                     ] [es-node1] started
+[2017-03-29 17:31:37,624][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 17:31:37,643][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 17:31:42,452][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 17:31:42,456][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 17:31:49,091][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 17:31:51,352][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 17:31:51,359][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 17:31:53,809][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 17:31:55,885][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 17:31:55,889][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 17:31:58,358][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 17:31:58,394][INFO ][cluster.service          ] [es-node1] detected_master [Speed Demon][GFmmh6trTe6vPZlXc7H86Q][v-c7-es][inet[/192.168.8.81:9301]], added {[Speed Demon][GFmmh6trTe6vPZlXc7H86Q][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Speed Demon][GFmmh6trTe6vPZlXc7H86Q][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-29 17:31:59,040][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-29 17:31:59,051][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-29 17:31:59,073][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-29 18:10:43,002][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:10:43,002][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:10:43,002][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:10:43,002][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:10:43,003][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:12:13,455][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:12:13,455][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:12:13,455][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:12:13,455][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:12:13,455][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:14:27,554][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:14:27,554][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:14:27,554][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:14:27,554][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:14:27,554][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:14:28,188][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:14:28,188][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:14:28,188][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:14:28,188][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:14:28,188][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:26:46,028][INFO ][discovery.zen            ] [es-node1] master_left [[Speed Demon][GFmmh6trTe6vPZlXc7H86Q][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-03-29 18:26:46,029][WARN ][discovery.zen            ] [es-node1] master left (reason = shut_down), current nodes: {[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]],}
+[2017-03-29 18:26:46,029][INFO ][cluster.service          ] [es-node1] removed {[Speed Demon][GFmmh6trTe6vPZlXc7H86Q][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([Speed Demon][GFmmh6trTe6vPZlXc7H86Q][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-03-29 18:26:52,474][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:26:52,479][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:26:59,054][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:26:59,061][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:26:59,070][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:02,645][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:02,646][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:09,547][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:09,548][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:09,548][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:11,143][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:12,066][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:16,902][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:16,902][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:22,476][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:22,479][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:25,652][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:26,276][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:28,910][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:28,928][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:29,054][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:29,062][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:29,071][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:32,646][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:32,647][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:39,548][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:39,548][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:39,549][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:41,144][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:42,067][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:46,902][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:46,903][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:48,920][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:48,930][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:51,723][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:55,653][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:56,277][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:56,580][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:57,239][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:27:58,910][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:27:58,928][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:28:00,193][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:28:00,195][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:28:18,920][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:28:18,930][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:28:20,205][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:28:20,206][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:28:21,724][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:28:26,581][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:28:27,240][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:28:30,193][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:28:30,199][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:28:30,202][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:28:50,206][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:28:50,207][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:29:00,203][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:29:00,209][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:29:30,209][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:35:44,157][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:35:44,160][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:35:45,894][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:35:48,476][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:35:48,762][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:36:08,473][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:36:08,494][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:36:14,157][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:36:14,160][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:36:15,895][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:36:18,476][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:36:18,762][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:36:18,830][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:36:38,474][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:36:38,496][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:36:48,830][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:36:53,080][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:37:23,081][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:51:27,334][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:51:27,341][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:51:29,475][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:51:33,790][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:51:33,794][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:51:52,978][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:51:52,978][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:51:57,334][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:51:57,343][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:51:59,475][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:52:03,793][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:52:03,794][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:52:04,412][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:52:22,979][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:52:22,979][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:52:34,413][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-29 18:52:35,530][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:52:35,534][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:52:39,661][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:52:45,856][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:52:45,856][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-29 18:52:46,237][INFO ][cluster.service          ] [es-node1] new_master [es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]], reason: zen-disco-join (elected_as_master)
+[2017-03-29 18:52:46,237][INFO ][cluster.routing          ] [es-node1] delaying allocation for [6] unassigned shards, next check in [59.9s]
+[2017-03-29 18:52:49,494][INFO ][cluster.service          ] [es-node1] added {[Lady Jacqueline Falsworth Crichton][pwYq4EwZR6yf7YAOLs-sew][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(join from node[[Lady Jacqueline Falsworth Crichton][pwYq4EwZR6yf7YAOLs-sew][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-29 19:18:59,162][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-29 19:18:59,168][WARN ][discovery.zen            ] [es-node1] not enough master nodes, current nodes: {[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]],}
+[2017-03-29 19:18:59,168][INFO ][cluster.service          ] [es-node1] removed {[Lady Jacqueline Falsworth Crichton][pwYq4EwZR6yf7YAOLs-sew][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-node_left([Lady Jacqueline Falsworth Crichton][pwYq4EwZR6yf7YAOLs-sew][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-03-29 19:18:59,369][INFO ][node                     ] [es-node1] stopped
+[2017-03-29 19:18:59,369][INFO ][node                     ] [es-node1] closing ...
+[2017-03-29 19:18:59,371][INFO ][node                     ] [es-node1] closed

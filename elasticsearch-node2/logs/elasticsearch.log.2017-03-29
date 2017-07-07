@@ -1,0 +1,182 @@
+[2017-03-29 10:02:52,667][INFO ][node                     ] [Willie Lumpkin] version[1.7.3], pid[2562], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 10:02:52,667][INFO ][node                     ] [Willie Lumpkin] initializing ...
+[2017-03-29 10:02:52,738][INFO ][plugins                  ] [Willie Lumpkin] loaded [analysis-ik], sites []
+[2017-03-29 10:02:52,761][INFO ][env                      ] [Willie Lumpkin] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 10:02:55,082][INFO ][node                     ] [Willie Lumpkin] initialized
+[2017-03-29 10:02:55,083][INFO ][node                     ] [Willie Lumpkin] starting ...
+[2017-03-29 10:02:55,247][INFO ][transport                ] [Willie Lumpkin] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-29 10:02:55,278][INFO ][discovery                ] [Willie Lumpkin] elasticsearch/rkgb2aEfTRG1zuAdv-cBLg
+[2017-03-29 10:02:59,055][INFO ][cluster.service          ] [Willie Lumpkin] new_master [Willie Lumpkin][rkgb2aEfTRG1zuAdv-cBLg][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-29 10:02:59,094][INFO ][http                     ] [Willie Lumpkin] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-29 10:02:59,094][INFO ][node                     ] [Willie Lumpkin] started
+[2017-03-29 10:02:59,123][INFO ][gateway                  ] [Willie Lumpkin] recovered [2] indices into cluster_state
+[2017-03-29 10:02:59,749][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-29 10:02:59,750][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-29 10:02:59,752][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-29 10:03:13,790][INFO ][cluster.service          ] [Willie Lumpkin] added {[es-node1][o9CwA7HhS0O5r3qRkHaa-Q][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][o9CwA7HhS0O5r3qRkHaa-Q][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-29 10:10:32,876][INFO ][index.shard              ] [Willie Lumpkin] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-29 10:10:32,876][INFO ][index.shard              ] [Willie Lumpkin] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-29 10:10:32,877][INFO ][index.shard              ] [Willie Lumpkin] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-29 10:10:32,877][INFO ][index.shard              ] [Willie Lumpkin] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-29 10:10:32,877][INFO ][index.shard              ] [Willie Lumpkin] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-29 10:12:03,229][INFO ][index.shard              ] [Willie Lumpkin] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-29 10:12:03,230][INFO ][index.shard              ] [Willie Lumpkin] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-29 10:12:03,230][INFO ][index.shard              ] [Willie Lumpkin] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-29 10:12:03,230][INFO ][index.shard              ] [Willie Lumpkin] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-29 10:12:03,230][INFO ][index.shard              ] [Willie Lumpkin] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-29 11:54:31,881][INFO ][cluster.metadata         ] [Willie Lumpkin] [myindex] deleting index
+[2017-03-29 11:54:31,903][INFO ][node                     ] [Willie Lumpkin] stopping ...
+[2017-03-29 11:54:31,942][INFO ][gateway.local.state.meta ] [Willie Lumpkin] [myindex] dangling index, exists on local file system, but not in cluster metadata, auto import to cluster state [YES]
+[2017-03-29 11:54:31,967][INFO ][gateway.local.state.meta ] [Willie Lumpkin] failed to send allocated dangled
+org.elasticsearch.transport.TransportException: transport stopped, action: internal:gateway/local/allocate_dangled
+	at org.elasticsearch.transport.TransportService$2.run(TransportService.java:178)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-29 11:54:32,000][INFO ][node                     ] [Willie Lumpkin] stopped
+[2017-03-29 11:54:32,000][INFO ][node                     ] [Willie Lumpkin] closing ...
+[2017-03-29 11:54:32,002][INFO ][node                     ] [Willie Lumpkin] closed
+[2017-03-29 11:56:26,911][INFO ][node                     ] [Morlun] version[1.7.3], pid[2907], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 11:56:26,911][INFO ][node                     ] [Morlun] initializing ...
+[2017-03-29 11:56:26,993][INFO ][plugins                  ] [Morlun] loaded [analysis-ik], sites []
+[2017-03-29 11:56:27,018][INFO ][env                      ] [Morlun] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 11:56:29,227][INFO ][node                     ] [Morlun] initialized
+[2017-03-29 11:56:29,227][INFO ][node                     ] [Morlun] starting ...
+[2017-03-29 11:56:29,293][INFO ][transport                ] [Morlun] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-29 11:56:29,325][INFO ][discovery                ] [Morlun] elasticsearch/US4_c2DDRz-1aKQtW4oq6w
+[2017-03-29 11:56:33,102][INFO ][cluster.service          ] [Morlun] new_master [Morlun][US4_c2DDRz-1aKQtW4oq6w][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-29 11:56:33,133][INFO ][http                     ] [Morlun] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-29 11:56:33,133][INFO ][node                     ] [Morlun] started
+[2017-03-29 11:56:33,246][INFO ][gateway                  ] [Morlun] recovered [2] indices into cluster_state
+[2017-03-29 11:56:33,762][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-29 11:56:33,762][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-29 11:56:33,774][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-29 12:02:29,939][INFO ][node                     ] [Morlun] stopping ...
+[2017-03-29 12:02:29,964][INFO ][node                     ] [Morlun] stopped
+[2017-03-29 12:02:29,964][INFO ][node                     ] [Morlun] closing ...
+[2017-03-29 12:02:30,017][INFO ][node                     ] [Morlun] closed
+[2017-03-29 12:03:47,094][INFO ][node                     ] [Agent Zero] version[1.7.3], pid[3031], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 12:03:47,097][INFO ][node                     ] [Agent Zero] initializing ...
+[2017-03-29 12:03:47,189][INFO ][plugins                  ] [Agent Zero] loaded [analysis-ik], sites []
+[2017-03-29 12:03:47,217][INFO ][env                      ] [Agent Zero] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 12:03:49,447][INFO ][node                     ] [Agent Zero] initialized
+[2017-03-29 12:03:49,447][INFO ][node                     ] [Agent Zero] starting ...
+[2017-03-29 12:03:49,564][INFO ][transport                ] [Agent Zero] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-29 12:03:49,594][INFO ][discovery                ] [Agent Zero] elasticsearch/imVAv3zDTsOzC1HctNh_ig
+[2017-03-29 12:03:53,372][INFO ][cluster.service          ] [Agent Zero] new_master [Agent Zero][imVAv3zDTsOzC1HctNh_ig][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-29 12:03:53,426][INFO ][http                     ] [Agent Zero] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-29 12:03:53,426][INFO ][node                     ] [Agent Zero] started
+[2017-03-29 12:03:53,445][INFO ][gateway                  ] [Agent Zero] recovered [2] indices into cluster_state
+[2017-03-29 12:03:53,965][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-29 12:03:53,965][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-29 12:03:53,966][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-29 12:04:16,382][INFO ][cluster.service          ] [Agent Zero] added {[es-node1][iJlCde30TlGv97bSN5S9-g][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][iJlCde30TlGv97bSN5S9-g][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-29 12:04:42,297][INFO ][cluster.metadata         ] [Agent Zero] [myindex] deleting index
+[2017-03-29 12:06:38,382][INFO ][cluster.metadata         ] [Agent Zero] [myindex] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-29 12:06:38,988][INFO ][index.shard              ] [Agent Zero] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-29 12:06:38,988][INFO ][index.shard              ] [Agent Zero] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-29 12:06:38,988][INFO ][index.shard              ] [Agent Zero] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-29 12:06:38,988][INFO ][index.shard              ] [Agent Zero] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-29 12:08:09,431][INFO ][index.shard              ] [Agent Zero] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-29 12:08:09,431][INFO ][index.shard              ] [Agent Zero] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-29 12:08:09,431][INFO ][index.shard              ] [Agent Zero] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-29 12:08:09,431][INFO ][index.shard              ] [Agent Zero] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-29 12:25:32,300][INFO ][cluster.metadata         ] [Agent Zero] [myindex] update_mapping [mytype] (dynamic)
+[2017-03-29 12:42:51,833][INFO ][node                     ] [Agent Zero] stopping ...
+[2017-03-29 12:42:51,868][INFO ][node                     ] [Agent Zero] stopped
+[2017-03-29 12:42:51,868][INFO ][node                     ] [Agent Zero] closing ...
+[2017-03-29 12:42:51,870][INFO ][node                     ] [Agent Zero] closed
+[2017-03-29 13:45:53,977][INFO ][node                     ] [Jason] version[1.7.3], pid[3288], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 13:45:53,977][INFO ][node                     ] [Jason] initializing ...
+[2017-03-29 13:45:54,066][INFO ][plugins                  ] [Jason] loaded [analysis-ik], sites []
+[2017-03-29 13:45:54,092][INFO ][env                      ] [Jason] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 13:45:56,255][INFO ][node                     ] [Jason] initialized
+[2017-03-29 13:45:56,255][INFO ][node                     ] [Jason] starting ...
+[2017-03-29 13:45:56,412][INFO ][transport                ] [Jason] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-29 13:45:56,443][INFO ][discovery                ] [Jason] elasticsearch/MhbvjJ_vT4aOmGddylcpAw
+[2017-03-29 13:46:00,221][INFO ][cluster.service          ] [Jason] new_master [Jason][MhbvjJ_vT4aOmGddylcpAw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-29 13:46:00,274][INFO ][http                     ] [Jason] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-29 13:46:00,274][INFO ][node                     ] [Jason] started
+[2017-03-29 13:46:00,285][INFO ][gateway                  ] [Jason] recovered [2] indices into cluster_state
+[2017-03-29 13:46:00,864][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-29 13:46:00,865][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-29 13:46:00,876][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-29 13:46:01,579][INFO ][cluster.service          ] [Jason] added {[es-node1][4vCBL2fmRtSto5Wf7fnC5A][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][4vCBL2fmRtSto5Wf7fnC5A][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-29 13:48:17,273][INFO ][index.shard              ] [Jason] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-29 13:48:17,273][INFO ][index.shard              ] [Jason] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-29 13:48:17,273][INFO ][index.shard              ] [Jason] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-29 13:48:17,273][INFO ][index.shard              ] [Jason] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-29 13:48:17,273][INFO ][index.shard              ] [Jason] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-29 13:49:47,602][INFO ][index.shard              ] [Jason] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-29 13:49:47,603][INFO ][index.shard              ] [Jason] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-29 13:49:47,603][INFO ][index.shard              ] [Jason] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-29 13:49:47,603][INFO ][index.shard              ] [Jason] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-29 13:49:47,603][INFO ][index.shard              ] [Jason] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-29 16:01:05,596][INFO ][node                     ] [Jason] stopping ...
+[2017-03-29 16:01:05,679][INFO ][node                     ] [Jason] stopped
+[2017-03-29 16:01:05,679][INFO ][node                     ] [Jason] closing ...
+[2017-03-29 16:01:05,683][INFO ][node                     ] [Jason] closed
+[2017-03-29 17:31:18,665][INFO ][node                     ] [Speed Demon] version[1.7.3], pid[4918], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 17:31:18,665][INFO ][node                     ] [Speed Demon] initializing ...
+[2017-03-29 17:31:18,800][INFO ][plugins                  ] [Speed Demon] loaded [analysis-ik], sites []
+[2017-03-29 17:31:18,821][INFO ][env                      ] [Speed Demon] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 17:31:21,182][INFO ][node                     ] [Speed Demon] initialized
+[2017-03-29 17:31:21,182][INFO ][node                     ] [Speed Demon] starting ...
+[2017-03-29 17:31:21,345][INFO ][transport                ] [Speed Demon] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-29 17:31:21,377][INFO ][discovery                ] [Speed Demon] elasticsearch/GFmmh6trTe6vPZlXc7H86Q
+[2017-03-29 17:31:25,156][INFO ][cluster.service          ] [Speed Demon] new_master [Speed Demon][GFmmh6trTe6vPZlXc7H86Q][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-29 17:31:25,196][INFO ][http                     ] [Speed Demon] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-29 17:31:25,196][INFO ][node                     ] [Speed Demon] started
+[2017-03-29 17:31:25,242][INFO ][gateway                  ] [Speed Demon] recovered [2] indices into cluster_state
+[2017-03-29 17:31:25,777][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-29 17:31:25,789][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-29 17:31:25,801][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-29 17:31:58,383][INFO ][cluster.service          ] [Speed Demon] added {[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-29 18:10:43,044][INFO ][index.shard              ] [Speed Demon] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:10:43,044][INFO ][index.shard              ] [Speed Demon] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:10:43,044][INFO ][index.shard              ] [Speed Demon] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:10:43,044][INFO ][index.shard              ] [Speed Demon] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:10:43,044][INFO ][index.shard              ] [Speed Demon] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:12:13,575][INFO ][index.shard              ] [Speed Demon] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:12:13,575][INFO ][index.shard              ] [Speed Demon] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:12:13,576][INFO ][index.shard              ] [Speed Demon] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:12:13,576][INFO ][index.shard              ] [Speed Demon] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:12:13,576][INFO ][index.shard              ] [Speed Demon] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:14:27,612][INFO ][index.shard              ] [Speed Demon] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:14:27,612][INFO ][index.shard              ] [Speed Demon] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:14:27,612][INFO ][index.shard              ] [Speed Demon] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:14:27,612][INFO ][index.shard              ] [Speed Demon] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:14:27,612][INFO ][index.shard              ] [Speed Demon] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-29 18:14:28,046][INFO ][cluster.metadata         ] [Speed Demon] [myindex] update_mapping [mytype] (dynamic)
+[2017-03-29 18:14:28,227][INFO ][index.shard              ] [Speed Demon] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:14:28,227][INFO ][index.shard              ] [Speed Demon] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:14:28,227][INFO ][index.shard              ] [Speed Demon] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:14:28,227][INFO ][index.shard              ] [Speed Demon] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:14:28,227][INFO ][index.shard              ] [Speed Demon] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-29 18:26:45,982][INFO ][node                     ] [Speed Demon] stopping ...
+[2017-03-29 18:26:46,210][INFO ][node                     ] [Speed Demon] stopped
+[2017-03-29 18:26:46,211][INFO ][node                     ] [Speed Demon] closing ...
+[2017-03-29 18:26:46,236][INFO ][node                     ] [Speed Demon] closed
+[2017-03-29 18:52:23,322][INFO ][node                     ] [Lady Jacqueline Falsworth Crichton] version[1.7.3], pid[5410], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-29 18:52:23,322][INFO ][node                     ] [Lady Jacqueline Falsworth Crichton] initializing ...
+[2017-03-29 18:52:23,435][INFO ][plugins                  ] [Lady Jacqueline Falsworth Crichton] loaded [analysis-ik], sites []
+[2017-03-29 18:52:23,460][INFO ][env                      ] [Lady Jacqueline Falsworth Crichton] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-29 18:52:25,625][INFO ][node                     ] [Lady Jacqueline Falsworth Crichton] initialized
+[2017-03-29 18:52:25,625][INFO ][node                     ] [Lady Jacqueline Falsworth Crichton] starting ...
+[2017-03-29 18:52:25,729][INFO ][transport                ] [Lady Jacqueline Falsworth Crichton] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-29 18:52:25,761][INFO ][discovery                ] [Lady Jacqueline Falsworth Crichton] elasticsearch/pwYq4EwZR6yf7YAOLs-sew
+[2017-03-29 18:52:29,803][INFO ][discovery.zen            ] [Lady Jacqueline Falsworth Crichton] failed to send join request to master [[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]], reason [RemoteTransportException[[es-node1][inet[/192.168.8.81:9300]][internal:discovery/zen/join]]; nested: ElasticsearchIllegalStateException[Node [[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]] not master for join request from [[Lady Jacqueline Falsworth Crichton][pwYq4EwZR6yf7YAOLs-sew][v-c7-es][inet[/192.168.8.81:9301]]]]; ], tried [3] times
+[2017-03-29 18:52:33,788][INFO ][discovery.zen            ] [Lady Jacqueline Falsworth Crichton] failed to send join request to master [[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]], reason [RemoteTransportException[[es-node1][inet[/192.168.8.81:9300]][internal:discovery/zen/join]]; nested: ElasticsearchIllegalStateException[Node [[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]] not master for join request from [[Lady Jacqueline Falsworth Crichton][pwYq4EwZR6yf7YAOLs-sew][v-c7-es][inet[/192.168.8.81:9301]]]]; ], tried [3] times
+[2017-03-29 18:52:37,780][INFO ][discovery.zen            ] [Lady Jacqueline Falsworth Crichton] failed to send join request to master [[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]], reason [RemoteTransportException[[es-node1][inet[/192.168.8.81:9300]][internal:discovery/zen/join]]; nested: ElasticsearchIllegalStateException[Node [[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]] not master for join request from [[Lady Jacqueline Falsworth Crichton][pwYq4EwZR6yf7YAOLs-sew][v-c7-es][inet[/192.168.8.81:9301]]]]; ], tried [3] times
+[2017-03-29 18:52:41,755][INFO ][discovery.zen            ] [Lady Jacqueline Falsworth Crichton] failed to send join request to master [[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]], reason [RemoteTransportException[[es-node1][inet[/192.168.8.81:9300]][internal:discovery/zen/join]]; nested: ElasticsearchIllegalStateException[Node [[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]] not master for join request from [[Lady Jacqueline Falsworth Crichton][pwYq4EwZR6yf7YAOLs-sew][v-c7-es][inet[/192.168.8.81:9301]]]]; ], tried [3] times
+[2017-03-29 18:52:45,730][INFO ][discovery.zen            ] [Lady Jacqueline Falsworth Crichton] failed to send join request to master [[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]], reason [RemoteTransportException[[es-node1][inet[/192.168.8.81:9300]][internal:discovery/zen/join]]; nested: ElasticsearchIllegalStateException[Node [[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]] not master for join request from [[Lady Jacqueline Falsworth Crichton][pwYq4EwZR6yf7YAOLs-sew][v-c7-es][inet[/192.168.8.81:9301]]]]; ], tried [3] times
+[2017-03-29 18:52:49,504][INFO ][cluster.service          ] [Lady Jacqueline Falsworth Crichton] detected_master [es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]], added {[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(from master [[es-node1][y2iGiO8nR_G-CyvpJLMWjA][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-29 18:52:49,675][INFO ][http                     ] [Lady Jacqueline Falsworth Crichton] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-29 18:52:49,675][INFO ][node                     ] [Lady Jacqueline Falsworth Crichton] started
+[2017-03-29 18:52:50,178][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-29 18:52:50,189][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-29 18:52:50,234][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-29 19:18:59,163][INFO ][node                     ] [Lady Jacqueline Falsworth Crichton] stopping ...
+[2017-03-29 19:18:59,197][INFO ][node                     ] [Lady Jacqueline Falsworth Crichton] stopped
+[2017-03-29 19:18:59,198][INFO ][node                     ] [Lady Jacqueline Falsworth Crichton] closing ...
+[2017-03-29 19:18:59,205][INFO ][node                     ] [Lady Jacqueline Falsworth Crichton] closed

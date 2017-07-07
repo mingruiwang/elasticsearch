@@ -1,0 +1,597 @@
+[2017-03-30 10:42:08,977][INFO ][node                     ] [es-node1] version[1.7.3], pid[3499], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 10:42:08,978][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-30 10:42:09,073][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-30 10:42:09,099][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 10:42:11,646][INFO ][node                     ] [es-node1] initialized
+[2017-03-30 10:42:11,646][INFO ][node                     ] [es-node1] starting ...
+[2017-03-30 10:42:11,832][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-30 10:42:11,851][INFO ][discovery                ] [es-node1] elasticsearch/PwdTjI9rSBGDZFFIcRkj-w
+[2017-03-30 10:42:41,851][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-30 10:42:41,858][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.http.BindHttpException: Failed to bind to [9200]
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:269)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.http.HttpServer.doStart(HttpServer.java:89)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:274)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9200
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport$1.onPortNumber(NettyHttpServerTransport.java:260)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:256)
+	... 7 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-30 10:42:41,860][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-30 10:42:41,869][INFO ][node                     ] [es-node1] stopped
+[2017-03-30 10:42:41,869][INFO ][node                     ] [es-node1] closing ...
+[2017-03-30 10:42:41,874][INFO ][node                     ] [es-node1] closed
+[2017-03-30 10:47:51,011][INFO ][node                     ] [es-node1] version[1.7.3], pid[3615], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 10:47:51,012][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-30 10:47:51,115][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-30 10:47:51,144][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 10:47:53,310][INFO ][node                     ] [es-node1] initialized
+[2017-03-30 10:47:53,310][INFO ][node                     ] [es-node1] starting ...
+[2017-03-30 10:47:53,442][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-30 10:47:53,462][INFO ][discovery                ] [es-node1] elasticsearch/xrrkHde1QiyauZlEiRrQcw
+[2017-03-30 10:48:23,462][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-30 10:48:23,469][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.http.BindHttpException: Failed to bind to [9200]
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:269)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.http.HttpServer.doStart(HttpServer.java:89)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:274)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9200
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport$1.onPortNumber(NettyHttpServerTransport.java:260)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:256)
+	... 7 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-30 10:48:23,471][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-30 10:48:23,479][INFO ][node                     ] [es-node1] stopped
+[2017-03-30 10:48:23,479][INFO ][node                     ] [es-node1] closing ...
+[2017-03-30 10:48:23,483][INFO ][node                     ] [es-node1] closed
+[2017-03-30 10:49:21,921][INFO ][node                     ] [es-node1] version[1.7.3], pid[2411], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 10:49:21,928][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-30 10:49:22,024][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-30 10:49:22,052][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 10:49:24,405][INFO ][node                     ] [es-node1] initialized
+[2017-03-30 10:49:24,405][INFO ][node                     ] [es-node1] starting ...
+[2017-03-30 10:49:24,551][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-30 10:49:24,569][INFO ][discovery                ] [es-node1] elasticsearch/5fh_9SyzRO-eGfP5LlOr7w
+[2017-03-30 10:49:54,569][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-30 10:49:54,576][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-30 10:49:54,576][INFO ][node                     ] [es-node1] started
+[2017-03-30 10:50:44,725][INFO ][cluster.service          ] [es-node1] detected_master [Blur][9u0kug34QRCbqFd_6gnsBw][v-c7-es][inet[/192.168.8.81:9301]], added {[Blur][9u0kug34QRCbqFd_6gnsBw][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Blur][9u0kug34QRCbqFd_6gnsBw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-30 10:50:45,367][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-30 10:50:45,368][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-30 10:50:45,371][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-30 12:19:38,367][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 12:19:38,368][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 12:19:38,368][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 12:19:39,116][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 12:19:39,116][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 12:19:39,116][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 12:33:59,485][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 12:33:59,486][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 12:33:59,486][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 12:34:00,215][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 12:34:00,215][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 12:34:00,215][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 12:35:13,585][INFO ][discovery.zen            ] [es-node1] master_left [[Blur][9u0kug34QRCbqFd_6gnsBw][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-03-30 12:35:13,585][WARN ][discovery.zen            ] [es-node1] master left (reason = shut_down), current nodes: {[es-node1][5fh_9SyzRO-eGfP5LlOr7w][v-c7-es][inet[/192.168.8.81:9300]],}
+[2017-03-30 12:35:13,586][INFO ][cluster.service          ] [es-node1] removed {[Blur][9u0kug34QRCbqFd_6gnsBw][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([Blur][9u0kug34QRCbqFd_6gnsBw][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-03-30 12:36:43,683][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-30 12:36:43,841][INFO ][node                     ] [es-node1] stopped
+[2017-03-30 12:36:43,841][INFO ][node                     ] [es-node1] closing ...
+[2017-03-30 12:36:43,854][INFO ][node                     ] [es-node1] closed
+[2017-03-30 14:08:51,047][INFO ][node                     ] [es-node1] version[1.7.3], pid[2785], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 14:08:51,047][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-30 14:08:51,157][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-30 14:08:51,182][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 14:08:53,556][INFO ][node                     ] [es-node1] initialized
+[2017-03-30 14:08:53,556][INFO ][node                     ] [es-node1] starting ...
+[2017-03-30 14:08:53,696][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-30 14:08:53,709][INFO ][discovery                ] [es-node1] elasticsearch/_ScTn5YyRW2r7kE3TlzvzQ
+[2017-03-30 14:09:23,710][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-30 14:09:23,717][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-30 14:09:23,717][INFO ][node                     ] [es-node1] started
+[2017-03-30 14:09:33,812][INFO ][cluster.service          ] [es-node1] new_master [es-node1][_ScTn5YyRW2r7kE3TlzvzQ][v-c7-es][inet[/192.168.8.81:9300]], reason: zen-disco-join (elected_as_master)
+[2017-03-30 14:15:12,363][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-30 14:15:12,391][INFO ][node                     ] [es-node1] stopped
+[2017-03-30 14:15:12,391][INFO ][node                     ] [es-node1] closing ...
+[2017-03-30 14:15:12,399][INFO ][node                     ] [es-node1] closed
+[2017-03-30 14:15:58,790][INFO ][node                     ] [es-node1] version[1.7.3], pid[2432], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 14:15:58,797][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-30 14:15:58,890][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-30 14:15:58,919][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 14:16:01,312][INFO ][node                     ] [es-node1] initialized
+[2017-03-30 14:16:01,312][INFO ][node                     ] [es-node1] starting ...
+[2017-03-30 14:16:01,455][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-30 14:16:01,473][INFO ][discovery                ] [es-node1] elasticsearch/tx9QR8l4Sk-4V27wS7pC7A
+[2017-03-30 14:16:31,473][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-30 14:16:31,480][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-30 14:16:31,480][INFO ][node                     ] [es-node1] started
+[2017-03-30 14:16:41,894][INFO ][discovery.zen            ] [es-node1] failed to send join request to master [[Dweller-in-Darkness][nXV4u8kaRGeGZW1kqsI0pQ][v-c7-es][inet[/192.168.8.81:9301]]], reason [RemoteTransportException[[Dweller-in-Darkness][inet[/192.168.8.81:9301]][internal:discovery/zen/join]]; nested: ElasticsearchIllegalStateException[Node [[Dweller-in-Darkness][nXV4u8kaRGeGZW1kqsI0pQ][v-c7-es][inet[/192.168.8.81:9301]]] not master for join request from [[es-node1][tx9QR8l4Sk-4V27wS7pC7A][v-c7-es][inet[/192.168.8.81:9300]]]]; ], tried [3] times
+[2017-03-30 14:17:01,325][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-30 14:17:01,326][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-30 14:17:21,304][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-30 14:17:21,305][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-30 14:17:21,923][INFO ][cluster.service          ] [es-node1] detected_master [Dweller-in-Darkness][nXV4u8kaRGeGZW1kqsI0pQ][v-c7-es][inet[/192.168.8.81:9301]], added {[Dweller-in-Darkness][nXV4u8kaRGeGZW1kqsI0pQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Dweller-in-Darkness][nXV4u8kaRGeGZW1kqsI0pQ][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-30 14:17:22,579][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-30 14:17:22,590][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-30 14:17:22,613][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-30 14:22:11,457][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:22:11,458][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:22:11,458][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:22:11,458][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:22:11,458][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:22:11,843][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:22:11,844][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:22:11,844][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:22:11,844][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:22:11,844][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:46:27,667][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:46:27,667][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:46:27,667][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:46:27,667][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:46:27,667][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:46:28,055][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:46:28,055][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:46:28,055][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:46:28,055][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:46:28,055][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:47:48,409][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:47:48,409][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:47:48,409][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:47:48,990][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:47:49,078][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:47:49,078][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:47:49,078][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:47:49,078][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 15:08:41,797][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 15:08:41,797][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 15:08:42,338][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 15:08:42,338][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 15:37:18,588][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 15:37:18,588][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 15:37:19,105][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 15:37:19,105][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:00:00,944][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:00:00,944][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:00:01,515][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:00:01,515][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:01:00,067][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:01:00,068][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:01:00,068][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:01:00,068][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:01:00,068][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:01:00,175][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:01:00,175][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:01:00,175][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:01:00,175][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:01:00,175][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:02:00,048][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:02:00,048][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:02:00,048][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:02:00,048][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:02:00,048][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:02:00,140][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:02:00,140][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:02:00,141][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:02:00,141][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:02:00,141][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:03:00,136][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:03:00,137][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:03:00,137][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:03:00,137][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:03:00,137][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:03:00,289][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:03:00,290][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:03:00,290][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:03:00,290][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:03:00,290][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:04:00,051][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:04:00,051][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:04:00,051][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:04:00,051][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:04:00,051][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:04:00,153][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:04:00,153][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:04:00,153][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:04:00,153][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:04:00,153][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:05:00,163][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:05:00,163][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:05:00,163][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:05:00,163][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:05:00,163][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:05:00,304][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:05:00,304][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:05:00,304][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:05:00,304][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:05:00,305][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:06:00,057][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:06:00,058][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:06:00,058][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:06:00,058][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:06:00,058][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:06:00,141][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:06:00,141][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:06:00,141][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:06:00,141][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:06:00,141][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:07:00,066][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:07:00,066][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:07:00,066][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:07:00,066][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:07:00,066][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:07:00,151][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:07:00,151][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:07:00,151][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:07:00,151][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:07:00,151][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:08:00,063][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:08:00,063][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:08:00,063][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:08:00,063][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:08:00,063][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:08:00,126][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:08:00,126][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:08:00,126][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:08:00,126][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:08:00,126][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:09:00,059][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:09:00,059][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:09:00,059][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:09:00,059][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:09:00,059][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:09:00,144][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:09:00,144][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:09:00,144][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:09:00,144][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:09:00,145][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:10:00,054][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:10:00,054][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:10:00,054][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:10:00,054][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:10:00,054][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:10:00,142][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:10:00,142][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:10:00,142][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:10:00,142][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:10:00,143][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:11:00,036][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:11:00,036][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:11:00,036][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:11:00,036][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:11:00,036][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:11:00,099][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:11:00,099][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:11:00,099][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:11:00,099][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:11:00,099][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:12:00,048][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:12:00,048][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:12:00,048][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:12:00,048][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:12:00,048][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:12:00,110][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:12:00,110][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:12:00,110][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:12:00,110][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:12:00,110][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:13:00,104][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:13:00,104][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:13:00,104][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:13:00,104][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:13:00,104][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:13:00,173][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:13:00,173][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:13:00,173][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:13:00,173][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:13:00,173][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:14:00,080][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:14:00,080][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:14:00,080][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:14:00,081][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:14:00,081][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:14:00,155][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:14:00,155][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:14:00,155][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:14:00,155][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:14:00,155][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:00,098][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:15:00,099][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:15:00,099][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:15:00,099][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:15:00,099][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:15:00,166][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:00,166][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:00,166][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:00,166][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:00,166][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:49,437][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-30 17:15:49,484][INFO ][node                     ] [es-node1] stopped
+[2017-03-30 17:15:49,484][INFO ][node                     ] [es-node1] closing ...
+[2017-03-30 17:15:49,487][INFO ][node                     ] [es-node1] closed
+[2017-03-30 18:07:19,487][INFO ][node                     ] [es-node1] version[1.7.3], pid[3902], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 18:07:19,487][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-30 18:07:19,588][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-30 18:07:19,613][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 18:07:22,037][INFO ][node                     ] [es-node1] initialized
+[2017-03-30 18:07:22,037][INFO ][node                     ] [es-node1] starting ...
+[2017-03-30 18:07:22,171][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-30 18:07:22,210][INFO ][discovery                ] [es-node1] elasticsearch/yPGhbHx3RQCBICIsnxMhdw
+[2017-03-30 18:07:52,211][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-30 18:07:52,217][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-30 18:07:52,218][INFO ][node                     ] [es-node1] started
+[2017-03-30 18:08:00,049][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-30 18:08:30,050][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-30 18:08:42,392][INFO ][cluster.service          ] [es-node1] detected_master [Iron Monger][0FMs_lhJQqu5_frGoIUe3w][v-c7-es][inet[/192.168.8.81:9301]], added {[Iron Monger][0FMs_lhJQqu5_frGoIUe3w][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Iron Monger][0FMs_lhJQqu5_frGoIUe3w][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-30 18:08:43,046][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-30 18:08:43,046][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-30 18:08:43,102][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-30 18:09:00,118][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:09:00,118][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:09:00,119][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:09:00,119][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:09:00,119][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:09:00,289][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:09:00,290][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:09:00,290][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:09:00,290][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:09:00,290][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:10:00,039][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:10:00,040][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:10:00,040][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:10:00,040][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:10:00,040][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:10:00,208][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:10:00,209][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:10:00,209][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:10:00,209][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:10:00,209][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:11:00,031][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:11:00,031][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:11:00,031][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:11:00,031][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:11:00,031][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:11:00,116][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:11:00,117][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:11:00,117][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:11:00,117][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:11:00,117][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:12:00,087][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:12:00,087][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:12:00,087][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:12:00,087][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:12:00,087][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:12:00,169][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:12:00,170][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:12:00,170][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:12:00,170][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:12:00,170][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:13:00,043][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:13:00,043][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:13:00,043][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:13:00,043][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:13:00,043][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:13:00,121][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:13:00,121][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:13:00,121][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:13:00,121][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:13:00,121][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:14:00,043][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:14:00,043][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:14:00,043][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:14:00,043][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:14:00,043][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:14:00,156][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:14:00,156][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:14:00,156][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:14:00,156][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:14:00,156][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:15:00,032][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:15:00,032][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:15:00,032][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:15:00,032][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:15:00,032][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:15:00,103][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:15:00,103][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:15:00,103][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:15:00,103][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:15:00,103][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:16:00,114][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:16:00,114][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:16:00,114][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:16:00,115][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:16:00,115][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:16:00,197][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:16:00,197][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:16:00,197][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:16:00,197][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:16:00,197][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:17:00,026][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:17:00,026][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:17:00,026][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:17:00,026][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:17:00,026][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:17:00,090][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:17:00,091][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:17:00,091][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:17:00,091][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:17:00,091][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:00,060][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:00,061][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:00,061][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:00,061][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:00,061][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:00,187][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:00,187][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:00,187][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:00,187][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:00,187][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:01,376][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:01,376][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:01,376][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:01,376][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:01,376][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:01,968][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:01,968][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:01,968][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:01,968][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:01,969][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:19:00,109][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:19:00,109][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:19:00,109][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:19:00,109][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:19:00,109][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:19:00,274][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:19:00,275][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:19:00,275][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:19:00,275][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:19:00,275][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:00,083][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:00,083][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:00,084][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:00,084][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:00,084][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:00,423][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:00,424][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:00,424][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:00,424][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:00,424][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:01,875][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:01,877][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:01,877][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:01,877][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:01,877][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:02,746][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:02,746][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:02,746][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:02,746][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:02,746][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:21:00,199][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:21:00,199][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:21:00,199][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:21:00,199][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:21:00,199][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:21:01,029][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:21:01,029][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:21:01,030][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:21:01,030][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:21:01,030][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:22:00,164][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:22:00,164][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:22:00,164][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:22:00,164][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:22:00,164][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:22:00,393][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:22:00,393][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:22:00,393][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:22:00,394][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:22:00,394][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:23:00,225][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:23:00,225][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:23:00,225][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:23:00,225][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:23:00,225][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:23:00,585][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:23:00,585][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:23:00,585][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:23:00,585][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:23:00,585][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:00,119][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:24:00,119][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:24:00,119][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:24:00,119][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:24:00,119][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:24:00,540][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:00,540][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:00,540][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:00,540][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:00,540][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:27,243][INFO ][discovery.zen            ] [es-node1] master_left [[Iron Monger][0FMs_lhJQqu5_frGoIUe3w][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-03-30 18:24:27,257][WARN ][discovery.zen            ] [es-node1] master left (reason = shut_down), current nodes: {[es-node1][yPGhbHx3RQCBICIsnxMhdw][v-c7-es][inet[/192.168.8.81:9300]],}
+[2017-03-30 18:24:27,258][INFO ][cluster.service          ] [es-node1] removed {[Iron Monger][0FMs_lhJQqu5_frGoIUe3w][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([Iron Monger][0FMs_lhJQqu5_frGoIUe3w][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-03-30 18:24:27,256][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-30 18:24:27,583][INFO ][node                     ] [es-node1] stopped
+[2017-03-30 18:24:27,583][INFO ][node                     ] [es-node1] closing ...
+[2017-03-30 18:24:27,614][INFO ][node                     ] [es-node1] closed
+[2017-03-30 18:44:23,961][INFO ][node                     ] [es-node1] version[1.7.3], pid[2460], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 18:44:23,969][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-30 18:44:24,061][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-30 18:44:24,088][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 18:44:26,502][INFO ][node                     ] [es-node1] initialized
+[2017-03-30 18:44:26,502][INFO ][node                     ] [es-node1] starting ...
+[2017-03-30 18:44:26,666][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-30 18:44:26,683][INFO ][discovery                ] [es-node1] elasticsearch/Gamjc9M1S1i_erQ3rNovAw
+[2017-03-30 18:44:56,684][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-30 18:44:56,690][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-30 18:44:56,690][INFO ][node                     ] [es-node1] started
+[2017-03-30 18:45:17,019][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-30 18:45:17,031][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-30 18:45:37,004][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-30 18:45:37,009][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-30 18:45:47,061][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-30 18:45:47,063][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-30 18:45:47,084][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-30 18:46:07,005][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-30 18:46:07,009][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-30 18:46:17,085][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-30 18:46:17,091][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-30 18:46:47,091][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-30 18:48:26,859][INFO ][cluster.service          ] [es-node1] detected_master [Vanisher][21DuJ7zIREG0DnpIJ7GwQg][v-c7-es][inet[/192.168.8.81:9301]], added {[Vanisher][21DuJ7zIREG0DnpIJ7GwQg][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Vanisher][21DuJ7zIREG0DnpIJ7GwQg][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-30 18:48:27,567][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-30 18:48:27,600][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-30 18:48:27,614][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-30 18:57:16,527][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:57:16,528][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:57:16,528][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:57:16,528][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:57:16,528][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:57:17,096][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:57:17,097][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:57:17,097][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:57:17,097][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:57:17,097][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 19:33:10,911][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-30 19:33:11,007][INFO ][node                     ] [es-node1] stopped
+[2017-03-30 19:33:11,007][INFO ][node                     ] [es-node1] closing ...
+[2017-03-30 19:33:11,009][INFO ][node                     ] [es-node1] closed

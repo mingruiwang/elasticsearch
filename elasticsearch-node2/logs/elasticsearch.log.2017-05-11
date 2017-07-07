@@ -1,0 +1,21 @@
+[2017-05-12 09:50:57,893][INFO ][node                     ] [Jolt] version[1.7.3], pid[4049], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-12 09:50:57,893][INFO ][node                     ] [Jolt] initializing ...
+[2017-05-12 09:50:57,973][INFO ][plugins                  ] [Jolt] loaded [analysis-ik], sites []
+[2017-05-12 09:50:58,007][INFO ][env                      ] [Jolt] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.2gb], net total_space [36.9gb], types [rootfs]
+[2017-05-12 09:50:59,943][INFO ][node                     ] [Jolt] initialized
+[2017-05-12 09:50:59,943][INFO ][node                     ] [Jolt] starting ...
+[2017-05-12 09:51:00,035][INFO ][transport                ] [Jolt] bound_address {inet[/0:0:0:0:0:0:0:0:9302]}, publish_address {inet[/192.168.8.81:9302]}
+[2017-05-12 09:51:00,076][INFO ][discovery                ] [Jolt] elasticsearch/YMTyn7FdSHKlVaGMfqRjHw
+[2017-05-12 09:51:03,213][INFO ][cluster.service          ] [Jolt] detected_master [Agamemnon][BunZuz4-QlGmLRzKnCtfYw][v-c7-es][inet[/192.168.8.81:9301]], added {[Agamemnon][BunZuz4-QlGmLRzKnCtfYw][v-c7-es][inet[/192.168.8.81:9301]],[es-node1][EJdu5G0SQ-G24iiB9ukvmg][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(from master [[Agamemnon][BunZuz4-QlGmLRzKnCtfYw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-12 09:51:03,395][INFO ][gateway.local.state.meta ] [Jolt] [index3] dangling index, exists on local file system, but not in cluster metadata, auto import to cluster state [YES]
+[2017-05-12 09:51:03,397][INFO ][gateway.local.state.meta ] [Jolt] [index] dangling index, exists on local file system, but not in cluster metadata, auto import to cluster state [YES]
+[2017-05-12 09:51:03,398][INFO ][gateway.local.state.meta ] [Jolt] [test1] dangling index, exists on local file system, but not in cluster metadata, auto import to cluster state [YES]
+[2017-05-12 09:51:03,512][INFO ][http                     ] [Jolt] bound_address {inet[/0:0:0:0:0:0:0:0:9202]}, publish_address {inet[/192.168.8.81:9202]}
+[2017-05-12 09:51:03,512][INFO ][node                     ] [Jolt] started
+[2017-05-12 09:51:03,973][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-12 09:51:03,973][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-12 09:51:03,987][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-12 09:56:06,564][INFO ][node                     ] [Jolt] stopping ...
+[2017-05-12 09:56:06,711][INFO ][node                     ] [Jolt] stopped
+[2017-05-12 09:56:06,711][INFO ][node                     ] [Jolt] closing ...
+[2017-05-12 09:56:06,712][INFO ][node                     ] [Jolt] closed

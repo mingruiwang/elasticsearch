@@ -1,0 +1,168 @@
+[2017-03-17 09:32:24,678][INFO ][node                     ] [es-node2] version[1.7.3], pid[4930], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-17 09:32:24,678][INFO ][node                     ] [es-node2] initializing ...
+[2017-03-17 09:32:24,780][INFO ][plugins                  ] [es-node2] loaded [], sites []
+[2017-03-17 09:32:24,810][INFO ][env                      ] [es-node2] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [35.2gb], net total_space [36.9gb], types [rootfs]
+[2017-03-17 09:32:26,909][INFO ][node                     ] [es-node2] initialized
+[2017-03-17 09:32:26,909][INFO ][node                     ] [es-node2] starting ...
+[2017-03-17 09:32:27,008][INFO ][transport                ] [es-node2] bound_address {inet[/192.168.8.81:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-17 09:32:27,036][INFO ][discovery                ] [es-node2] elasticsearch/80eh6BcUQuehWREfk9yHag
+[2017-03-17 09:32:57,036][WARN ][discovery                ] [es-node2] waited for 30s and no initial state was set by the discovery
+[2017-03-17 09:32:57,049][INFO ][http                     ] [es-node2] bound_address {inet[/192.168.8.81:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-17 09:32:57,050][INFO ][node                     ] [es-node2] started
+[2017-03-17 09:33:07,128][INFO ][cluster.service          ] [es-node2] new_master [es-node2][80eh6BcUQuehWREfk9yHag][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-17 09:33:31,492][INFO ][cluster.service          ] [es-node2] added {[es-node1][k_oqBPevQQq5bMq0uCD9Pg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][k_oqBPevQQq5bMq0uCD9Pg][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-17 09:33:31,754][INFO ][gateway                  ] [es-node2] recovered [0] indices into cluster_state
+[2017-03-17 09:55:59,943][INFO ][cluster.metadata         ] [es-node2] [megacorp] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-17 10:11:02,984][INFO ][cluster.metadata         ] [es-node2] [productindex] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-17 10:22:51,886][INFO ][cluster.metadata         ] [es-node2] [megacorp] update_mapping [employee] (dynamic)
+[2017-03-17 10:28:05,940][INFO ][cluster.metadata         ] [es-node2] [productindex] update_mapping [employee] (dynamic)
+[2017-03-17 14:21:44,886][INFO ][cluster.metadata         ] [es-node2] [index] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-17 14:21:44,966][INFO ][node                     ] [es-node2] stopping ...
+[2017-03-17 14:21:45,186][INFO ][node                     ] [es-node2] stopped
+[2017-03-17 14:21:45,186][INFO ][node                     ] [es-node2] closing ...
+[2017-03-17 14:21:45,188][INFO ][node                     ] [es-node2] closed
+[2017-03-17 14:59:58,085][INFO ][node                     ] [es-node2] version[1.7.3], pid[2273], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-17 14:59:58,087][INFO ][node                     ] [es-node2] initializing ...
+[2017-03-17 14:59:58,187][INFO ][plugins                  ] [es-node2] loaded [], sites []
+[2017-03-17 14:59:58,221][INFO ][env                      ] [es-node2] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [35.2gb], net total_space [36.9gb], types [rootfs]
+[2017-03-17 15:00:00,708][INFO ][node                     ] [es-node2] initialized
+[2017-03-17 15:00:00,708][INFO ][node                     ] [es-node2] starting ...
+[2017-03-17 15:00:00,869][INFO ][transport                ] [es-node2] bound_address {inet[/192.168.8.81:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-17 15:00:00,887][INFO ][discovery                ] [es-node2] elasticsearch/Ft3jj3bnT8-9yzQU3xkUjQ
+[2017-03-17 15:00:30,887][WARN ][discovery                ] [es-node2] waited for 30s and no initial state was set by the discovery
+[2017-03-17 15:00:30,893][INFO ][http                     ] [es-node2] bound_address {inet[/192.168.8.81:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-17 15:00:30,893][INFO ][node                     ] [es-node2] started
+[2017-03-17 15:00:40,974][INFO ][cluster.service          ] [es-node2] new_master [es-node2][Ft3jj3bnT8-9yzQU3xkUjQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-17 15:00:44,815][INFO ][cluster.service          ] [es-node2] added {[es-node1][_BJg7gnIS-2JS4Aj6fzpNg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][_BJg7gnIS-2JS4Aj6fzpNg][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-17 15:00:45,017][INFO ][gateway                  ] [es-node2] recovered [3] indices into cluster_state
+[2017-03-17 15:08:24,880][INFO ][node                     ] [es-node2] stopping ...
+[2017-03-17 15:08:24,904][WARN ][discovery.zen            ] [es-node2] not enough master nodes, current nodes: {[es-node2][Ft3jj3bnT8-9yzQU3xkUjQ][v-c7-es][inet[/192.168.8.81:9301]],}
+[2017-03-17 15:08:24,904][INFO ][cluster.service          ] [es-node2] removed {[es-node1][_BJg7gnIS-2JS4Aj6fzpNg][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][_BJg7gnIS-2JS4Aj6fzpNg][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-17 15:08:25,025][INFO ][node                     ] [es-node2] stopped
+[2017-03-17 15:08:25,025][INFO ][node                     ] [es-node2] closing ...
+[2017-03-17 15:08:25,027][INFO ][node                     ] [es-node2] closed
+[2017-03-17 15:44:56,783][INFO ][node                     ] [es-node2] version[1.7.3], pid[2274], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-17 15:44:56,784][INFO ][node                     ] [es-node2] initializing ...
+[2017-03-17 15:44:56,876][INFO ][plugins                  ] [es-node2] loaded [], sites []
+[2017-03-17 15:44:56,900][INFO ][env                      ] [es-node2] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [35.2gb], net total_space [36.9gb], types [rootfs]
+[2017-03-17 15:44:59,076][INFO ][node                     ] [es-node2] initialized
+[2017-03-17 15:44:59,076][INFO ][node                     ] [es-node2] starting ...
+[2017-03-17 15:44:59,223][INFO ][transport                ] [es-node2] bound_address {inet[/192.168.8.81:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-17 15:44:59,230][INFO ][discovery                ] [es-node2] elasticsearch/gE9LvaalS--PO1e0IcO0dw
+[2017-03-17 15:45:29,230][WARN ][discovery                ] [es-node2] waited for 30s and no initial state was set by the discovery
+[2017-03-17 15:45:29,239][INFO ][http                     ] [es-node2] bound_address {inet[/192.168.8.81:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-17 15:45:29,239][INFO ][node                     ] [es-node2] started
+[2017-03-17 15:45:39,314][INFO ][cluster.service          ] [es-node2] new_master [es-node2][gE9LvaalS--PO1e0IcO0dw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-17 15:46:06,432][INFO ][cluster.service          ] [es-node2] added {[es-node1][pX4f1dpPRzWUDdyTsA9M5Q][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][pX4f1dpPRzWUDdyTsA9M5Q][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-17 15:46:06,632][INFO ][gateway                  ] [es-node2] recovered [3] indices into cluster_state
+[2017-03-17 15:54:51,758][INFO ][cluster.metadata         ] [es-node2] [index] deleting index
+[2017-03-17 17:05:27,202][INFO ][cluster.metadata         ] [es-node2] [index] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-17 17:31:55,595][INFO ][cluster.metadata         ] [es-node2] [index] update_mapping [mapping] (dynamic)
+[2017-03-17 17:50:24,993][INFO ][cluster.metadata         ] [es-node2] [[index]] remove_mapping [[mapping]]
+[2017-03-17 18:13:13,613][DEBUG][action.admin.indices.mapping.put] [es-node2] failed to put mappings on indices [[index]], type [fulltext]
+java.lang.NullPointerException
+	at org.elasticsearch.common.xcontent.XContentFactory.xContent(XContentFactory.java:137)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:119)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:107)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:184)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-17 18:21:26,668][DEBUG][action.admin.indices.mapping.put] [es-node2] failed to put mappings on indices [[index]], type [fulltext]
+org.elasticsearch.ElasticsearchParseException: Failed to parse content to map
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:130)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:107)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:184)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unrecognized token 'ik_max_word': was expecting ('true', 'false' or 'null')
+ at [Source: org.elasticsearch.common.compress.lzf.LZFCompressedStreamInput@4a90b0de; line: 1, column: 39]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3323)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2482)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:755)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:268)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readValue(AbstractXContentParser.java:308)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:275)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readValue(AbstractXContentParser.java:308)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:275)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readOrderedMap(AbstractXContentParser.java:258)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrdered(AbstractXContentParser.java:213)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrderedAndClose(AbstractXContentParser.java:228)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:125)
+	... 10 more
+[2017-03-17 18:42:17,758][DEBUG][action.admin.indices.mapping.put] [es-node2] failed to put mappings on indices [[index]], type [fulltext]
+org.elasticsearch.ElasticsearchParseException: Failed to parse content to map
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:130)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:107)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:184)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('\' (code 92)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: org.elasticsearch.common.compress.lzf.LZFCompressedStreamInput@7c09dc8a; line: 1, column: 2]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:447)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2485)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:801)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:697)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:265)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readOrderedMap(AbstractXContentParser.java:258)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrdered(AbstractXContentParser.java:213)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrderedAndClose(AbstractXContentParser.java:228)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:125)
+	... 10 more
+[2017-03-17 18:55:45,708][DEBUG][action.admin.indices.mapping.put] [es-node2] failed to put mappings on indices [[index]], type [fulltext]
+org.elasticsearch.ElasticsearchParseException: Failed to parse content to map
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:130)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:107)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:184)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:204)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('\' (code 92)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: org.elasticsearch.common.compress.lzf.LZFCompressedStreamInput@38a5e88; line: 1, column: 2]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:447)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2485)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:801)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:697)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readMap(AbstractXContentParser.java:265)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.readOrderedMap(AbstractXContentParser.java:258)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrdered(AbstractXContentParser.java:213)
+	at org.elasticsearch.common.xcontent.support.AbstractXContentParser.mapOrderedAndClose(AbstractXContentParser.java:228)
+	at org.elasticsearch.common.xcontent.XContentHelper.convertToMap(XContentHelper.java:125)
+	... 10 more
+[2017-03-17 20:11:46,392][INFO ][node                     ] [es-node2] stopping ...
+[2017-03-17 20:11:46,461][WARN ][discovery.zen            ] [es-node2] not enough master nodes, current nodes: {[es-node2][gE9LvaalS--PO1e0IcO0dw][v-c7-es][inet[/192.168.8.81:9301]],}
+[2017-03-17 20:11:46,462][INFO ][cluster.service          ] [es-node2] removed {[es-node1][pX4f1dpPRzWUDdyTsA9M5Q][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][pX4f1dpPRzWUDdyTsA9M5Q][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-17 20:11:46,570][INFO ][node                     ] [es-node2] stopped
+[2017-03-17 20:11:46,570][INFO ][node                     ] [es-node2] closing ...
+[2017-03-17 20:11:46,586][INFO ][node                     ] [es-node2] closed

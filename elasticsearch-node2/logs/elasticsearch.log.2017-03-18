@@ -1,0 +1,19 @@
+[2017-03-18 12:27:01,678][INFO ][node                     ] [Goliath] version[1.7.3], pid[2715], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-18 12:27:01,678][INFO ][node                     ] [Goliath] initializing ...
+[2017-03-18 12:27:01,771][INFO ][plugins                  ] [Goliath] loaded [], sites []
+[2017-03-18 12:27:01,794][INFO ][env                      ] [Goliath] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [35.2gb], net total_space [36.9gb], types [rootfs]
+[2017-03-18 12:27:04,204][INFO ][node                     ] [Goliath] initialized
+[2017-03-18 12:27:04,204][INFO ][node                     ] [Goliath] starting ...
+[2017-03-18 12:27:04,311][INFO ][transport                ] [Goliath] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-18 12:27:04,344][INFO ][discovery                ] [Goliath] elasticsearch/w3gPS-dOQ3SnlitcAXZyfw
+[2017-03-18 12:27:08,133][INFO ][cluster.service          ] [Goliath] new_master [Goliath][w3gPS-dOQ3SnlitcAXZyfw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-18 12:27:08,177][INFO ][http                     ] [Goliath] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-18 12:27:08,177][INFO ][node                     ] [Goliath] started
+[2017-03-18 12:27:08,294][INFO ][gateway                  ] [Goliath] recovered [3] indices into cluster_state
+[2017-03-18 12:27:19,390][INFO ][cluster.service          ] [Goliath] added {[es-node1][ck0ADnWcQiCLC06D8kTE4g][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][ck0ADnWcQiCLC06D8kTE4g][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-18 17:40:20,203][INFO ][node                     ] [Goliath] stopping ...
+[2017-03-18 17:40:20,297][INFO ][cluster.service          ] [Goliath] removed {[es-node1][ck0ADnWcQiCLC06D8kTE4g][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][ck0ADnWcQiCLC06D8kTE4g][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-18 17:40:20,297][INFO ][cluster.routing          ] [Goliath] delaying allocation for [15] unassigned shards, next check in [59.9s]
+[2017-03-18 17:40:20,746][INFO ][node                     ] [Goliath] stopped
+[2017-03-18 17:40:20,746][INFO ][node                     ] [Goliath] closing ...
+[2017-03-18 17:40:20,748][INFO ][node                     ] [Goliath] closed

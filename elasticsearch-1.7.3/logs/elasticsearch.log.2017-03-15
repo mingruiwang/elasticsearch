@@ -1,0 +1,16 @@
+[2017-03-15 19:45:00,311][INFO ][node                     ] [Nate Grey] version[1.7.3], pid[2429], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-15 19:45:00,312][INFO ][node                     ] [Nate Grey] initializing ...
+[2017-03-15 19:45:00,380][INFO ][plugins                  ] [Nate Grey] loaded [], sites []
+[2017-03-15 19:45:00,404][INFO ][env                      ] [Nate Grey] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [35.3gb], net total_space [36.9gb], types [rootfs]
+[2017-03-15 19:45:02,369][INFO ][node                     ] [Nate Grey] initialized
+[2017-03-15 19:45:02,369][INFO ][node                     ] [Nate Grey] starting ...
+[2017-03-15 19:45:02,507][INFO ][transport                ] [Nate Grey] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-15 19:45:02,538][INFO ][discovery                ] [Nate Grey] elasticsearch/EtaPN4DoToaHI1kPaFcm2Q
+[2017-03-15 19:45:06,316][INFO ][cluster.service          ] [Nate Grey] new_master [Nate Grey][EtaPN4DoToaHI1kPaFcm2Q][v-c7-es][inet[/192.168.8.81:9300]], reason: zen-disco-join (elected_as_master)
+[2017-03-15 19:45:06,334][INFO ][http                     ] [Nate Grey] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-15 19:45:06,334][INFO ][node                     ] [Nate Grey] started
+[2017-03-15 19:45:06,362][INFO ][gateway                  ] [Nate Grey] recovered [0] indices into cluster_state
+[2017-03-15 20:02:34,322][INFO ][node                     ] [Nate Grey] stopping ...
+[2017-03-15 20:02:34,330][INFO ][node                     ] [Nate Grey] stopped
+[2017-03-15 20:02:34,330][INFO ][node                     ] [Nate Grey] closing ...
+[2017-03-15 20:02:34,335][INFO ][node                     ] [Nate Grey] closed

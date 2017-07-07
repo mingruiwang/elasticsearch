@@ -1,0 +1,1681 @@
+[2017-03-23 10:12:21,335][INFO ][node                     ] [es-node1] version[1.7.3], pid[3040], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-23 10:12:21,335][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-23 10:12:21,420][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-23 10:12:21,448][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-23 10:12:23,742][INFO ][node                     ] [es-node1] initialized
+[2017-03-23 10:12:23,742][INFO ][node                     ] [es-node1] starting ...
+[2017-03-23 10:12:23,917][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-23 10:12:23,935][INFO ][discovery                ] [es-node1] elasticsearch/GdxQI0veSquVVy_UEMaUuQ
+[2017-03-23 10:12:53,935][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-23 10:12:53,941][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-23 10:12:53,941][INFO ][node                     ] [es-node1] started
+[2017-03-23 10:13:44,035][INFO ][cluster.service          ] [es-node1] detected_master [Tethlam][30xiWl7bSDmbDCjRGt3Gqw][v-c7-es][inet[/192.168.8.81:9301]], added {[Tethlam][30xiWl7bSDmbDCjRGt3Gqw][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Tethlam][30xiWl7bSDmbDCjRGt3Gqw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-23 10:13:44,749][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-23 10:13:44,749][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-23 10:13:44,754][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-23 11:35:31,263][INFO ][node                     ] [es-node1] version[1.7.3], pid[3195], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-23 11:35:31,263][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-23 11:35:31,370][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-23 11:35:31,417][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-23 11:35:33,523][INFO ][node                     ] [es-node1] initialized
+[2017-03-23 11:35:33,524][INFO ][node                     ] [es-node1] starting ...
+[2017-03-23 11:35:33,628][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.transport.BindTransportException: Failed to bind to [9300]
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:422)
+	at org.elasticsearch.transport.netty.NettyTransport.doStart(NettyTransport.java:283)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.transport.TransportService.doStart(TransportService.java:153)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:257)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9300
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.transport.netty.NettyTransport$1.onPortNumber(NettyTransport.java:413)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:409)
+	... 8 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-23 11:35:33,641][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-23 11:35:33,654][INFO ][node                     ] [es-node1] stopped
+[2017-03-23 11:35:33,654][INFO ][node                     ] [es-node1] closing ...
+[2017-03-23 11:35:33,658][INFO ][node                     ] [es-node1] closed
+[2017-03-23 11:36:35,993][DEBUG][action.search.type       ] [es-node1] [megacorp][0], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@75b43de] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:35,999][DEBUG][action.search.type       ] [es-node1] [megacorp][1], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@75b43de]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:35,999][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:35,996][DEBUG][action.search.type       ] [es-node1] [megacorp][4], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@75b43de] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:35,995][DEBUG][action.search.type       ] [es-node1] [megacorp][2], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@75b43de] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:35,995][DEBUG][action.search.type       ] [es-node1] [megacorp][3], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@75b43de] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:38,433][DEBUG][action.search.type       ] [es-node1] [megacorp][0], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@456c11fc] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:38,433][DEBUG][action.search.type       ] [es-node1] [megacorp][3], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@456c11fc] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:38,437][DEBUG][action.search.type       ] [es-node1] [megacorp][1], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@456c11fc] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:38,440][DEBUG][action.search.type       ] [es-node1] [megacorp][2], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@456c11fc] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:38,458][DEBUG][action.search.type       ] [es-node1] [megacorp][4], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@456c11fc]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:38,458][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:40,509][DEBUG][action.search.type       ] [es-node1] [megacorp][2], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@30c6391f] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:40,511][DEBUG][action.search.type       ] [es-node1] [megacorp][3], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@30c6391f] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:40,513][DEBUG][action.search.type       ] [es-node1] [megacorp][0], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@30c6391f] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:40,514][DEBUG][action.search.type       ] [es-node1] [megacorp][1], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@30c6391f] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:40,523][DEBUG][action.search.type       ] [es-node1] [megacorp][4], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@30c6391f]
+org.elasticsearch.search.SearchParseException: [megacorp][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:40,523][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [megacorp][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:42,921][DEBUG][action.search.type       ] [es-node1] [megacorp][1], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@34e81627] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:42,931][DEBUG][action.search.type       ] [es-node1] [megacorp][3], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@34e81627] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:42,932][DEBUG][action.search.type       ] [es-node1] [megacorp][0], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@34e81627] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:42,933][DEBUG][action.search.type       ] [es-node1] [megacorp][2], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@34e81627] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:42,940][DEBUG][action.search.type       ] [es-node1] [megacorp][4], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@34e81627]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:42,940][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:43,125][DEBUG][action.search.type       ] [es-node1] [megacorp][4], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3bf4692e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:43,126][DEBUG][action.search.type       ] [es-node1] [megacorp][2], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3bf4692e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:43,131][DEBUG][action.search.type       ] [es-node1] [megacorp][0], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3bf4692e] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:43,134][DEBUG][action.search.type       ] [es-node1] [megacorp][1], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3bf4692e] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:43,152][DEBUG][action.search.type       ] [es-node1] [megacorp][3], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3bf4692e]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:43,152][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:43,315][DEBUG][action.search.type       ] [es-node1] [megacorp][1], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@57b9ea5f] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:43,315][DEBUG][action.search.type       ] [es-node1] [megacorp][0], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@57b9ea5f] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:43,315][DEBUG][action.search.type       ] [es-node1] [megacorp][3], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@57b9ea5f] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:43,318][DEBUG][action.search.type       ] [es-node1] [megacorp][4], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@57b9ea5f] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:43,320][DEBUG][action.search.type       ] [es-node1] [megacorp][2], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@57b9ea5f]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:43,320][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:43,491][DEBUG][action.search.type       ] [es-node1] [megacorp][4], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3cdb3c91] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:43,491][DEBUG][action.search.type       ] [es-node1] [megacorp][2], node[GdxQI0veSquVVy_UEMaUuQ], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3cdb3c91] lastShard [true]
+org.elasticsearch.search.SearchParseException: [megacorp][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 9 more
+[2017-03-23 11:36:43,493][DEBUG][action.search.type       ] [es-node1] [megacorp][1], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3cdb3c91] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:43,507][DEBUG][action.search.type       ] [es-node1] [megacorp][0], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3cdb3c91] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:43,508][DEBUG][action.search.type       ] [es-node1] [megacorp][3], node[30xiWl7bSDmbDCjRGt3Gqw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3cdb3c91]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:36:43,508][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Tethlam][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [megacorp][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[],"must_not":[{"exists":{"field":"age"}}],"should":[{"match_all":{}}]}},"from":0,"size":10,"sort":[],"aggs":{}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [megacorp] No query registered for [exists]
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:305)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:100)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:307)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:731)
+	... 10 more
+[2017-03-23 11:52:54,826][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-23 11:52:54,968][INFO ][node                     ] [es-node1] stopped
+[2017-03-23 11:52:54,968][INFO ][node                     ] [es-node1] closing ...
+[2017-03-23 11:52:54,971][INFO ][node                     ] [es-node1] closed
+[2017-03-23 11:58:29,846][INFO ][node                     ] [es-node1] version[1.7.3], pid[2197], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-23 11:58:29,848][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-23 11:58:29,944][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-23 11:58:29,971][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-23 11:58:32,346][INFO ][node                     ] [es-node1] initialized
+[2017-03-23 11:58:32,347][INFO ][node                     ] [es-node1] starting ...
+[2017-03-23 11:58:32,614][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-23 11:58:32,633][INFO ][discovery                ] [es-node1] elasticsearch/RnTJATfNRxuo9s_Nmy6jOg
+[2017-03-23 11:59:02,634][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-23 11:59:02,639][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-23 11:59:02,639][INFO ][node                     ] [es-node1] started
+[2017-03-23 11:59:42,595][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 11:59:42,613][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 11:59:52,728][INFO ][cluster.service          ] [es-node1] detected_master [Avarrish][Z1ul5EDfT4mwQO_s1rMUfQ][v-c7-es][inet[/192.168.8.81:9301]], added {[Avarrish][Z1ul5EDfT4mwQO_s1rMUfQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Avarrish][Z1ul5EDfT4mwQO_s1rMUfQ][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-23 11:59:53,561][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-23 11:59:53,571][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-23 11:59:53,639][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-23 14:23:26,934][DEBUG][action.search.type       ] [es-node1] [index][4], node[Z1ul5EDfT4mwQO_s1rMUfQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@72d3ce52] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Avarrish][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"querry" : {"term" : {"content" : "明天"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][4]: from[-1],size[-1]: Parse Failure [No parser for element [querry]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 10 more
+[2017-03-23 14:23:26,937][DEBUG][action.search.type       ] [es-node1] [index][0], node[Z1ul5EDfT4mwQO_s1rMUfQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@72d3ce52] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Avarrish][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"querry" : {"term" : {"content" : "明天"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [No parser for element [querry]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 10 more
+[2017-03-23 14:23:26,938][DEBUG][action.search.type       ] [es-node1] [index][3], node[Z1ul5EDfT4mwQO_s1rMUfQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@72d3ce52] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Avarrish][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [index][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"querry" : {"term" : {"content" : "明天"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][3]: from[-1],size[-1]: Parse Failure [No parser for element [querry]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 10 more
+[2017-03-23 14:23:26,938][DEBUG][action.search.type       ] [es-node1] [index][1], node[RnTJATfNRxuo9s_Nmy6jOg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@72d3ce52] lastShard [true]
+org.elasticsearch.search.SearchParseException: [index][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"querry" : {"term" : {"content" : "明天"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][1]: from[-1],size[-1]: Parse Failure [No parser for element [querry]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 9 more
+[2017-03-23 14:23:26,959][DEBUG][action.search.type       ] [es-node1] [index][2], node[RnTJATfNRxuo9s_Nmy6jOg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@72d3ce52]
+org.elasticsearch.search.SearchParseException: [index][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"querry" : {"term" : {"content" : "明天"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][2]: from[-1],size[-1]: Parse Failure [No parser for element [querry]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 9 more
+[2017-03-23 14:23:26,959][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [index][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"querry" : {"term" : {"content" : "明天"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][2]: from[-1],size[-1]: Parse Failure [No parser for element [querry]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 9 more
+[2017-03-23 14:23:26,974][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-23 14:23:27,057][INFO ][node                     ] [es-node1] stopped
+[2017-03-23 14:23:27,057][INFO ][node                     ] [es-node1] closing ...
+[2017-03-23 14:23:27,059][INFO ][node                     ] [es-node1] closed
+[2017-03-23 14:36:36,756][INFO ][node                     ] [es-node1] version[1.7.3], pid[2451], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-23 14:36:36,757][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-23 14:36:36,848][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-23 14:36:36,872][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-23 14:36:39,240][INFO ][node                     ] [es-node1] initialized
+[2017-03-23 14:36:39,241][INFO ][node                     ] [es-node1] starting ...
+[2017-03-23 14:36:39,492][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-23 14:36:39,529][INFO ][discovery                ] [es-node1] elasticsearch/RlPPyGH7SdqVaB-uJw0ZjA
+[2017-03-23 14:37:09,529][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-23 14:37:09,535][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-23 14:37:09,535][INFO ][node                     ] [es-node1] started
+[2017-03-23 14:37:28,424][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:28,434][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:30,390][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:30,493][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:30,496][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:33,326][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:33,597][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:33,604][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:45,659][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:45,773][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:45,779][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:48,617][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:48,619][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:48,726][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:48,731][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:49,535][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:49,641][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:49,644][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:49,878][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:49,880][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:49,987][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:49,992][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,061][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,185][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,188][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,375][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,376][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,491][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,494][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,554][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,557][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,670][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,679][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,730][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,731][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,862][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,879][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:50,906][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:51,385][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:51,391][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:51,418][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:52,832][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:52,951][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:52,957][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:53,496][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:53,501][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:53,601][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:53,606][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:54,117][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:54,222][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:54,229][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-23 14:37:58,428][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-23 14:37:58,437][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-23 14:37:59,669][INFO ][cluster.service          ] [es-node1] detected_master [Arena][T0aOd46hSp2J1ryKLtKGQA][v-c7-es][inet[/192.168.8.81:9301]], added {[Arena][T0aOd46hSp2J1ryKLtKGQA][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Arena][T0aOd46hSp2J1ryKLtKGQA][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-23 14:38:00,395][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-23 14:38:00,395][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-23 14:38:00,407][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-23 14:43:13,100][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-23 14:43:13,163][INFO ][node                     ] [es-node1] stopped
+[2017-03-23 14:43:13,163][INFO ][node                     ] [es-node1] closing ...
+[2017-03-23 14:43:13,174][INFO ][node                     ] [es-node1] closed
+[2017-03-23 14:44:38,082][INFO ][node                     ] [es-node1] version[1.7.3], pid[2197], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-23 14:44:38,089][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-23 14:44:38,183][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-23 14:44:38,211][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-23 14:44:40,583][INFO ][node                     ] [es-node1] initialized
+[2017-03-23 14:44:40,583][INFO ][node                     ] [es-node1] starting ...
+[2017-03-23 14:44:40,840][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-23 14:44:40,860][INFO ][discovery                ] [es-node1] elasticsearch/zmIs23JjQ-qDBw-XZFnLNw
+[2017-03-23 14:45:10,860][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-23 14:45:10,867][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-23 14:45:10,867][INFO ][node                     ] [es-node1] started
+[2017-03-23 14:46:00,983][INFO ][cluster.service          ] [es-node1] detected_master [Decay II][o3wb-RSvSOKVLG7FLrgnEA][v-c7-es][inet[/192.168.8.81:9301]], added {[Decay II][o3wb-RSvSOKVLG7FLrgnEA][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Decay II][o3wb-RSvSOKVLG7FLrgnEA][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-23 14:48:01,376][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-23 14:48:01,388][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-23 14:48:01,455][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-23 14:48:02,170][DEBUG][action.index             ] [es-node1] [productindex][2], node[zmIs23JjQ-qDBw-XZFnLNw], [P], s[STARTED]: Failed to execute [index {[productindex][index][AVr57BFjHyWMWOt1FIYv], source[_na_]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse, document is empty
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:562)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareCreate(IndexShard.java:466)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:201)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-23 14:48:48,604][DEBUG][action.index             ] [es-node1] [productindex][4], node[zmIs23JjQ-qDBw-XZFnLNw], [P], s[STARTED]: Failed to execute [index {[productindex][index][AVr57MbcHyWMWOt1FIYw], source[_na_]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse, document is empty
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:562)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareCreate(IndexShard.java:466)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:201)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-23 14:50:43,599][DEBUG][action.index             ] [es-node1] [productindex][2], node[zmIs23JjQ-qDBw-XZFnLNw], [P], s[STARTED]: Failed to execute [index {[productindex][index][1], source[_na_]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse, document is empty
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:562)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:493)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:192)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.performOnPrimary(TransportShardReplicationOperationAction.java:574)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$1.doRun(TransportShardReplicationOperationAction.java:440)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-23 15:05:18,244][DEBUG][action.search.type       ] [es-node1] [productindex][0], node[o3wb-RSvSOKVLG7FLrgnEA], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3fbdb321] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Decay II][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [productindex][0]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@ea1a999; line: 1, column: 0])
+ at [Source: UNKNOWN; line: 4, column: 128]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 10 more
+[2017-03-23 15:05:18,245][DEBUG][action.search.type       ] [es-node1] [productindex][2], node[zmIs23JjQ-qDBw-XZFnLNw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3fbdb321] lastShard [true]
+org.elasticsearch.search.SearchParseException: [productindex][2]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@4f44ca7; line: 1, column: 0])
+ at [Source: [B@4f44ca7; line: 4, column: 52]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 9 more
+[2017-03-23 15:05:18,256][DEBUG][action.search.type       ] [es-node1] [productindex][3], node[o3wb-RSvSOKVLG7FLrgnEA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3fbdb321] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Decay II][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [productindex][3]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@60904ece; line: 1, column: 0])
+ at [Source: UNKNOWN; line: 4, column: 128]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 10 more
+[2017-03-23 15:05:18,257][DEBUG][action.search.type       ] [es-node1] [productindex][1], node[o3wb-RSvSOKVLG7FLrgnEA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3fbdb321] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Decay II][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [productindex][1]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@5c7f6177; line: 1, column: 0])
+ at [Source: UNKNOWN; line: 4, column: 128]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 10 more
+[2017-03-23 15:05:18,275][DEBUG][action.search.type       ] [es-node1] [productindex][4], node[o3wb-RSvSOKVLG7FLrgnEA], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3fbdb321]
+org.elasticsearch.transport.RemoteTransportException: [Decay II][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [productindex][4]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@31b1a03c; line: 1, column: 0])
+ at [Source: UNKNOWN; line: 4, column: 128]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 10 more
+[2017-03-23 15:05:18,275][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Decay II][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [productindex][4]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@31b1a03c; line: 1, column: 0])
+ at [Source: UNKNOWN; line: 4, column: 128]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 10 more
+[2017-03-23 15:11:36,038][DEBUG][action.search.type       ] [es-node1] [productindex][2], node[zmIs23JjQ-qDBw-XZFnLNw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@32988ebd] lastShard [true]
+org.elasticsearch.search.SearchParseException: [productindex][2]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@482702b9; line: 1, column: 0])
+ at [Source: [B@482702b9; line: 4, column: 52]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 9 more
+[2017-03-23 15:11:36,041][DEBUG][action.search.type       ] [es-node1] [productindex][0], node[o3wb-RSvSOKVLG7FLrgnEA], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@32988ebd] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Decay II][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [productindex][0]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@6c420874; line: 1, column: 0])
+ at [Source: UNKNOWN; line: 4, column: 128]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 10 more
+[2017-03-23 15:11:36,045][DEBUG][action.search.type       ] [es-node1] [productindex][3], node[o3wb-RSvSOKVLG7FLrgnEA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@32988ebd] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Decay II][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [productindex][3]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@4016cad0; line: 1, column: 0])
+ at [Source: UNKNOWN; line: 4, column: 128]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 10 more
+[2017-03-23 15:11:36,046][DEBUG][action.search.type       ] [es-node1] [productindex][1], node[o3wb-RSvSOKVLG7FLrgnEA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@32988ebd] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Decay II][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [productindex][1]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@4227109f; line: 1, column: 0])
+ at [Source: UNKNOWN; line: 4, column: 128]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 10 more
+[2017-03-23 15:11:36,050][DEBUG][action.search.type       ] [es-node1] [productindex][4], node[o3wb-RSvSOKVLG7FLrgnEA], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@32988ebd]
+org.elasticsearch.transport.RemoteTransportException: [Decay II][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [productindex][4]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@15a5009e; line: 1, column: 0])
+ at [Source: UNKNOWN; line: 4, column: 128]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 10 more
+[2017-03-23 15:11:36,051][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Decay II][inet[/192.168.8.81:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [productindex][4]: query[age:29],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"query" : {
+"term" : {
+"age" : 29 }}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:306)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected end-of-input: expected close marker for OBJECT (from [Source: [B@15a5009e; line: 1, column: 0])
+ at [Source: UNKNOWN; line: 4, column: 128]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1487)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:455)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._handleEOF(ParserBase.java:502)
+	at org.elasticsearch.common.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:510)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2729)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:652)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:723)
+	... 10 more
+[2017-03-23 15:12:35,754][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-23 15:12:35,834][INFO ][node                     ] [es-node1] stopped
+[2017-03-23 15:12:35,835][INFO ][node                     ] [es-node1] closing ...
+[2017-03-23 15:12:35,837][INFO ][node                     ] [es-node1] closed
+[2017-03-23 15:17:53,934][INFO ][node                     ] [es-node1] version[1.7.3], pid[2267], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-23 15:17:53,945][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-23 15:17:54,015][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-23 15:17:54,045][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-23 15:17:56,493][INFO ][node                     ] [es-node1] initialized
+[2017-03-23 15:17:56,493][INFO ][node                     ] [es-node1] starting ...
+[2017-03-23 15:17:56,664][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-23 15:17:56,671][INFO ][discovery                ] [es-node1] elasticsearch/4XVmN0AfQxyV5m2xTwDiRA
+[2017-03-23 15:18:26,672][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-23 15:18:26,678][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-23 15:18:26,678][INFO ][node                     ] [es-node1] started
+[2017-03-23 15:19:16,741][INFO ][cluster.service          ] [es-node1] detected_master [Ironclad][po3af1VySD-yMKL5JRkdrQ][v-c7-es][inet[/192.168.8.81:9301]], added {[Ironclad][po3af1VySD-yMKL5JRkdrQ][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Ironclad][po3af1VySD-yMKL5JRkdrQ][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-23 15:19:17,387][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-23 15:19:17,398][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-23 15:19:17,426][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-23 16:46:26,276][DEBUG][action.search.type       ] [es-node1] [index][0], node[4XVmN0AfQxyV5m2xTwDiRA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@15e941f0]
+org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"term":{
+"content" : "明天是个好日子"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:333)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:330)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [No parser for element [term]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 9 more
+[2017-03-23 16:46:26,278][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query_fetch]
+org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+"term":{
+"content" : "明天是个好日子"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:747)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:572)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:544)
+	at org.elasticsearch.search.SearchService.executeFetchPhase(SearchService.java:385)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:333)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$11.call(SearchServiceTransportAction.java:330)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [index][0]: from[-1],size[-1]: Parse Failure [No parser for element [term]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:729)
+	... 9 more
+[2017-03-23 19:37:42,296][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-23 19:37:42,407][INFO ][discovery.zen            ] [es-node1] master_left [[Ironclad][po3af1VySD-yMKL5JRkdrQ][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-03-23 19:37:42,495][INFO ][node                     ] [es-node1] stopped
+[2017-03-23 19:37:42,495][INFO ][node                     ] [es-node1] closing ...
+[2017-03-23 19:37:42,498][INFO ][node                     ] [es-node1] closed

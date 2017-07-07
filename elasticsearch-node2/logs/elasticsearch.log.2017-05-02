@@ -1,0 +1,60 @@
+[2017-05-02 09:12:15,779][INFO ][node                     ] [Susan Richards] version[1.7.3], pid[3893], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-02 09:12:15,782][INFO ][node                     ] [Susan Richards] initializing ...
+[2017-05-02 09:12:15,882][INFO ][plugins                  ] [Susan Richards] loaded [analysis-ik], sites []
+[2017-05-02 09:12:15,905][INFO ][env                      ] [Susan Richards] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.1gb], net total_space [36.9gb], types [rootfs]
+[2017-05-02 09:12:18,230][INFO ][node                     ] [Susan Richards] initialized
+[2017-05-02 09:12:18,230][INFO ][node                     ] [Susan Richards] starting ...
+[2017-05-02 09:12:18,352][INFO ][transport                ] [Susan Richards] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-05-02 09:12:18,383][INFO ][discovery                ] [Susan Richards] elasticsearch/BAUuLtjMQa23yEo5_M5ESw
+[2017-05-02 09:12:22,161][INFO ][cluster.service          ] [Susan Richards] new_master [Susan Richards][BAUuLtjMQa23yEo5_M5ESw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-05-02 09:12:22,205][INFO ][http                     ] [Susan Richards] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-05-02 09:12:22,205][INFO ][node                     ] [Susan Richards] started
+[2017-05-02 09:12:22,268][INFO ][gateway                  ] [Susan Richards] recovered [3] indices into cluster_state
+[2017-05-02 09:12:23,279][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-02 09:12:23,289][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-02 09:12:23,355][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-02 09:12:45,882][INFO ][cluster.service          ] [Susan Richards] added {[es-node1][-8vmh8wUSOOU4Mytmx_A1Q][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(join from node[[es-node1][-8vmh8wUSOOU4Mytmx_A1Q][v-c7-es][inet[/127.0.0.1:9300]]])
+[2017-05-02 15:00:47,693][INFO ][node                     ] [Stentor] version[1.7.3], pid[5025], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-02 15:00:47,693][INFO ][node                     ] [Stentor] initializing ...
+[2017-05-02 15:00:47,790][INFO ][plugins                  ] [Stentor] loaded [analysis-ik], sites []
+[2017-05-02 15:00:47,828][INFO ][env                      ] [Stentor] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.6gb], net total_space [36.9gb], types [rootfs]
+[2017-05-02 15:00:49,952][INFO ][node                     ] [Stentor] initialized
+[2017-05-02 15:00:49,952][INFO ][node                     ] [Stentor] starting ...
+[2017-05-02 15:00:50,141][INFO ][transport                ] [Stentor] bound_address {inet[/0:0:0:0:0:0:0:0:9302]}, publish_address {inet[/192.168.8.81:9302]}
+[2017-05-02 15:00:50,185][INFO ][discovery                ] [Stentor] elasticsearch/iUjWmAtKRviOdsYreKVpsg
+[2017-05-02 15:00:53,257][INFO ][cluster.service          ] [Susan Richards] added {[Stentor][iUjWmAtKRviOdsYreKVpsg][v-c7-es][inet[/192.168.8.81:9302]],}, reason: zen-disco-receive(join from node[[Stentor][iUjWmAtKRviOdsYreKVpsg][v-c7-es][inet[/192.168.8.81:9302]]])
+[2017-05-02 15:00:53,284][INFO ][cluster.service          ] [Stentor] detected_master [Susan Richards][BAUuLtjMQa23yEo5_M5ESw][v-c7-es][inet[/192.168.8.81:9301]], added {[Susan Richards][BAUuLtjMQa23yEo5_M5ESw][v-c7-es][inet[/192.168.8.81:9301]],[es-node1][-8vmh8wUSOOU4Mytmx_A1Q][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(from master [[Susan Richards][BAUuLtjMQa23yEo5_M5ESw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-05-02 15:00:53,608][INFO ][http                     ] [Stentor] bound_address {inet[/0:0:0:0:0:0:0:0:9202]}, publish_address {inet[/192.168.8.81:9202]}
+[2017-05-02 15:00:53,608][INFO ][node                     ] [Stentor] started
+[2017-05-02 15:00:54,186][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-02 15:00:54,186][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-02 15:00:54,187][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-02 15:57:47,188][INFO ][node                     ] [Stentor] stopping ...
+[2017-05-02 15:57:47,189][INFO ][node                     ] [Susan Richards] stopping ...
+[2017-05-02 15:57:47,282][INFO ][node                     ] [Susan Richards] stopped
+[2017-05-02 15:57:47,282][INFO ][node                     ] [Susan Richards] closing ...
+[2017-05-02 15:57:47,284][INFO ][node                     ] [Susan Richards] closed
+[2017-05-02 15:57:47,340][INFO ][node                     ] [Stentor] stopped
+[2017-05-02 15:57:47,340][INFO ][node                     ] [Stentor] closing ...
+[2017-05-02 15:57:47,342][INFO ][node                     ] [Stentor] closed
+[2017-05-02 15:59:34,692][INFO ][node                     ] [Oblivion] version[1.7.3], pid[2491], build[05d4530/2015-10-15T09:14:17Z]
+[2017-05-02 15:59:34,695][INFO ][node                     ] [Oblivion] initializing ...
+[2017-05-02 15:59:34,797][INFO ][plugins                  ] [Oblivion] loaded [analysis-ik], sites []
+[2017-05-02 15:59:34,820][INFO ][env                      ] [Oblivion] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [31.7gb], net total_space [36.9gb], types [rootfs]
+[2017-05-02 15:59:37,105][INFO ][node                     ] [Oblivion] initialized
+[2017-05-02 15:59:37,105][INFO ][node                     ] [Oblivion] starting ...
+[2017-05-02 15:59:37,331][INFO ][transport                ] [Oblivion] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-05-02 15:59:37,377][INFO ][discovery                ] [Oblivion] elasticsearch/GUMLv0BcQAmIZhggH7OJ1g
+[2017-05-02 15:59:41,202][INFO ][cluster.service          ] [Oblivion] new_master [Oblivion][GUMLv0BcQAmIZhggH7OJ1g][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-05-02 15:59:41,295][INFO ][http                     ] [Oblivion] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-05-02 15:59:41,295][INFO ][node                     ] [Oblivion] started
+[2017-05-02 15:59:41,329][INFO ][gateway                  ] [Oblivion] recovered [3] indices into cluster_state
+[2017-05-02 15:59:42,144][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-05-02 15:59:42,145][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-05-02 15:59:42,167][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-05-02 16:00:19,321][INFO ][cluster.service          ] [Oblivion] added {[es-node1][VgqiXd-UQC2nLj4zJ7AVNw][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(join from node[[es-node1][VgqiXd-UQC2nLj4zJ7AVNw][v-c7-es][inet[/127.0.0.1:9300]]])
+[2017-05-02 16:12:35,518][INFO ][cluster.metadata         ] [Oblivion] [test1] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [type]
+[2017-05-02 19:05:43,908][INFO ][node                     ] [Oblivion] stopping ...
+[2017-05-02 19:05:44,043][INFO ][node                     ] [Oblivion] stopped
+[2017-05-02 19:05:44,043][INFO ][node                     ] [Oblivion] closing ...
+[2017-05-02 19:05:44,045][INFO ][node                     ] [Oblivion] closed

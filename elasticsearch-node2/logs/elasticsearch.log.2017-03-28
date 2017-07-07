@@ -1,0 +1,220 @@
+[2017-03-28 09:49:12,997][INFO ][node                     ] [Slyde] version[1.7.3], pid[2534], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 09:49:12,997][INFO ][node                     ] [Slyde] initializing ...
+[2017-03-28 09:49:13,082][INFO ][plugins                  ] [Slyde] loaded [analysis-ik], sites []
+[2017-03-28 09:49:13,104][INFO ][env                      ] [Slyde] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 09:49:15,252][INFO ][node                     ] [Slyde] initialized
+[2017-03-28 09:49:15,253][INFO ][node                     ] [Slyde] starting ...
+[2017-03-28 09:49:15,378][INFO ][transport                ] [Slyde] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-28 09:49:15,410][INFO ][discovery                ] [Slyde] elasticsearch/YASorybUSMOsTCVwkP2vPw
+[2017-03-28 09:49:19,189][INFO ][cluster.service          ] [Slyde] new_master [Slyde][YASorybUSMOsTCVwkP2vPw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-28 09:49:19,233][INFO ][http                     ] [Slyde] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-28 09:49:19,233][INFO ][node                     ] [Slyde] started
+[2017-03-28 09:49:19,285][INFO ][gateway                  ] [Slyde] recovered [2] indices into cluster_state
+[2017-03-28 09:49:19,880][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-28 09:49:19,881][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-28 09:49:19,891][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-28 09:49:34,000][INFO ][cluster.service          ] [Slyde] added {[es-node1][5bfvtEhsSdmR8tH2dPTZaw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][5bfvtEhsSdmR8tH2dPTZaw][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-28 14:23:51,952][INFO ][node                     ] [Slyde] stopping ...
+[2017-03-28 14:23:51,954][INFO ][cluster.service          ] [Slyde] removed {[es-node1][5bfvtEhsSdmR8tH2dPTZaw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][5bfvtEhsSdmR8tH2dPTZaw][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-28 14:23:51,954][INFO ][cluster.routing          ] [Slyde] delaying allocation for [6] unassigned shards, next check in [59.9s]
+[2017-03-28 14:23:52,276][INFO ][node                     ] [Slyde] stopped
+[2017-03-28 14:23:52,276][INFO ][node                     ] [Slyde] closing ...
+[2017-03-28 14:23:52,278][INFO ][node                     ] [Slyde] closed
+[2017-03-28 14:26:46,783][INFO ][node                     ] [Humbug] version[1.7.3], pid[2260], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 14:26:46,796][INFO ][node                     ] [Humbug] initializing ...
+[2017-03-28 14:26:46,865][INFO ][plugins                  ] [Humbug] loaded [analysis-ik], sites []
+[2017-03-28 14:26:46,889][INFO ][env                      ] [Humbug] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 14:26:49,215][INFO ][node                     ] [Humbug] initialized
+[2017-03-28 14:26:49,215][INFO ][node                     ] [Humbug] starting ...
+[2017-03-28 14:26:49,379][INFO ][transport                ] [Humbug] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-28 14:26:49,411][INFO ][discovery                ] [Humbug] elasticsearch/N6rZEajdTb6SWr8UpiiM9g
+[2017-03-28 14:26:53,197][INFO ][cluster.service          ] [Humbug] new_master [Humbug][N6rZEajdTb6SWr8UpiiM9g][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-28 14:26:53,257][INFO ][http                     ] [Humbug] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-28 14:26:53,257][INFO ][node                     ] [Humbug] started
+[2017-03-28 14:26:53,298][INFO ][gateway                  ] [Humbug] recovered [2] indices into cluster_state
+[2017-03-28 14:26:53,949][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-28 14:26:53,949][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-28 14:26:53,952][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-28 14:27:30,589][INFO ][cluster.service          ] [Humbug] added {[es-node1][lfLpEHViSAKV03YXmaY_1Q][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][lfLpEHViSAKV03YXmaY_1Q][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-28 18:01:46,464][INFO ][cluster.metadata         ] [Humbug] [myindex] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-28 18:01:46,593][INFO ][node                     ] [Humbug] stopping ...
+[2017-03-28 18:01:46,805][INFO ][node                     ] [Humbug] stopped
+[2017-03-28 18:01:46,805][INFO ][node                     ] [Humbug] closing ...
+[2017-03-28 18:01:46,806][INFO ][node                     ] [Humbug] closed
+[2017-03-28 18:08:41,082][INFO ][node                     ] [Copperhead] version[1.7.3], pid[2639], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 18:08:41,082][INFO ][node                     ] [Copperhead] initializing ...
+[2017-03-28 18:08:41,157][INFO ][plugins                  ] [Copperhead] loaded [analysis-ik], sites []
+[2017-03-28 18:08:41,183][INFO ][env                      ] [Copperhead] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 18:08:43,309][INFO ][node                     ] [Copperhead] initialized
+[2017-03-28 18:08:43,309][INFO ][node                     ] [Copperhead] starting ...
+[2017-03-28 18:08:43,381][INFO ][transport                ] [Copperhead] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-28 18:08:43,412][INFO ][discovery                ] [Copperhead] elasticsearch/RudyyaDXTfCq8aI5z81OWQ
+[2017-03-28 18:08:47,190][INFO ][cluster.service          ] [Copperhead] new_master [Copperhead][RudyyaDXTfCq8aI5z81OWQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-28 18:08:47,238][INFO ][http                     ] [Copperhead] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-28 18:08:47,238][INFO ][node                     ] [Copperhead] started
+[2017-03-28 18:08:47,346][INFO ][gateway                  ] [Copperhead] recovered [3] indices into cluster_state
+[2017-03-28 18:08:47,868][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-28 18:08:47,868][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-28 18:08:47,869][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-28 18:11:25,479][DEBUG][action.search.type       ] [Copperhead] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:14:29,220][INFO ][node                     ] [Copperhead] stopping ...
+[2017-03-28 18:14:29,346][INFO ][node                     ] [Copperhead] stopped
+[2017-03-28 18:14:29,346][INFO ][node                     ] [Copperhead] closing ...
+[2017-03-28 18:14:29,348][INFO ][node                     ] [Copperhead] closed
+[2017-03-28 18:15:16,951][INFO ][node                     ] [Ankhi] version[1.7.3], pid[2251], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 18:15:16,963][INFO ][node                     ] [Ankhi] initializing ...
+[2017-03-28 18:15:17,035][INFO ][plugins                  ] [Ankhi] loaded [analysis-ik], sites []
+[2017-03-28 18:15:17,059][INFO ][env                      ] [Ankhi] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 18:15:19,302][INFO ][node                     ] [Ankhi] initialized
+[2017-03-28 18:15:19,302][INFO ][node                     ] [Ankhi] starting ...
+[2017-03-28 18:15:19,428][INFO ][transport                ] [Ankhi] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-28 18:15:19,461][INFO ][discovery                ] [Ankhi] elasticsearch/RnYKVZ4ATqetBXlc__65Eg
+[2017-03-28 18:15:23,236][INFO ][cluster.service          ] [Ankhi] new_master [Ankhi][RnYKVZ4ATqetBXlc__65Eg][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-28 18:15:23,279][INFO ][http                     ] [Ankhi] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-28 18:15:23,279][INFO ][node                     ] [Ankhi] started
+[2017-03-28 18:15:23,319][INFO ][gateway                  ] [Ankhi] recovered [3] indices into cluster_state
+[2017-03-28 18:15:23,846][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-28 18:15:23,857][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-28 18:15:23,902][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-28 18:21:44,928][INFO ][node                     ] [Ankhi] stopping ...
+[2017-03-28 18:21:45,044][INFO ][node                     ] [Ankhi] stopped
+[2017-03-28 18:21:45,044][INFO ][node                     ] [Ankhi] closing ...
+[2017-03-28 18:21:45,046][INFO ][node                     ] [Ankhi] closed
+[2017-03-28 18:23:16,104][INFO ][node                     ] [Barracuda] version[1.7.3], pid[2382], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 18:23:16,104][INFO ][node                     ] [Barracuda] initializing ...
+[2017-03-28 18:23:16,178][INFO ][plugins                  ] [Barracuda] loaded [analysis-ik], sites []
+[2017-03-28 18:23:16,203][INFO ][env                      ] [Barracuda] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 18:23:18,402][INFO ][node                     ] [Barracuda] initialized
+[2017-03-28 18:23:18,402][INFO ][node                     ] [Barracuda] starting ...
+[2017-03-28 18:23:18,465][INFO ][transport                ] [Barracuda] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-28 18:23:18,475][INFO ][discovery                ] [Barracuda] elasticsearch/nLe1aqgWQ1qHlmTaXFpbJw
+[2017-03-28 18:23:22,251][INFO ][cluster.service          ] [Barracuda] new_master [Barracuda][nLe1aqgWQ1qHlmTaXFpbJw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-28 18:23:22,322][INFO ][http                     ] [Barracuda] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-28 18:23:22,322][INFO ][node                     ] [Barracuda] started
+[2017-03-28 18:23:22,442][INFO ][gateway                  ] [Barracuda] recovered [3] indices into cluster_state
+[2017-03-28 18:23:22,960][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-28 18:23:22,960][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-28 18:23:22,962][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-28 18:23:25,663][INFO ][cluster.service          ] [Barracuda] added {[es-node1][TvIyYmAhSjOMSbIn1OIUEQ][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][TvIyYmAhSjOMSbIn1OIUEQ][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-28 18:30:59,319][INFO ][cluster.metadata         ] [Barracuda] [productindex] deleting index
+[2017-03-28 18:36:04,323][INFO ][cluster.metadata         ] [Barracuda] [myindex] deleting index
+[2017-03-28 18:36:28,712][INFO ][cluster.metadata         ] [Barracuda] [myindex] creating index, cause [api], templates [], shards [1]/[1], mappings []
+[2017-03-28 18:39:14,482][INFO ][index.shard              ] [Barracuda] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:40:44,870][INFO ][index.shard              ] [Barracuda] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:42:02,044][INFO ][index.shard              ] [Barracuda] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:43:32,282][INFO ][index.shard              ] [Barracuda] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:44:02,100][INFO ][index.shard              ] [Barracuda] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:44:21,887][INFO ][cluster.metadata         ] [Barracuda] [myindex] deleting index
+[2017-03-28 18:45:37,732][INFO ][cluster.metadata         ] [Barracuda] [myindex] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-28 18:45:38,181][INFO ][index.shard              ] [Barracuda] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:45:38,181][INFO ][index.shard              ] [Barracuda] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:45:38,181][INFO ][index.shard              ] [Barracuda] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:47:08,519][INFO ][index.shard              ] [Barracuda] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:47:08,519][INFO ][index.shard              ] [Barracuda] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:47:08,519][INFO ][index.shard              ] [Barracuda] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:48:17,362][INFO ][cluster.metadata         ] [Barracuda] [myindex] update_mapping [mytype] (dynamic)
+[2017-03-28 18:55:32,081][INFO ][index.shard              ] [Barracuda] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:55:32,081][INFO ][index.shard              ] [Barracuda] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:55:32,081][INFO ][index.shard              ] [Barracuda] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:55:32,081][INFO ][index.shard              ] [Barracuda] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:55:32,081][INFO ][index.shard              ] [Barracuda] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:56:22,662][INFO ][cluster.metadata         ] [Barracuda] [myindex] deleting index
+[2017-03-28 18:57:10,416][INFO ][cluster.metadata         ] [Barracuda] [myindex] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-28 18:57:10,993][INFO ][index.shard              ] [Barracuda] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:57:10,993][INFO ][index.shard              ] [Barracuda] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:57:10,993][INFO ][index.shard              ] [Barracuda] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:58:41,324][INFO ][index.shard              ] [Barracuda] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:58:41,324][INFO ][index.shard              ] [Barracuda] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:58:41,324][INFO ][index.shard              ] [Barracuda] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:10:59,564][INFO ][node                     ] [Barracuda] stopping ...
+[2017-03-28 19:10:59,591][INFO ][node                     ] [Barracuda] stopped
+[2017-03-28 19:10:59,591][INFO ][node                     ] [Barracuda] closing ...
+[2017-03-28 19:10:59,594][INFO ][node                     ] [Barracuda] closed
+[2017-03-28 19:14:48,227][INFO ][node                     ] [Swordsman] version[1.7.3], pid[2261], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 19:14:48,239][INFO ][node                     ] [Swordsman] initializing ...
+[2017-03-28 19:14:48,328][INFO ][plugins                  ] [Swordsman] loaded [analysis-ik], sites []
+[2017-03-28 19:14:48,350][INFO ][env                      ] [Swordsman] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 19:14:50,711][INFO ][node                     ] [Swordsman] initialized
+[2017-03-28 19:14:50,711][INFO ][node                     ] [Swordsman] starting ...
+[2017-03-28 19:14:50,835][INFO ][transport                ] [Swordsman] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-28 19:14:50,871][INFO ][discovery                ] [Swordsman] elasticsearch/9qmgiwg6Q8-5tg8grFnM_g
+[2017-03-28 19:14:54,650][INFO ][cluster.service          ] [Swordsman] new_master [Swordsman][9qmgiwg6Q8-5tg8grFnM_g][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-28 19:14:54,698][INFO ][http                     ] [Swordsman] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-28 19:14:54,698][INFO ][node                     ] [Swordsman] started
+[2017-03-28 19:14:54,762][INFO ][gateway                  ] [Swordsman] recovered [2] indices into cluster_state
+[2017-03-28 19:14:55,268][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-28 19:14:55,279][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-28 19:14:55,324][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-28 19:15:28,836][INFO ][cluster.service          ] [Swordsman] added {[es-node1][6s23RnjWTySv77KZWCmPIw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][6s23RnjWTySv77KZWCmPIw][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-28 19:22:09,117][INFO ][index.shard              ] [Swordsman] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-28 19:22:09,118][INFO ][index.shard              ] [Swordsman] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 19:22:09,118][INFO ][index.shard              ] [Swordsman] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-28 19:22:09,118][INFO ][index.shard              ] [Swordsman] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-28 19:22:09,118][INFO ][index.shard              ] [Swordsman] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-28 19:23:39,451][INFO ][index.shard              ] [Swordsman] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:23:39,451][INFO ][index.shard              ] [Swordsman] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:23:39,452][INFO ][index.shard              ] [Swordsman] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:23:39,452][INFO ][index.shard              ] [Swordsman] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:23:39,452][INFO ][index.shard              ] [Swordsman] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:23:59,967][INFO ][cluster.metadata         ] [Swordsman] [myindex] update_mapping [mytype] (dynamic)
+[2017-03-28 19:25:47,251][INFO ][node                     ] [Swordsman] stopping ...
+[2017-03-28 19:25:47,428][INFO ][node                     ] [Swordsman] stopped
+[2017-03-28 19:25:47,428][INFO ][node                     ] [Swordsman] closing ...
+[2017-03-28 19:25:47,430][INFO ][node                     ] [Swordsman] closed

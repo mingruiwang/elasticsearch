@@ -1,0 +1,20 @@
+[2017-04-14 09:41:31,357][INFO ][node                     ] [Fateball] version[1.7.3], pid[2924], build[05d4530/2015-10-15T09:14:17Z]
+[2017-04-14 09:41:31,360][INFO ][node                     ] [Fateball] initializing ...
+[2017-04-14 09:41:31,458][INFO ][plugins                  ] [Fateball] loaded [analysis-ik], sites []
+[2017-04-14 09:41:31,481][INFO ][env                      ] [Fateball] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.5gb], net total_space [36.9gb], types [rootfs]
+[2017-04-14 09:41:33,948][INFO ][node                     ] [Fateball] initialized
+[2017-04-14 09:41:33,948][INFO ][node                     ] [Fateball] starting ...
+[2017-04-14 09:41:34,029][INFO ][transport                ] [Fateball] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-04-14 09:41:34,061][INFO ][discovery                ] [Fateball] elasticsearch/2qGB00cKTLC7xdSrz4Zzaw
+[2017-04-14 09:41:37,839][INFO ][cluster.service          ] [Fateball] new_master [Fateball][2qGB00cKTLC7xdSrz4Zzaw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-04-14 09:41:37,885][INFO ][http                     ] [Fateball] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-04-14 09:41:37,886][INFO ][node                     ] [Fateball] started
+[2017-04-14 09:41:37,926][INFO ][gateway                  ] [Fateball] recovered [3] indices into cluster_state
+[2017-04-14 09:41:38,411][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-04-14 09:41:38,433][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-04-14 09:41:38,499][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-04-14 09:41:56,402][INFO ][cluster.service          ] [Fateball] added {[es-node1][jhufPKFQROWBUk4ZB5lKrA][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(join from node[[es-node1][jhufPKFQROWBUk4ZB5lKrA][v-c7-es][inet[/127.0.0.1:9300]]])
+[2017-04-14 19:16:45,079][INFO ][node                     ] [Fateball] stopping ...
+[2017-04-14 19:16:45,259][INFO ][node                     ] [Fateball] stopped
+[2017-04-14 19:16:45,259][INFO ][node                     ] [Fateball] closing ...
+[2017-04-14 19:16:45,262][INFO ][node                     ] [Fateball] closed

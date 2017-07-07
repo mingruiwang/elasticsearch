@@ -1,0 +1,552 @@
+[2017-03-30 10:42:24,051][INFO ][node                     ] [Eel] version[1.7.3], pid[3551], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 10:42:24,051][INFO ][node                     ] [Eel] initializing ...
+[2017-03-30 10:42:24,135][INFO ][plugins                  ] [Eel] loaded [analysis-ik], sites []
+[2017-03-30 10:42:24,157][INFO ][env                      ] [Eel] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 10:42:26,515][INFO ][node                     ] [Eel] initialized
+[2017-03-30 10:42:26,515][INFO ][node                     ] [Eel] starting ...
+[2017-03-30 10:42:26,679][INFO ][transport                ] [Eel] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-30 10:42:26,712][INFO ][discovery                ] [Eel] elasticsearch/gK1wYORWSYOZGtb7_RF8Uw
+[2017-03-30 10:42:30,490][INFO ][cluster.service          ] [Eel] new_master [Eel][gK1wYORWSYOZGtb7_RF8Uw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-30 10:42:30,529][INFO ][http                     ] [Eel] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-30 10:42:30,529][INFO ][node                     ] [Eel] started
+[2017-03-30 10:42:30,554][INFO ][gateway                  ] [Eel] recovered [2] indices into cluster_state
+[2017-03-30 10:42:31,103][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-30 10:42:31,115][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-30 10:42:31,137][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-30 10:47:09,482][INFO ][node                     ] [Eel] stopping ...
+[2017-03-30 10:47:09,521][INFO ][node                     ] [Eel] stopped
+[2017-03-30 10:47:09,522][INFO ][node                     ] [Eel] closing ...
+[2017-03-30 10:47:09,523][INFO ][node                     ] [Eel] closed
+[2017-03-30 10:48:05,325][INFO ][node                     ] [Red Skull II] version[1.7.3], pid[3652], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 10:48:05,325][INFO ][node                     ] [Red Skull II] initializing ...
+[2017-03-30 10:48:05,416][INFO ][plugins                  ] [Red Skull II] loaded [analysis-ik], sites []
+[2017-03-30 10:48:05,441][INFO ][env                      ] [Red Skull II] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 10:48:07,471][INFO ][node                     ] [Red Skull II] initialized
+[2017-03-30 10:48:07,472][INFO ][node                     ] [Red Skull II] starting ...
+[2017-03-30 10:48:07,527][INFO ][transport                ] [Red Skull II] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-30 10:48:07,559][INFO ][discovery                ] [Red Skull II] elasticsearch/fEVt1F-ZQHa4bkpZsGxPvw
+[2017-03-30 10:48:11,332][INFO ][cluster.service          ] [Red Skull II] new_master [Red Skull II][fEVt1F-ZQHa4bkpZsGxPvw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-30 10:48:11,368][INFO ][http                     ] [Red Skull II] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-30 10:48:11,368][INFO ][node                     ] [Red Skull II] started
+[2017-03-30 10:48:11,386][INFO ][gateway                  ] [Red Skull II] recovered [2] indices into cluster_state
+[2017-03-30 10:48:12,105][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-30 10:48:12,105][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-30 10:48:12,117][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-30 10:48:49,364][INFO ][node                     ] [Red Skull II] stopping ...
+[2017-03-30 10:48:49,415][INFO ][node                     ] [Red Skull II] stopped
+[2017-03-30 10:48:49,415][INFO ][node                     ] [Red Skull II] closing ...
+[2017-03-30 10:48:49,417][INFO ][node                     ] [Red Skull II] closed
+[2017-03-30 10:50:03,967][INFO ][node                     ] [Blur] version[1.7.3], pid[2476], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 10:50:03,979][INFO ][node                     ] [Blur] initializing ...
+[2017-03-30 10:50:04,060][INFO ][plugins                  ] [Blur] loaded [analysis-ik], sites []
+[2017-03-30 10:50:04,082][INFO ][env                      ] [Blur] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 10:50:06,403][INFO ][node                     ] [Blur] initialized
+[2017-03-30 10:50:06,403][INFO ][node                     ] [Blur] starting ...
+[2017-03-30 10:50:06,559][INFO ][transport                ] [Blur] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-30 10:50:06,591][INFO ][discovery                ] [Blur] elasticsearch/9u0kug34QRCbqFd_6gnsBw
+[2017-03-30 10:50:10,369][INFO ][cluster.service          ] [Blur] new_master [Blur][9u0kug34QRCbqFd_6gnsBw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-30 10:50:10,408][INFO ][http                     ] [Blur] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-30 10:50:10,408][INFO ][node                     ] [Blur] started
+[2017-03-30 10:50:10,462][INFO ][gateway                  ] [Blur] recovered [2] indices into cluster_state
+[2017-03-30 10:50:10,979][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-30 10:50:10,979][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-30 10:50:11,023][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-30 10:50:44,714][INFO ][cluster.service          ] [Blur] added {[es-node1][5fh_9SyzRO-eGfP5LlOr7w][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][5fh_9SyzRO-eGfP5LlOr7w][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-30 10:59:17,529][INFO ][cluster.metadata         ] [Blur] [[myindex]] remove_mapping [[mytype]]
+[2017-03-30 11:00:02,190][INFO ][cluster.metadata         ] [Blur] [myindex] deleting index
+[2017-03-30 12:19:37,877][INFO ][cluster.metadata         ] [Blur] [myindex] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-30 12:19:38,439][INFO ][index.shard              ] [Blur] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 12:19:38,439][INFO ][index.shard              ] [Blur] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 12:19:39,180][INFO ][index.shard              ] [Blur] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 12:19:39,180][INFO ][index.shard              ] [Blur] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 12:21:52,613][INFO ][cluster.metadata         ] [Blur] [myindex] update_mapping [mytype] (dynamic)
+[2017-03-30 12:30:47,607][INFO ][cluster.metadata         ] [Blur] [myindex] deleting index
+[2017-03-30 12:33:59,053][INFO ][cluster.metadata         ] [Blur] [myindex] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-30 12:33:59,523][INFO ][index.shard              ] [Blur] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 12:33:59,523][INFO ][index.shard              ] [Blur] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 12:34:00,248][INFO ][index.shard              ] [Blur] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 12:34:00,248][INFO ][index.shard              ] [Blur] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 12:34:00,276][INFO ][cluster.metadata         ] [Blur] [myindex] update_mapping [mytype] (dynamic)
+[2017-03-30 12:35:13,579][INFO ][node                     ] [Blur] stopping ...
+[2017-03-30 12:35:13,742][INFO ][node                     ] [Blur] stopped
+[2017-03-30 12:35:13,743][INFO ][node                     ] [Blur] closing ...
+[2017-03-30 12:35:13,759][INFO ][node                     ] [Blur] closed
+[2017-03-30 14:09:27,484][INFO ][node                     ] [Demiurge] version[1.7.3], pid[2846], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 14:09:27,484][INFO ][node                     ] [Demiurge] initializing ...
+[2017-03-30 14:09:27,569][INFO ][plugins                  ] [Demiurge] loaded [analysis-ik], sites []
+[2017-03-30 14:09:27,594][INFO ][env                      ] [Demiurge] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 14:09:29,904][INFO ][node                     ] [Demiurge] initialized
+[2017-03-30 14:09:29,904][INFO ][node                     ] [Demiurge] starting ...
+[2017-03-30 14:09:30,023][INFO ][transport                ] [Demiurge] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-30 14:09:30,065][INFO ][discovery                ] [Demiurge] elasticsearch/u1hZImtiQK-bpzTbvFO1DQ
+[2017-03-30 14:09:33,841][INFO ][cluster.service          ] [Demiurge] new_master [Demiurge][u1hZImtiQK-bpzTbvFO1DQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-30 14:09:33,883][INFO ][http                     ] [Demiurge] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-30 14:09:33,883][INFO ][node                     ] [Demiurge] started
+[2017-03-30 14:09:33,896][INFO ][gateway                  ] [Demiurge] recovered [2] indices into cluster_state
+[2017-03-30 14:09:34,415][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-30 14:09:34,423][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-30 14:09:34,431][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-30 14:15:12,373][INFO ][node                     ] [Demiurge] stopping ...
+[2017-03-30 14:15:12,527][INFO ][node                     ] [Demiurge] stopped
+[2017-03-30 14:15:12,527][INFO ][node                     ] [Demiurge] closing ...
+[2017-03-30 14:15:12,529][INFO ][node                     ] [Demiurge] closed
+[2017-03-30 14:16:35,952][INFO ][node                     ] [Dweller-in-Darkness] version[1.7.3], pid[2473], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 14:16:35,965][INFO ][node                     ] [Dweller-in-Darkness] initializing ...
+[2017-03-30 14:16:36,034][INFO ][plugins                  ] [Dweller-in-Darkness] loaded [analysis-ik], sites []
+[2017-03-30 14:16:36,057][INFO ][env                      ] [Dweller-in-Darkness] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 14:16:38,377][INFO ][node                     ] [Dweller-in-Darkness] initialized
+[2017-03-30 14:16:38,377][INFO ][node                     ] [Dweller-in-Darkness] starting ...
+[2017-03-30 14:16:38,502][INFO ][transport                ] [Dweller-in-Darkness] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-30 14:16:38,534][INFO ][discovery                ] [Dweller-in-Darkness] elasticsearch/nXV4u8kaRGeGZW1kqsI0pQ
+[2017-03-30 14:16:42,312][INFO ][cluster.service          ] [Dweller-in-Darkness] new_master [Dweller-in-Darkness][nXV4u8kaRGeGZW1kqsI0pQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-30 14:16:42,350][INFO ][http                     ] [Dweller-in-Darkness] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-30 14:16:42,350][INFO ][node                     ] [Dweller-in-Darkness] started
+[2017-03-30 14:16:42,385][INFO ][gateway                  ] [Dweller-in-Darkness] recovered [2] indices into cluster_state
+[2017-03-30 14:16:43,001][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-30 14:16:43,002][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-30 14:16:43,047][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-30 14:17:21,912][INFO ][cluster.service          ] [Dweller-in-Darkness] added {[es-node1][tx9QR8l4Sk-4V27wS7pC7A][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][tx9QR8l4Sk-4V27wS7pC7A][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-30 14:22:11,513][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:22:11,514][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:22:11,514][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:22:11,514][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:22:11,514][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:22:11,880][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:22:11,880][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:22:11,880][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:22:11,880][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:22:11,880][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:46:27,714][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:46:27,714][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:46:27,715][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:46:27,715][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:46:27,715][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:46:28,089][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:46:28,090][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:46:28,090][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:46:28,090][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:46:28,090][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:47:37,758][INFO ][cluster.metadata         ] [Dweller-in-Darkness] [myindex] deleting index
+[2017-03-30 14:47:47,858][INFO ][cluster.metadata         ] [Dweller-in-Darkness] [myindex] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-30 14:47:48,481][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:47:48,481][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:47:48,481][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 14:47:48,988][INFO ][cluster.metadata         ] [Dweller-in-Darkness] [myindex] update_mapping [mytype] (dynamic)
+[2017-03-30 14:47:49,183][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:47:49,183][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 14:47:49,184][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 15:08:24,784][INFO ][cluster.metadata         ] [Dweller-in-Darkness] [myindex] deleting index
+[2017-03-30 15:08:41,410][INFO ][cluster.metadata         ] [Dweller-in-Darkness] [myindex] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-30 15:08:41,830][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 15:08:41,830][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 15:08:41,830][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 15:08:42,379][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 15:08:42,380][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 15:08:42,380][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 15:08:42,414][INFO ][cluster.metadata         ] [Dweller-in-Darkness] [myindex] update_mapping [mytype] (dynamic)
+[2017-03-30 15:37:05,111][INFO ][cluster.metadata         ] [Dweller-in-Darkness] [myindex] deleting index
+[2017-03-30 15:37:18,261][INFO ][cluster.metadata         ] [Dweller-in-Darkness] [myindex] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-30 15:37:18,614][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 15:37:18,614][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 15:37:18,614][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 15:37:19,138][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 15:37:19,138][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 15:37:19,138][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 15:37:19,174][INFO ][cluster.metadata         ] [Dweller-in-Darkness] [myindex] update_mapping [mytype] (dynamic)
+[2017-03-30 16:59:19,364][INFO ][cluster.metadata         ] [Dweller-in-Darkness] [myindex] deleting index
+[2017-03-30 17:00:00,602][INFO ][cluster.metadata         ] [Dweller-in-Darkness] [myindex] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-03-30 17:00:00,983][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:00:00,983][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:00:00,983][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:00:01,548][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:00:01,548][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:00:01,549][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:01:00,102][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:01:00,102][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:01:00,102][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:01:00,102][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:01:00,102][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:01:00,210][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:01:00,211][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:01:00,211][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:01:00,211][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:01:00,211][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:02:00,081][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:02:00,081][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:02:00,081][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:02:00,081][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:02:00,081][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:02:00,173][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:02:00,173][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:02:00,173][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:02:00,173][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:02:00,173][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:03:00,219][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:03:00,219][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:03:00,219][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:03:00,219][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:03:00,219][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:03:00,353][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:03:00,353][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:03:00,353][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:03:00,353][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:03:00,353][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:04:00,087][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:04:00,087][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:04:00,088][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:04:00,088][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:04:00,088][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:04:00,212][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:04:00,212][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:04:00,213][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:04:00,213][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:04:00,213][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:05:00,234][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:05:00,234][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:05:00,234][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:05:00,234][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:05:00,235][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:05:00,341][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:05:00,341][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:05:00,341][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:05:00,341][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:05:00,341][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:06:00,088][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:06:00,088][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:06:00,088][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:06:00,088][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:06:00,088][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:06:00,171][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:06:00,172][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:06:00,172][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:06:00,172][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:06:00,172][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:07:00,108][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:07:00,108][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:07:00,109][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:07:00,109][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:07:00,109][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:07:00,201][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:07:00,201][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:07:00,201][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:07:00,202][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:07:00,202][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:08:00,086][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:08:00,087][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:08:00,087][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:08:00,087][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:08:00,087][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:08:00,154][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:08:00,154][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:08:00,154][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:08:00,154][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:08:00,154][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:09:00,098][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:09:00,099][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:09:00,099][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:09:00,099][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:09:00,099][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:09:00,190][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:09:00,190][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:09:00,190][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:09:00,190][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:09:00,191][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:10:00,093][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:10:00,094][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:10:00,094][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:10:00,094][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:10:00,094][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:10:00,177][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:10:00,177][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:10:00,177][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:10:00,177][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:10:00,178][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:11:00,064][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:11:00,064][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:11:00,064][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:11:00,064][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:11:00,064][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:11:00,139][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:11:00,139][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:11:00,139][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:11:00,139][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:11:00,139][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:12:00,075][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:12:00,075][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:12:00,075][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:12:00,075][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:12:00,075][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:12:00,142][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:12:00,142][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:12:00,142][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:12:00,143][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:12:00,143][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:13:00,129][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:13:00,129][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:13:00,129][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:13:00,129][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:13:00,129][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:13:00,204][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:13:00,204][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:13:00,204][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:13:00,204][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:13:00,204][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:14:00,107][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:14:00,107][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:14:00,107][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:14:00,107][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:14:00,107][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:14:00,191][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:14:00,191][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:14:00,191][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:14:00,191][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:14:00,191][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:00,127][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:15:00,128][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:15:00,128][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:15:00,128][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:15:00,128][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 17:15:00,194][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:00,194][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:00,194][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:00,194][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:00,194][INFO ][index.shard              ] [Dweller-in-Darkness] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 17:15:49,441][INFO ][cluster.service          ] [Dweller-in-Darkness] removed {[es-node1][tx9QR8l4Sk-4V27wS7pC7A][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][tx9QR8l4Sk-4V27wS7pC7A][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-30 17:15:49,441][INFO ][cluster.routing          ] [Dweller-in-Darkness] delaying allocation for [6] unassigned shards, next check in [59.9s]
+[2017-03-30 17:16:36,539][INFO ][node                     ] [Dweller-in-Darkness] stopping ...
+[2017-03-30 17:16:36,564][INFO ][node                     ] [Dweller-in-Darkness] stopped
+[2017-03-30 17:16:36,564][INFO ][node                     ] [Dweller-in-Darkness] closing ...
+[2017-03-30 17:16:36,566][INFO ][node                     ] [Dweller-in-Darkness] closed
+[2017-03-30 18:08:11,096][INFO ][node                     ] [Iron Monger] version[1.7.3], pid[3977], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 18:08:11,096][INFO ][node                     ] [Iron Monger] initializing ...
+[2017-03-30 18:08:11,208][INFO ][plugins                  ] [Iron Monger] loaded [analysis-ik], sites []
+[2017-03-30 18:08:11,230][INFO ][env                      ] [Iron Monger] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 18:08:13,570][INFO ][node                     ] [Iron Monger] initialized
+[2017-03-30 18:08:13,570][INFO ][node                     ] [Iron Monger] starting ...
+[2017-03-30 18:08:13,756][INFO ][transport                ] [Iron Monger] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-30 18:08:13,787][INFO ][discovery                ] [Iron Monger] elasticsearch/0FMs_lhJQqu5_frGoIUe3w
+[2017-03-30 18:08:17,573][INFO ][cluster.service          ] [Iron Monger] new_master [Iron Monger][0FMs_lhJQqu5_frGoIUe3w][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-30 18:08:17,651][INFO ][http                     ] [Iron Monger] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-30 18:08:17,652][INFO ][node                     ] [Iron Monger] started
+[2017-03-30 18:08:17,712][INFO ][gateway                  ] [Iron Monger] recovered [2] indices into cluster_state
+[2017-03-30 18:08:18,205][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-30 18:08:18,216][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-30 18:08:18,260][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-30 18:08:42,330][INFO ][cluster.service          ] [Iron Monger] added {[es-node1][yPGhbHx3RQCBICIsnxMhdw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][yPGhbHx3RQCBICIsnxMhdw][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-30 18:09:00,245][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:09:00,245][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:09:00,245][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:09:00,245][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:09:00,245][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:09:00,327][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:09:00,327][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:09:00,327][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:09:00,327][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:09:00,327][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:10:00,141][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:10:00,150][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:10:00,150][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:10:00,151][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:10:00,151][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:10:00,255][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:10:00,255][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:10:00,256][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:10:00,256][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:10:00,256][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:11:00,066][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:11:00,066][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:11:00,067][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:11:00,067][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:11:00,067][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:11:00,151][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:11:00,151][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:11:00,151][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:11:00,151][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:11:00,151][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:12:00,120][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:12:00,120][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:12:00,120][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:12:00,120][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:12:00,120][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:12:00,203][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:12:00,203][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:12:00,203][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:12:00,203][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:12:00,203][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:13:00,072][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:13:00,073][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:13:00,073][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:13:00,073][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:13:00,073][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:13:00,156][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:13:00,156][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:13:00,156][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:13:00,157][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:13:00,157][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:14:00,077][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:14:00,077][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:14:00,078][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:14:00,078][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:14:00,078][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:14:00,201][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:14:00,201][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:14:00,201][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:14:00,201][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:14:00,201][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:15:00,072][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:15:00,072][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:15:00,072][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:15:00,072][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:15:00,072][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:15:00,138][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:15:00,138][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:15:00,138][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:15:00,138][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:15:00,138][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:16:00,149][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:16:00,149][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:16:00,149][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:16:00,149][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:16:00,149][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:16:00,233][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:16:00,234][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:16:00,234][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:16:00,234][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:16:00,234][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:17:00,052][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:17:00,052][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:17:00,052][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:17:00,052][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:17:00,052][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:17:00,129][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:17:00,129][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:17:00,129][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:17:00,129][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:17:00,129][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:00,105][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:00,108][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:00,108][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:00,108][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:00,108][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:00,523][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:00,523][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:00,523][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:00,523][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:00,524][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:01,656][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:01,656][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:01,657][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:01,657][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:01,657][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:18:01,996][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:01,996][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:01,996][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:01,996][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:18:01,996][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:19:00,143][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:19:00,143][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:19:00,143][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:19:00,143][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:19:00,143][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:19:00,325][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:19:00,325][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:19:00,325][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:19:00,325][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:19:00,325][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:00,214][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:00,217][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:00,217][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:00,217][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:00,217][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:00,542][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:00,543][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:00,543][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:00,543][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:00,543][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:02,363][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:02,365][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:02,366][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:02,366][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:02,366][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:20:02,812][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:02,812][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:02,812][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:02,812][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:20:02,812][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:21:00,387][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:21:00,387][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:21:00,387][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:21:00,387][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:21:00,387][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:21:01,107][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:21:01,107][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:21:01,107][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:21:01,108][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:21:01,108][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:22:00,194][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:22:00,194][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:22:00,194][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:22:00,194][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:22:00,194][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:22:00,435][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:22:00,435][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:22:00,435][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:22:00,435][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:22:00,435][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:23:00,274][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:23:00,274][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:23:00,274][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:23:00,274][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:23:00,274][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:23:00,705][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:23:00,705][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:23:00,705][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:23:00,705][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:23:00,705][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:00,234][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:24:00,235][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:24:00,235][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:24:00,235][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:24:00,235][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:24:00,618][INFO ][index.shard              ] [Iron Monger] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:00,618][INFO ][index.shard              ] [Iron Monger] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:00,618][INFO ][index.shard              ] [Iron Monger] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:00,618][INFO ][index.shard              ] [Iron Monger] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:00,618][INFO ][index.shard              ] [Iron Monger] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:24:27,159][INFO ][node                     ] [Iron Monger] stopping ...
+[2017-03-30 18:24:27,375][INFO ][node                     ] [Iron Monger] stopped
+[2017-03-30 18:24:27,375][INFO ][node                     ] [Iron Monger] closing ...
+[2017-03-30 18:24:27,378][INFO ][node                     ] [Iron Monger] closed
+[2017-03-30 18:48:04,300][INFO ][node                     ] [Vanisher] version[1.7.3], pid[2543], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-30 18:48:04,312][INFO ][node                     ] [Vanisher] initializing ...
+[2017-03-30 18:48:04,384][INFO ][plugins                  ] [Vanisher] loaded [analysis-ik], sites []
+[2017-03-30 18:48:04,408][INFO ][env                      ] [Vanisher] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.8gb], net total_space [36.9gb], types [rootfs]
+[2017-03-30 18:48:06,596][INFO ][node                     ] [Vanisher] initialized
+[2017-03-30 18:48:06,596][INFO ][node                     ] [Vanisher] starting ...
+[2017-03-30 18:48:06,721][INFO ][transport                ] [Vanisher] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-30 18:48:06,753][INFO ][discovery                ] [Vanisher] elasticsearch/21DuJ7zIREG0DnpIJ7GwQg
+[2017-03-30 18:48:10,531][INFO ][cluster.service          ] [Vanisher] new_master [Vanisher][21DuJ7zIREG0DnpIJ7GwQg][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-30 18:48:10,568][INFO ][http                     ] [Vanisher] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-30 18:48:10,568][INFO ][node                     ] [Vanisher] started
+[2017-03-30 18:48:10,585][INFO ][gateway                  ] [Vanisher] recovered [2] indices into cluster_state
+[2017-03-30 18:48:11,154][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-30 18:48:11,165][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-30 18:48:11,207][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-30 18:48:26,849][INFO ][cluster.service          ] [Vanisher] added {[es-node1][Gamjc9M1S1i_erQ3rNovAw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][Gamjc9M1S1i_erQ3rNovAw][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-30 18:57:16,579][INFO ][index.shard              ] [Vanisher] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:57:16,579][INFO ][index.shard              ] [Vanisher] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:57:16,579][INFO ][index.shard              ] [Vanisher] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:57:16,579][INFO ][index.shard              ] [Vanisher] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:57:16,579][INFO ][index.shard              ] [Vanisher] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-30 18:57:16,983][INFO ][cluster.metadata         ] [Vanisher] [myindex] update_mapping [mytype] (dynamic)
+[2017-03-30 18:57:17,129][INFO ][index.shard              ] [Vanisher] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:57:17,129][INFO ][index.shard              ] [Vanisher] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:57:17,129][INFO ][index.shard              ] [Vanisher] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:57:17,129][INFO ][index.shard              ] [Vanisher] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-30 18:57:17,129][INFO ][index.shard              ] [Vanisher] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-30 19:33:10,894][INFO ][node                     ] [Vanisher] stopping ...
+[2017-03-30 19:33:10,947][INFO ][cluster.service          ] [Vanisher] removed {[es-node1][Gamjc9M1S1i_erQ3rNovAw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][Gamjc9M1S1i_erQ3rNovAw][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-30 19:33:10,948][INFO ][cluster.routing          ] [Vanisher] delaying allocation for [6] unassigned shards, next check in [59.9s]
+[2017-03-30 19:33:11,239][INFO ][node                     ] [Vanisher] stopped
+[2017-03-30 19:33:11,239][INFO ][node                     ] [Vanisher] closing ...
+[2017-03-30 19:33:11,241][INFO ][node                     ] [Vanisher] closed

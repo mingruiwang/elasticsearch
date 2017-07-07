@@ -1,0 +1,20 @@
+[2017-04-28 09:57:41,462][INFO ][node                     ] [Ultra-Marine] version[1.7.3], pid[2752], build[05d4530/2015-10-15T09:14:17Z]
+[2017-04-28 09:57:41,472][INFO ][node                     ] [Ultra-Marine] initializing ...
+[2017-04-28 09:57:41,576][INFO ][plugins                  ] [Ultra-Marine] loaded [analysis-ik], sites []
+[2017-04-28 09:57:41,598][INFO ][env                      ] [Ultra-Marine] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.1gb], net total_space [36.9gb], types [rootfs]
+[2017-04-28 09:57:43,868][INFO ][node                     ] [Ultra-Marine] initialized
+[2017-04-28 09:57:43,868][INFO ][node                     ] [Ultra-Marine] starting ...
+[2017-04-28 09:57:44,074][INFO ][transport                ] [Ultra-Marine] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-04-28 09:57:44,131][INFO ][discovery                ] [Ultra-Marine] elasticsearch/jLkznOZST4WmnONHIXXsgg
+[2017-04-28 09:57:47,921][INFO ][cluster.service          ] [Ultra-Marine] new_master [Ultra-Marine][jLkznOZST4WmnONHIXXsgg][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-04-28 09:57:48,030][INFO ][http                     ] [Ultra-Marine] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-04-28 09:57:48,030][INFO ][node                     ] [Ultra-Marine] started
+[2017-04-28 09:57:48,047][INFO ][gateway                  ] [Ultra-Marine] recovered [3] indices into cluster_state
+[2017-04-28 09:57:48,840][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-04-28 09:57:48,851][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-04-28 09:57:48,880][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-04-28 09:58:27,485][INFO ][cluster.service          ] [Ultra-Marine] added {[es-node1][wNxF6oBnQZq75HrG8UP6Hg][v-c7-es][inet[/127.0.0.1:9300]],}, reason: zen-disco-receive(join from node[[es-node1][wNxF6oBnQZq75HrG8UP6Hg][v-c7-es][inet[/127.0.0.1:9300]]])
+[2017-04-28 18:34:25,134][INFO ][node                     ] [Ultra-Marine] stopping ...
+[2017-04-28 18:34:25,249][INFO ][node                     ] [Ultra-Marine] stopped
+[2017-04-28 18:34:25,249][INFO ][node                     ] [Ultra-Marine] closing ...
+[2017-04-28 18:34:25,250][INFO ][node                     ] [Ultra-Marine] closed

@@ -1,0 +1,914 @@
+[2017-03-28 09:48:11,017][INFO ][node                     ] [es-node1] version[1.7.3], pid[2477], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 09:48:11,017][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-28 09:48:11,114][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-28 09:48:11,140][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 09:48:13,614][INFO ][node                     ] [es-node1] initialized
+[2017-03-28 09:48:13,615][INFO ][node                     ] [es-node1] starting ...
+[2017-03-28 09:48:13,851][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-28 09:48:13,870][INFO ][discovery                ] [es-node1] elasticsearch/5bfvtEhsSdmR8tH2dPTZaw
+[2017-03-28 09:48:43,870][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-28 09:48:43,876][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-28 09:48:43,876][INFO ][node                     ] [es-node1] started
+[2017-03-28 09:49:34,010][INFO ][cluster.service          ] [es-node1] detected_master [Slyde][YASorybUSMOsTCVwkP2vPw][v-c7-es][inet[/192.168.8.81:9301]], added {[Slyde][YASorybUSMOsTCVwkP2vPw][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Slyde][YASorybUSMOsTCVwkP2vPw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-28 09:49:34,857][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-28 09:49:34,869][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-28 09:49:34,913][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-28 14:23:51,948][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-28 14:23:52,002][INFO ][node                     ] [es-node1] stopped
+[2017-03-28 14:23:52,003][INFO ][node                     ] [es-node1] closing ...
+[2017-03-28 14:23:52,010][INFO ][node                     ] [es-node1] closed
+[2017-03-28 14:26:07,440][INFO ][node                     ] [es-node1] version[1.7.3], pid[2200], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 14:26:07,442][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-28 14:26:07,535][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-28 14:26:07,562][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 14:26:09,935][INFO ][node                     ] [es-node1] initialized
+[2017-03-28 14:26:09,935][INFO ][node                     ] [es-node1] starting ...
+[2017-03-28 14:26:10,161][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-28 14:26:10,181][INFO ][discovery                ] [es-node1] elasticsearch/lfLpEHViSAKV03YXmaY_1Q
+[2017-03-28 14:26:40,181][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-28 14:26:40,187][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-28 14:26:40,187][INFO ][node                     ] [es-node1] started
+[2017-03-28 14:26:50,573][INFO ][discovery.zen            ] [es-node1] failed to send join request to master [[Humbug][N6rZEajdTb6SWr8UpiiM9g][v-c7-es][inet[/192.168.8.81:9301]]], reason [RemoteTransportException[[Humbug][inet[/192.168.8.81:9301]][internal:discovery/zen/join]]; nested: ElasticsearchIllegalStateException[Node [[Humbug][N6rZEajdTb6SWr8UpiiM9g][v-c7-es][inet[/192.168.8.81:9301]]] not master for join request from [[es-node1][lfLpEHViSAKV03YXmaY_1Q][v-c7-es][inet[/192.168.8.81:9300]]]]; ], tried [3] times
+[2017-03-28 14:27:30,603][INFO ][cluster.service          ] [es-node1] detected_master [Humbug][N6rZEajdTb6SWr8UpiiM9g][v-c7-es][inet[/192.168.8.81:9301]], added {[Humbug][N6rZEajdTb6SWr8UpiiM9g][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Humbug][N6rZEajdTb6SWr8UpiiM9g][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-28 14:27:31,273][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-28 14:27:31,285][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-28 14:27:31,330][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-28 18:01:46,751][INFO ][discovery.zen            ] [es-node1] master_left [[Humbug][N6rZEajdTb6SWr8UpiiM9g][v-c7-es][inet[/192.168.8.81:9301]]], reason [shut_down]
+[2017-03-28 18:01:46,752][WARN ][discovery.zen            ] [es-node1] master left (reason = shut_down), current nodes: {[es-node1][lfLpEHViSAKV03YXmaY_1Q][v-c7-es][inet[/192.168.8.81:9300]],}
+[2017-03-28 18:01:46,752][INFO ][cluster.service          ] [es-node1] removed {[Humbug][N6rZEajdTb6SWr8UpiiM9g][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-master_failed ([Humbug][N6rZEajdTb6SWr8UpiiM9g][v-c7-es][inet[/192.168.8.81:9301]])
+[2017-03-28 18:01:46,751][DEBUG][action.admin.indices.settings.put] [es-node1] connection exception while trying to forward request to master node [[Humbug][N6rZEajdTb6SWr8UpiiM9g][v-c7-es][inet[/192.168.8.81:9301]]], scheduling a retry. Error: [org.elasticsearch.transport.SendRequestTransportException: [Humbug][inet[/192.168.8.81:9301]][indices:admin/settings/update]; org.elasticsearch.transport.NodeNotConnectedException: [Humbug][inet[/192.168.8.81:9301]] Node not connected]
+[2017-03-28 18:01:46,753][DEBUG][action.admin.indices.settings.put] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:01:46,761][INFO ][discovery.zen            ] [es-node1] master_left [[Humbug][N6rZEajdTb6SWr8UpiiM9g][v-c7-es][inet[/192.168.8.81:9301]]], reason [transport disconnected]
+[2017-03-28 18:01:46,812][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-28 18:01:46,936][INFO ][node                     ] [es-node1] stopped
+[2017-03-28 18:01:46,936][INFO ][node                     ] [es-node1] closing ...
+[2017-03-28 18:01:46,938][INFO ][node                     ] [es-node1] closed
+[2017-03-28 18:08:27,879][INFO ][node                     ] [es-node1] version[1.7.3], pid[2583], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 18:08:27,879][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-28 18:08:27,942][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-28 18:08:27,965][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 18:08:30,159][INFO ][node                     ] [es-node1] initialized
+[2017-03-28 18:08:30,160][INFO ][node                     ] [es-node1] starting ...
+[2017-03-28 18:08:30,329][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-28 18:08:30,349][INFO ][discovery                ] [es-node1] elasticsearch/xHrO5Z_WQyK7cupJ4qGZtg
+[2017-03-28 18:09:00,349][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-28 18:09:00,356][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.http.BindHttpException: Failed to bind to [9200]
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:269)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.http.HttpServer.doStart(HttpServer.java:89)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:274)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9200
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport$1.onPortNumber(NettyHttpServerTransport.java:260)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:256)
+	... 7 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:09:00,358][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-28 18:09:00,364][INFO ][node                     ] [es-node1] stopped
+[2017-03-28 18:09:00,364][INFO ][node                     ] [es-node1] closing ...
+[2017-03-28 18:09:00,374][INFO ][node                     ] [es-node1] closed
+[2017-03-28 18:12:36,797][INFO ][node                     ] [es-node1] version[1.7.3], pid[2698], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 18:12:36,797][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-28 18:12:36,872][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-28 18:12:36,897][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 18:12:39,000][INFO ][node                     ] [es-node1] initialized
+[2017-03-28 18:12:39,000][INFO ][node                     ] [es-node1] starting ...
+[2017-03-28 18:12:39,142][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-28 18:12:39,172][INFO ][discovery                ] [es-node1] elasticsearch/eFOEhfI3SXej4DGegop1dA
+[2017-03-28 18:13:09,172][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-28 18:13:09,180][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.http.BindHttpException: Failed to bind to [9200]
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:269)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.http.HttpServer.doStart(HttpServer.java:89)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:274)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9200
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport$1.onPortNumber(NettyHttpServerTransport.java:260)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:256)
+	... 7 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:13:09,188][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-28 18:13:09,197][INFO ][node                     ] [es-node1] stopped
+[2017-03-28 18:13:09,197][INFO ][node                     ] [es-node1] closing ...
+[2017-03-28 18:13:09,202][INFO ][node                     ] [es-node1] closed
+[2017-03-28 18:15:00,236][INFO ][node                     ] [es-node1] version[1.7.3], pid[2191], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 18:15:00,238][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-28 18:15:00,333][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-28 18:15:00,359][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 18:15:02,856][INFO ][node                     ] [es-node1] initialized
+[2017-03-28 18:15:02,856][INFO ][node                     ] [es-node1] starting ...
+[2017-03-28 18:15:03,122][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-28 18:15:03,140][INFO ][discovery                ] [es-node1] elasticsearch/ZpxcnqbMS6KK4O4XQXMoGw
+[2017-03-28 18:15:33,141][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-28 18:15:33,148][ERROR][bootstrap                ] [es-node1] Exception
+org.elasticsearch.http.BindHttpException: Failed to bind to [9200]
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:269)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.http.HttpServer.doStart(HttpServer.java:89)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85)
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:274)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:160)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:248)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /192.168.8.81:9200
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport$1.onPortNumber(NettyHttpServerTransport.java:260)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.doStart(NettyHttpServerTransport.java:256)
+	... 7 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:15:33,151][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-28 18:15:33,158][INFO ][node                     ] [es-node1] stopped
+[2017-03-28 18:15:33,158][INFO ][node                     ] [es-node1] closing ...
+[2017-03-28 18:15:33,168][INFO ][node                     ] [es-node1] closed
+[2017-03-28 18:22:02,993][INFO ][node                     ] [es-node1] version[1.7.3], pid[2338], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 18:22:02,993][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-28 18:22:03,078][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-28 18:22:03,101][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 18:22:05,374][INFO ][node                     ] [es-node1] initialized
+[2017-03-28 18:22:05,374][INFO ][node                     ] [es-node1] starting ...
+[2017-03-28 18:22:05,536][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-28 18:22:05,565][INFO ][discovery                ] [es-node1] elasticsearch/TvIyYmAhSjOMSbIn1OIUEQ
+[2017-03-28 18:22:35,565][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-28 18:22:35,571][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-28 18:22:35,571][INFO ][node                     ] [es-node1] started
+[2017-03-28 18:22:52,260][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:52,264][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:54,126][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:54,131][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:54,237][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:54,242][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:58,657][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:58,662][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:58,781][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:58,787][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:59,389][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:59,390][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:59,490][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:59,492][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:59,596][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:59,598][DEBUG][action.admin.indices.get ] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:59,701][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:22:59,706][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:23:19,713][DEBUG][action.admin.cluster.state] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:23:19,714][DEBUG][action.admin.cluster.health] [es-node1] no known master node, scheduling a retry
+[2017-03-28 18:23:22,273][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-28 18:23:22,302][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-28 18:23:24,127][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-28 18:23:24,131][DEBUG][action.admin.indices.get ] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-28 18:23:24,237][DEBUG][action.admin.cluster.state] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-28 18:23:24,243][DEBUG][action.admin.cluster.health] [es-node1] observer: timeout notification from cluster service. timeout setting [30s], time since start [30s]
+[2017-03-28 18:23:25,674][INFO ][cluster.service          ] [es-node1] detected_master [Barracuda][nLe1aqgWQ1qHlmTaXFpbJw][v-c7-es][inet[/192.168.8.81:9301]], added {[Barracuda][nLe1aqgWQ1qHlmTaXFpbJw][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Barracuda][nLe1aqgWQ1qHlmTaXFpbJw][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-28 18:23:26,626][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-28 18:23:26,638][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-28 18:23:26,686][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-28 18:26:15,820][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:26:26,349][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:26:32,266][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:26:35,294][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:26:49,918][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:28:08,451][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:28:10,545][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:30:06,010][DEBUG][action.index             ] [es-node1] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2017-03-28 18:30:26,807][DEBUG][action.index             ] [es-node1] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2017-03-28 18:30:27,876][DEBUG][action.index             ] [es-node1] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2017-03-28 18:30:29,326][DEBUG][action.index             ] [es-node1] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2017-03-28 18:30:32,848][DEBUG][action.index             ] [es-node1] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2017-03-28 18:31:10,213][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:31:11,074][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:31:11,699][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:31:20,291][DEBUG][action.search.type       ] [es-node1] All shards failed for phase: [query]
+org.elasticsearch.action.NoShardAvailableActionException: [myindex][4] null
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.start(TransportSearchTypeAction.java:160)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:62)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction.doExecute(TransportSearchQueryThenFetchAction.java:52)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:100)
+	at org.elasticsearch.action.search.TransportSearchAction.doExecute(TransportSearchAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.client.node.NodeClient.execute(NodeClient.java:98)
+	at org.elasticsearch.client.FilterClient.execute(FilterClient.java:66)
+	at org.elasticsearch.rest.BaseRestHandler$HeadersAndContextCopyClient.execute(BaseRestHandler.java:92)
+	at org.elasticsearch.client.support.AbstractClient.search(AbstractClient.java:338)
+	at org.elasticsearch.rest.action.search.RestSearchAction.handleRequest(RestSearchAction.java:84)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:53)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:225)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:170)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:121)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:83)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:327)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.elasticsearch.common.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.elasticsearch.common.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:74)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-28 18:39:14,441][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:40:44,838][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:42:01,994][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:43:32,240][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:44:02,056][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:45:38,143][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:45:38,143][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:47:08,481][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:47:08,482][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:55:32,045][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:55:32,045][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:55:32,045][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:55:32,045][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:55:32,045][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:57:10,936][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:57:10,937][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:57:10,937][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-28 18:58:41,282][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:58:41,283][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-28 18:58:41,283][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:10:59,563][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-28 19:10:59,617][INFO ][node                     ] [es-node1] stopped
+[2017-03-28 19:10:59,617][INFO ][node                     ] [es-node1] closing ...
+[2017-03-28 19:10:59,620][INFO ][node                     ] [es-node1] closed
+[2017-03-28 19:14:06,008][INFO ][node                     ] [es-node1] version[1.7.3], pid[2201], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-28 19:14:06,015][INFO ][node                     ] [es-node1] initializing ...
+[2017-03-28 19:14:06,108][INFO ][plugins                  ] [es-node1] loaded [analysis-ik], sites [head, bigdesk]
+[2017-03-28 19:14:06,136][INFO ][env                      ] [es-node1] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [32.9gb], net total_space [36.9gb], types [rootfs]
+[2017-03-28 19:14:08,525][INFO ][node                     ] [es-node1] initialized
+[2017-03-28 19:14:08,525][INFO ][node                     ] [es-node1] starting ...
+[2017-03-28 19:14:08,677][INFO ][transport                ] [es-node1] bound_address {inet[/192.168.8.81:9300]}, publish_address {inet[/192.168.8.81:9300]}
+[2017-03-28 19:14:08,694][INFO ][discovery                ] [es-node1] elasticsearch/6s23RnjWTySv77KZWCmPIw
+[2017-03-28 19:14:38,695][WARN ][discovery                ] [es-node1] waited for 30s and no initial state was set by the discovery
+[2017-03-28 19:14:38,701][INFO ][http                     ] [es-node1] bound_address {inet[/192.168.8.81:9200]}, publish_address {inet[/192.168.8.81:9200]}
+[2017-03-28 19:14:38,702][INFO ][node                     ] [es-node1] started
+[2017-03-28 19:15:28,846][INFO ][cluster.service          ] [es-node1] detected_master [Swordsman][9qmgiwg6Q8-5tg8grFnM_g][v-c7-es][inet[/192.168.8.81:9301]], added {[Swordsman][9qmgiwg6Q8-5tg8grFnM_g][v-c7-es][inet[/192.168.8.81:9301]],}, reason: zen-disco-receive(from master [[Swordsman][9qmgiwg6Q8-5tg8grFnM_g][v-c7-es][inet[/192.168.8.81:9301]]])
+[2017-03-28 19:15:29,665][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2017-03-28 19:15:29,676][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2017-03-28 19:15:29,709][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2017-03-28 19:22:09,069][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [1s] to [-1]
+[2017-03-28 19:22:09,069][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [1s] to [-1]
+[2017-03-28 19:22:09,069][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [1s] to [-1]
+[2017-03-28 19:22:09,069][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [1s] to [-1]
+[2017-03-28 19:22:09,069][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [1s] to [-1]
+[2017-03-28 19:23:39,408][INFO ][index.shard              ] [es-node1] [myindex][2] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:23:39,408][INFO ][index.shard              ] [es-node1] [myindex][1] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:23:39,408][INFO ][index.shard              ] [es-node1] [myindex][4] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:23:39,408][INFO ][index.shard              ] [es-node1] [myindex][3] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:23:39,408][INFO ][index.shard              ] [es-node1] [myindex][0] updating refresh_interval from [-1] to [1s]
+[2017-03-28 19:25:47,250][INFO ][node                     ] [es-node1] stopping ...
+[2017-03-28 19:25:47,525][INFO ][node                     ] [es-node1] stopped
+[2017-03-28 19:25:47,526][INFO ][node                     ] [es-node1] closing ...
+[2017-03-28 19:25:47,532][INFO ][node                     ] [es-node1] closed

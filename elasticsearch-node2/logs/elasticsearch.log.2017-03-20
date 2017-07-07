@@ -1,0 +1,115 @@
+[2017-03-20 09:58:50,898][INFO ][node                     ] [Aralune] version[1.7.3], pid[2254], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-20 09:58:50,911][INFO ][node                     ] [Aralune] initializing ...
+[2017-03-20 09:58:50,974][INFO ][plugins                  ] [Aralune] loaded [], sites []
+[2017-03-20 09:58:50,998][INFO ][env                      ] [Aralune] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [35.2gb], net total_space [36.9gb], types [rootfs]
+[2017-03-20 09:58:53,416][INFO ][node                     ] [Aralune] initialized
+[2017-03-20 09:58:53,416][INFO ][node                     ] [Aralune] starting ...
+[2017-03-20 09:58:53,622][INFO ][transport                ] [Aralune] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-20 09:58:53,654][INFO ][discovery                ] [Aralune] elasticsearch/x5eatnP4TXqBfsJP3iNmWQ
+[2017-03-20 09:58:57,431][INFO ][cluster.service          ] [Aralune] new_master [Aralune][x5eatnP4TXqBfsJP3iNmWQ][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-20 09:58:57,471][INFO ][http                     ] [Aralune] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-20 09:58:57,472][INFO ][node                     ] [Aralune] started
+[2017-03-20 09:58:57,539][INFO ][gateway                  ] [Aralune] recovered [3] indices into cluster_state
+[2017-03-20 09:59:32,087][INFO ][cluster.service          ] [Aralune] added {[es-node1][Rw2FPJtAQFeayimdGwytlQ][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][Rw2FPJtAQFeayimdGwytlQ][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-20 13:02:53,724][INFO ][node                     ] [Aralune] stopping ...
+[2017-03-20 13:02:53,777][INFO ][node                     ] [Aralune] stopped
+[2017-03-20 13:02:53,777][INFO ][node                     ] [Aralune] closing ...
+[2017-03-20 13:02:53,779][INFO ][node                     ] [Aralune] closed
+[2017-03-20 15:53:19,386][INFO ][node                     ] [Svarog] version[1.7.3], pid[2257], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-20 15:53:19,388][INFO ][node                     ] [Svarog] initializing ...
+[2017-03-20 15:53:19,485][INFO ][plugins                  ] [Svarog] loaded [], sites []
+[2017-03-20 15:53:19,509][INFO ][env                      ] [Svarog] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-20 15:53:21,794][INFO ][node                     ] [Svarog] initialized
+[2017-03-20 15:53:21,794][INFO ][node                     ] [Svarog] starting ...
+[2017-03-20 15:53:21,953][INFO ][transport                ] [Svarog] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-20 15:53:21,985][INFO ][discovery                ] [Svarog] elasticsearch/jzrHS0qPS-mTIjwEEc0dvA
+[2017-03-20 15:53:25,773][INFO ][cluster.service          ] [Svarog] new_master [Svarog][jzrHS0qPS-mTIjwEEc0dvA][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-20 15:53:25,836][INFO ][http                     ] [Svarog] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-20 15:53:25,836][INFO ][node                     ] [Svarog] started
+[2017-03-20 15:53:25,861][INFO ][gateway                  ] [Svarog] recovered [3] indices into cluster_state
+[2017-03-20 15:53:39,906][INFO ][cluster.service          ] [Svarog] added {[es-node1][sIl0wWUrTJWCvhxkanzmnw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][sIl0wWUrTJWCvhxkanzmnw][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-20 15:53:40,255][WARN ][cluster.action.shard     ] [Svarog] [index][0] received shard failed for [index][0], node[sIl0wWUrTJWCvhxkanzmnw], [R], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2017-03-20T07:53:25.809Z]], indexUUID [LqtmUo4oR6C_orJa3MfK2w], reason [shard failure [failed to create index][IndexCreationException[[index] failed to create index]; nested: NullPointerException; ]]
+[2017-03-20 15:53:40,335][WARN ][cluster.action.shard     ] [Svarog] [index][0] received shard failed for [index][0], node[sIl0wWUrTJWCvhxkanzmnw], [R], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2017-03-20T07:53:25.809Z]], indexUUID [LqtmUo4oR6C_orJa3MfK2w], reason [master [Svarog][jzrHS0qPS-mTIjwEEc0dvA][v-c7-es][inet[/192.168.8.81:9301]] marked shard as initializing, but shard is marked as failed, resend shard failure]
+[2017-03-20 16:52:06,484][INFO ][node                     ] [Svarog] stopping ...
+[2017-03-20 16:52:06,602][INFO ][node                     ] [Svarog] stopped
+[2017-03-20 16:52:06,602][INFO ][node                     ] [Svarog] closing ...
+[2017-03-20 16:52:06,604][INFO ][node                     ] [Svarog] closed
+[2017-03-20 16:54:53,327][INFO ][node                     ] [Android Man] version[1.7.3], pid[2257], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-20 16:54:53,340][INFO ][node                     ] [Android Man] initializing ...
+[2017-03-20 16:54:53,402][INFO ][plugins                  ] [Android Man] loaded [], sites []
+[2017-03-20 16:54:53,425][INFO ][env                      ] [Android Man] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-20 16:54:55,806][INFO ][node                     ] [Android Man] initialized
+[2017-03-20 16:54:55,806][INFO ][node                     ] [Android Man] starting ...
+[2017-03-20 16:54:55,970][INFO ][transport                ] [Android Man] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-20 16:54:56,002][INFO ][discovery                ] [Android Man] elasticsearch/q23ub4eTRG-PfPermxXF6w
+[2017-03-20 16:54:59,778][INFO ][cluster.service          ] [Android Man] new_master [Android Man][q23ub4eTRG-PfPermxXF6w][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-20 16:54:59,822][INFO ][http                     ] [Android Man] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-20 16:54:59,822][INFO ][node                     ] [Android Man] started
+[2017-03-20 16:54:59,851][INFO ][gateway                  ] [Android Man] recovered [3] indices into cluster_state
+[2017-03-20 16:55:37,715][INFO ][cluster.service          ] [Android Man] added {[es-node1][yk_G4I2MSJe6cPklQWcV1A][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][yk_G4I2MSJe6cPklQWcV1A][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-20 17:19:34,651][INFO ][node                     ] [Android Man] stopping ...
+[2017-03-20 17:19:34,849][INFO ][node                     ] [Android Man] stopped
+[2017-03-20 17:19:34,849][INFO ][node                     ] [Android Man] closing ...
+[2017-03-20 17:19:34,851][INFO ][node                     ] [Android Man] closed
+[2017-03-20 17:21:58,711][INFO ][node                     ] [Frog-Man] version[1.7.3], pid[2254], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-20 17:21:58,723][INFO ][node                     ] [Frog-Man] initializing ...
+[2017-03-20 17:21:58,787][INFO ][plugins                  ] [Frog-Man] loaded [], sites []
+[2017-03-20 17:21:58,810][INFO ][env                      ] [Frog-Man] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-20 17:22:01,201][INFO ][node                     ] [Frog-Man] initialized
+[2017-03-20 17:22:01,201][INFO ][node                     ] [Frog-Man] starting ...
+[2017-03-20 17:22:01,379][INFO ][transport                ] [Frog-Man] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-20 17:22:01,423][INFO ][discovery                ] [Frog-Man] elasticsearch/uUo1T-a2R-WnEGttpJfPOA
+[2017-03-20 17:22:05,201][INFO ][cluster.service          ] [Frog-Man] new_master [Frog-Man][uUo1T-a2R-WnEGttpJfPOA][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-20 17:22:05,242][INFO ][http                     ] [Frog-Man] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-20 17:22:05,243][INFO ][node                     ] [Frog-Man] started
+[2017-03-20 17:22:05,283][INFO ][gateway                  ] [Frog-Man] recovered [3] indices into cluster_state
+[2017-03-20 17:22:10,962][INFO ][cluster.service          ] [Frog-Man] added {[es-node1][axYKe9QNTdK4BNVewepq8Q][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][axYKe9QNTdK4BNVewepq8Q][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-20 17:24:28,845][INFO ][cluster.metadata         ] [Frog-Man] [index] update_mapping [fulltext] (dynamic)
+[2017-03-20 17:54:12,958][INFO ][node                     ] [Frog-Man] stopping ...
+[2017-03-20 17:54:13,034][INFO ][cluster.service          ] [Frog-Man] removed {[es-node1][axYKe9QNTdK4BNVewepq8Q][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-node_left([es-node1][axYKe9QNTdK4BNVewepq8Q][v-c7-es][inet[/192.168.8.81:9300]])
+[2017-03-20 17:54:13,034][INFO ][cluster.routing          ] [Frog-Man] delaying allocation for [15] unassigned shards, next check in [59.9s]
+[2017-03-20 17:54:13,623][INFO ][node                     ] [Frog-Man] stopped
+[2017-03-20 17:54:13,624][INFO ][node                     ] [Frog-Man] closing ...
+[2017-03-20 17:54:13,625][INFO ][node                     ] [Frog-Man] closed
+[2017-03-20 17:56:04,856][INFO ][node                     ] [Equinox] version[1.7.3], pid[2253], build[05d4530/2015-10-15T09:14:17Z]
+[2017-03-20 17:56:04,859][INFO ][node                     ] [Equinox] initializing ...
+[2017-03-20 17:56:04,953][INFO ][plugins                  ] [Equinox] loaded [], sites []
+[2017-03-20 17:56:04,976][INFO ][env                      ] [Equinox] using [1] data paths, mounts [[/ (rootfs)]], net usable_space [33gb], net total_space [36.9gb], types [rootfs]
+[2017-03-20 17:56:07,351][INFO ][node                     ] [Equinox] initialized
+[2017-03-20 17:56:07,351][INFO ][node                     ] [Equinox] starting ...
+[2017-03-20 17:56:07,521][INFO ][transport                ] [Equinox] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.8.81:9301]}
+[2017-03-20 17:56:07,565][INFO ][discovery                ] [Equinox] elasticsearch/7yOWqg4OQZKUHIxvXQR-fw
+[2017-03-20 17:56:11,342][INFO ][cluster.service          ] [Equinox] new_master [Equinox][7yOWqg4OQZKUHIxvXQR-fw][v-c7-es][inet[/192.168.8.81:9301]], reason: zen-disco-join (elected_as_master)
+[2017-03-20 17:56:11,384][INFO ][http                     ] [Equinox] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.8.81:9201]}
+[2017-03-20 17:56:11,384][INFO ][node                     ] [Equinox] started
+[2017-03-20 17:56:11,431][INFO ][gateway                  ] [Equinox] recovered [3] indices into cluster_state
+[2017-03-20 17:56:39,907][INFO ][cluster.service          ] [Equinox] added {[es-node1][UDhHKXahQVGit2wnESneFw][v-c7-es][inet[/192.168.8.81:9300]],}, reason: zen-disco-receive(join from node[[es-node1][UDhHKXahQVGit2wnESneFw][v-c7-es][inet[/192.168.8.81:9300]]])
+[2017-03-20 19:42:04,969][INFO ][node                     ] [Equinox] stopping ...
+[2017-03-20 19:42:05,101][WARN ][netty.channel.DefaultChannelPipeline] An exception was thrown by an exception handler.
+java.util.concurrent.RejectedExecutionException: Worker has already been shutdown
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.registerTask(AbstractNioSelector.java:120)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:72)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:56)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioChannelSink.execute(AbstractNioChannelSink.java:34)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.execute(DefaultChannelPipeline.java:636)
+	at org.elasticsearch.common.netty.channel.Channels.fireExceptionCaughtLater(Channels.java:496)
+	at org.elasticsearch.common.netty.channel.AbstractChannelSink.exceptionCaught(AbstractChannelSink.java:46)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.notifyHandlerException(DefaultChannelPipeline.java:658)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:577)
+	at org.elasticsearch.common.netty.channel.Channels.write(Channels.java:704)
+	at org.elasticsearch.common.netty.channel.Channels.write(Channels.java:671)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.write(AbstractChannel.java:348)
+	at org.elasticsearch.transport.netty.NettyTransportChannel.sendResponse(NettyTransportChannel.java:105)
+	at org.elasticsearch.transport.netty.NettyTransportChannel.sendResponse(NettyTransportChannel.java:76)
+	at org.elasticsearch.discovery.zen.membership.MembershipAction$LeaveRequestRequestHandler.messageReceived(MembershipAction.java:290)
+	at org.elasticsearch.discovery.zen.membership.MembershipAction$LeaveRequestRequestHandler.messageReceived(MembershipAction.java:280)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:279)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-03-20 19:42:05,137][INFO ][node                     ] [Equinox] stopped
+[2017-03-20 19:42:05,137][INFO ][node                     ] [Equinox] closing ...
+[2017-03-20 19:42:05,138][INFO ][node                     ] [Equinox] closed
